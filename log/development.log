@@ -22,3 +22,35 @@ ActionController::RoutingError (No route matches "/jquery.min.js" with {:method=
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-03 22:28:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/temple_title_for_web.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-03 22:28:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/temple_title_for_web.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-03 22:28:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/temple_title_for_web.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-03 22:28:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/temple_title_for_web.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
