@@ -18,11 +18,11 @@
  
 .droppy { background-color: #ffffff; height: 24px; }
 .droppy *:hover { background-color: none; }
-.droppy a { border-right: 1px solid white; color: #000000; font-size: 12px; padding: 6px; line-height: 1; }
-  .droppy li.hover a { background-color: #EFEFEF; }
+.droppy a { border-right: 1px solid white; color: #000000; font-size: 12px; padding: 6px; line-height: 1; text-decoration: none; }
+  .droppy li.hover a { background-color: #EFEFEF; text-decoration: none;}
   .droppy ul { top: 25px; }
-    .droppy ul li a { background-color: #EFEFEF; }
-      .droppy ul a.hover { background-color: #EAEAEA; }
-   .droppy ul a { border-bottom: 1px solid white; border-right: none; opacity: 0.9; filter: alpha(opacity=90); }
+    .droppy ul li a { background-color: #EFEFEF; text-decoration: none; }
+      .droppy ul a.hover { background-color: #EAEAEA; text-decoration: none; }
+   .droppy ul a { border-bottom: 1px solid white; border-right: none; opacity: 0.9; filter: alpha(opacity=90); text-decoration: none; }
 /* .droppy ul a { border-bottom: none; } - I also needed this for IE6/7 */
 
