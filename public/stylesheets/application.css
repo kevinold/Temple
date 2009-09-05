@@ -2,6 +2,20 @@
     background: url(/images/temple_logo.png) no-repeat 0 20px;
     height: 180px;
 }
+
+.sidebox {
+    background:#F5F5F5 none repeat scroll 0 0;
+    border:1px solid #EFEDED;
+    margin-bottom:10px;
+    padding: 10px 25px 0 25px;
+    font-size: 14px;
+}
+
+.sidebox ul li {
+    list-style: none; 
+    margin: 0;
+}
+
 /*
 #doublebar {
     background:transparent url(/images/doublebar.gif) repeat-x scroll 0 0;
