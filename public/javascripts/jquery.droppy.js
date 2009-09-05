@@ -39,7 +39,7 @@
 	        if (!$.data(subnav, 'cancelHide')) {
 	          $(subnav).slideUp(options.speed);
 	        }
-	      }, 500);
+	      }, 100);
 	    };
 
 	    function show() {
