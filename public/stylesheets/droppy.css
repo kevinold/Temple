@@ -11,17 +11,17 @@
     
 /* Essentials - configure this */
 
-.droppy ul { width: 130px; }
+.droppy ul { width: 150px; }
 .droppy ul ul { left: 131px; }
 
 /* Everything else is theming */
  
 .droppy { background-color: #ffffff; height: 24px; }
 .droppy *:hover { background-color: none; }
-.droppy a { border-right: 1px solid white; color: #000000; font-size: 12px; padding: 6px; line-height: 1; text-decoration: none; font-weight: bold;}
+.droppy a { border-right: 1px solid white; color: #000000; font-size: 16px; padding: 8px; line-height: 1; text-decoration: none; font-weight: bold;}
   .droppy li.hover a { background-color: #EFEFEF; }
-  .droppy ul { top: 25px; }
-    .droppy ul li a { background-color: #EFEFEF; }
+  .droppy ul { top: 30px; }
+    .droppy ul li a { background-color: #EFEFEF; font-size: 14px;}
       .droppy ul a.hover { background-color: #EAEAEA;  }
    .droppy ul a { border-bottom: 1px solid white; border-right: none; opacity: 0.9; filter: alpha(opacity=90); }
 /* .droppy ul a { border-bottom: none; } - I also needed this for IE6/7 */
