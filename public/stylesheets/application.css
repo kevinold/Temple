@@ -4,6 +4,7 @@
 body {
     /*background: #cccccc;*/
     background: #fff url(/images/back_cont.jpg) repeat-x;
+    font-family: "Trebuchet MS","Helvetica Neue",Arial,sans-serif;
 }
 
 #header {
