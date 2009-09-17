@@ -1,14 +1,13 @@
 
 /* container for slides */
 .images {
-    background:#fff url(/images/jquery_tools_slideshow/h300.png) repeat-x;
-	border:1px solid #666;
+    /*background:#fff url(/images/jquery_tools_slideshow/h300.png) repeat-x;*/
+	border:1px solid #ccc;
 	position:relative;	
-	height:300px;
+	height:250px;
 	
-    width:500px;
+    width: 100%;
 	float:left;	
-	margin:15px;
 	cursor:pointer;
 	
 	/* CSS3 tweaks for modern browsers 
@@ -41,9 +40,7 @@
 /* tabs (those little circles below slides) */
 .tabs {
 	clear:both;
-          /*margin-left:330px;*/
-          margin: 0 auto 0 auto;
-          width: 100px;
+    margin: 0 auto 0 auto;
 }
 
 /* single tab */
