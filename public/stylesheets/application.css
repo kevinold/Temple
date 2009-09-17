@@ -6,12 +6,13 @@ body {
 }
 
 #header {
-background: url(/images/temple_header_bg.jpg) no-repeat 0 0;
+    /*background: url(/images/temple_header_bg.jpg) no-repeat 0 0;*/
                 height: 220px;
 }
 
 .logo {
-    background: url(/images/temple_logo_white_ds.png) no-repeat 0 20px;
+    /*background: url(/images/temple_logo_white_ds.png) no-repeat 0 20px;*/
+    background: url(/images/temple_logo.png) no-repeat 0 20px;
     height: 180px;
 }
 
