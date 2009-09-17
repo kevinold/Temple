@@ -16,13 +16,13 @@
 
 /* Everything else is theming */
  
-.droppy { background-color: #ffffff; height: 24px; }
+.droppy { background-color: #8c0d0d; height: 30px; }
 .droppy *:hover { background-color: none; }
-.droppy a { border-right: 1px solid white; color: #000000; font-size: 16px; padding: 8px; line-height: 1; text-decoration: none; font-weight: bold;}
-  .droppy li.hover a { background-color: #EFEFEF; }
+.droppy a { border-right: 1px dotted white; color: #ffffff; font-size: 16px; padding: 8px; line-height: 1; text-decoration: none; font-weight: bold;}
+  .droppy li.hover a { background-color: #A94A4A; }
   .droppy ul { top: 30px; }
-    .droppy ul li a { background-color: #EFEFEF; font-size: 14px;}
-      .droppy ul a.hover { background-color: #EAEAEA;  }
+    .droppy ul li a { background-color: #C68787; font-size: 14px;}
+      .droppy ul a.hover { background-color: #C68787;  }
    .droppy ul a { border-bottom: 1px solid white; border-right: none; opacity: 0.9; filter: alpha(opacity=90); }
 /* .droppy ul a { border-bottom: none; } - I also needed this for IE6/7 */
 

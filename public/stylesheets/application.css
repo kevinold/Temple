@@ -1,4 +1,5 @@
-/* http://slayeroffice.com/tools/color_palette/?hex=38200D */
+/* Brown shades - http://slayeroffice.com/tools/color_palette/?hex=38200D */
+/* Cranberry shades - http://slayeroffice.com/tools/color_palette/?hex=8c0d0d */
 
 body {
     /*background: #cccccc;*/
@@ -6,8 +7,9 @@ body {
 }
 
 #header {
-    /*background: url(/images/temple_header_bg.jpg) no-repeat 0 0;*/
-                height: 220px;
+    background: url(/images/temple_header_bg_bw.jpg) no-repeat 0 0;
+    height: 200px;
+    margin-bottom: 2px;
 }
 
 .logo {
@@ -17,8 +19,8 @@ body {
 }
 
 .sidebox {
-    background:#F5F5F5 none repeat scroll 0 0;
-    border:1px solid #EFEDED;
+    background:#F4E7E7 none repeat scroll 0 0;
+    border:1px solid #C68787;
     margin-bottom:10px;
     padding: 10px 25px 0 25px;
     font-size: 14px;
@@ -42,8 +44,8 @@ body {
 }
 
 #footer {
-    border-top: 5px #9C9087 solid;
-    background: #6A584A;
+    border-top: 5px #C68787 solid;
+    background: #8c0d0d;
     color: #CDC7C2;
     padding-top: 20px;
 }
