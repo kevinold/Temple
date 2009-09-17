@@ -10,7 +10,7 @@ body {
 #header {
     background: url(/images/temple_header_bg_bw.jpg) no-repeat 0 0;
     height: 200px;
-    margin-bottom: 2px;
+    border-bottom: 2px solid #ccc;
 }
 
 .logo {
