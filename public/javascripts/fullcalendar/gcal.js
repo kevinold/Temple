@@ -38,7 +38,7 @@
 							});
 							var showTime = entry['gd$when'][0]['startTime'].indexOf('T') != -1;
 							var classNames = [];
-							if (showTime) {
+							if (showTime && options.noEventBg) {
 								classNames.push('nobg');
 							}
 							if (options.className) {
