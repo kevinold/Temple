@@ -80,6 +80,16 @@ body {
 	padding: 0;
 	}
 
+.full-calendar-title {
+    color: #8c0d0d;
+	text-align: left;
+	}
+
+.full-calendar-month td.today {
+	background: #C68787;
+    color: #ffffff;
+	}
+
 /*
 #doublebar {
     background:transparent url(/images/doublebar.gif) repeat-x scroll 0 0;
