@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/960/reset.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/960/text.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/960/960.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/application.css" />
+
+    <!--<script type="text/javascript" src="/jquery.min.js"></script>-->
+
+    <!--<style type="text/css"></style>-->
+    <script type='text/javascript' src='/javascripts/jquery.js'></script>
+    <script type='text/javascript' src="/javascripts/jquery.tools.min.js"></script>
+
+    <script type='text/javascript' src='/javascripts/jquery.droppy.js'></script>
+    <link rel="stylesheet" href="/stylesheets/droppy.css" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/tabs-slideshow.css"/>
+</head>
+
+<body>
+<div class="container_12">
+    <div class="grid_12" id="doublebar"></div>
+
+    <!-- header -->
+    <div class="grid_12" id="header"><div class="logo"></div></div>
+    <div class="clear"></div>
+
+    <!-- nav -->
+    <div class="grid_12" id="navigation">
+    <ul id='nav'>
+    <li><a href='#'>Home</a></li>
+
+    <li><a href='#'>About Us</a>
+        <ul>
+        <li><a href='#'>Contact Us</a></li>
+        <li><a href='#'>Location</a></li>
+        <li><a href='#'>Meet Our Pastor</a></li>
+        <li><a href='#'>Meet Our Staff</a></li>
+        <li><a href='#'>Church Covenant</a></li>
+        <li><a href='#'>Church Character</a></li>
+        </ul>
+    </li>
+
+    <li><a href='#'>Children</a>
+        <ul>
+        <li><a href='#'>Nursery</a></li>
+        <li><a href='#'>Sunday School</a></li>
+        <li><a href='#'>Vacation Bible School</a></li>
+        </ul>
+    </li>
+
+    <li><a href='#'>Youth</a>
+        <ul>
+        <li><a href='#'>Sunday School</a></li>
+        <li><a href='#'>Missions</a></li>
+        <li><a href='#'>Special Events</a></li>
+        </ul>
+    </li>
+
+    <li><a href='#'>Adults</a>
+        <ul>
+        <li><a href='#'>Sunday School</a></li>
+        <li><a href='#'>Music</a></li>
+        <li><a href='#'>G.R.O.W.</a></li>
+        <li><a href='#'>Discipleship</a></li>
+        </ul>
+    </li>
+
+    <li><a href='#'>Calendar</a></li>
+
+    <!--
+    <li><a href='#'>Top level 2</a>
+        <ul>
+        <li><a href='#'>Sub 2 - 1</a></li>
+        <li>
+            <a href='#'>Sub 2 - 2</a>
+            <ul>
+            <li>
+
+                <a href='#'>Sub 2 - 2 - 1</a>
+                <ul>
+                <li><a href='#'>Sub 2 - 2 - 1 - 1</a></li>
+                <li><a href='#'>Sub 2 - 2 - 1 - 2</a></li>
+                <li><a href='#'>Sub 2 - 2 - 1 - 3</a></li>
+                <li><a href='#'>Sub 2 - 2 - 1 - 4</a></li>
+
+                </ul>
+            </li>
+            <li><a href='#'>Sub 2 - 2 - 2</a></li>
+            <li>
+                <a href='#'>Sub 2 - 2 - 3</a>
+                <ul>
+                <li><a href='#'>Sub 2 - 2 - 3 - 1</a></li>
+
+                <li><a href='#'>Sub 2 - 2 - 3 - 2</a></li>
+                <li><a href='#'>Sub 2 - 2 - 3 - 3</a></li>
+                <li><a href='#'>Sub 2 - 2 - 3 - 4</a></li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+
+        <li><a href='#'>Sub 2 - 3</a></li>
+        </ul>
+    </li>
+        -->
+    </ul>
+
+
+    </div>
+    <div class="clear"></div>
+
+    <!-- body -->
+    <div class="grid_8" id="content">
+    <%= yield %>
+    </div>  
+
+    <%= render :partial => "shared/sidebar" %>
+    <div class="clear"></div>
+
+    <!-- footer -->
+    <div class="grid_12" id="footer">
+        <div class="grid_4 alpha">
+            <ul class="footer_section">
+                <li><strong>Temple Baptist Church</strong>
+                <br/>
+                117 Marlin Road
+                <br/>
+                White House, TN 37188
+                <br/>
+                (615) 672-5339
+                </li>
+            </ul>
+        </div>
+        <div class="grid_4">
+            <ul class="footer_section">
+                <li>Pellentesque habitant</li>
+                <li>Pellentesque habitant</li>
+                <li>Pellentesque habitant</li>
+                <li>Pellentesque habitant</li>
+                <li>Pellentesque habitant</li>
+            </ul>
+        </div>
+        <div class="grid_4 omega">
+            <ul class="footer_section">
+                <li>Pellentesque habitant</li>
+                <li>Pellentesque habitant</li>
+                <li>Pellentesque habitant</li>
+                <li>Pellentesque habitant</li>
+                <li>Pellentesque habitant</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
