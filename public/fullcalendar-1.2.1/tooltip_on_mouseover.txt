@@ -1,0 +1,38 @@
+$(document).ready(function() {
+	var d = new Date();
+	var y = d.getFullYear();
+	var m = d.getMonth();
+	$('#calendar').fullCalendar({
+		draggable: false,
+		showTime: false,
+		events: [
+		
+			{
+				id: 1,
+				title: "New Event",
+				start: "2009-08-14 00:00:00",
+				end: "2009-08-17 00:00:00",
+				tooltip: "<p id='tooltip'><strong>New Event Addition</strong><br/>Here&#039;s my event description.<br/><br/>Aug 14, 2009 - Aug 17, 2009</p>"
+			},
+			{
+				id: 2,
+				title: "Another Event",
+				start: "2009-08-20 13:00:00",
+				end: "2009-08-20 16:00:00",
+				tooltip: "<p id='tooltip'><strong>Another Event Addition</strong><br/>Here&#039;s my event description.<br/><br/>Aug 20, 2009<br/>1:00 pm - 4:00 pm</p>"
+			}		
+		],
+		eventMouseover: function(calEvent,jsEvent) {
+				xOffset = 10;
+				yOffset = 30;
+				$("body").append(calEvent.tooltip);
+				$("#tooltip")
+					.css("top",(jsEvent.clientY - xOffset) + "px")
+					.css("left",(jsEvent.clientX + yOffset) + "px")
+					.fadeIn("fast");
+		},
+		eventMouseout: function(calEvent,jsEvent) {
+			$("#tooltip").remove();	
+		}
+	});
+});
