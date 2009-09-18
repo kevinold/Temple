@@ -23,7 +23,7 @@ body {
     background:#F4E7E7 none repeat scroll 0 0;
     border:1px solid #C68787;
     margin-bottom:10px;
-    padding: 10px 25px 0 25px;
+    padding: 10px 20px 0 20px;
     font-size: 14px;
 }
 
@@ -38,6 +38,10 @@ body {
 
 .content_box {
     /* needs definition */
+}
+
+.content_box h3 {
+    color: #8c0d0d;
 }
 
 #sidebar {
