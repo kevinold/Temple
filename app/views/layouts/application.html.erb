@@ -5,22 +5,10 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <title></title>
-    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/960/reset.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/960/text.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/960/960.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/application.css" />
+    <title>Temple Baptist Church, White House, TN</title>
+    <%= javascript_include_tag "jquery", "jquery.tools.min", "jquery.droppy", "fullcalendar/fullcalendar", "fullcalendar/gcal.js" %> 
+    <%= stylesheet_link_tag "960/reset", "960/text", "960/960", "application", "droppy", "tabs-slideshow", "fullcalendar" %> 
 
-    <!--<script type="text/javascript" src="/jquery.min.js"></script>-->
-
-    <!--<style type="text/css"></style>-->
-    <script type='text/javascript' src='/javascripts/jquery.js'></script>
-    <script type='text/javascript' src="/javascripts/jquery.tools.min.js"></script>
-
-    <script type='text/javascript' src='/javascripts/jquery.droppy.js'></script>
-    <link rel="stylesheet" href="/stylesheets/droppy.css" type="text/css" />
-
-    <link rel="stylesheet" type="text/css" href="/stylesheets/tabs-slideshow.css"/>
 </head>
 
 <body>
@@ -159,6 +147,11 @@
     </div>
 </div>
 
+    <script type='text/javascript'>
+    $(function() {
+        $('#nav').droppy({speed: 150});
+    });
+    </script>
 
 
 </body>

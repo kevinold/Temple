@@ -1,0 +1,25 @@
+<script type='text/javascript'>
+
+    $(function() {
+	
+		$('#calendar').fullCalendar({
+			// US Holidays
+			events: $.fullCalendar.gcalFeed(
+				'http://www.google.com/calendar/feeds/m2mhi9aoueuujgalci739t8iqc%40group.calendar.google.com/private-b6e1fd08128e7120611022cad150e6d1/basic',
+				{draggable: false, className: 'mygcal'}
+			),
+			eventClick: function(event) {
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			loading: function(bool) {
+				if (bool) $('#loading').show();
+				else $('#loading').hide();
+			}
+		});
+		
+	});
+
+</script>
+<div id='loading' style='display:none'>loading...</div>
+<div id='calendar'></div>

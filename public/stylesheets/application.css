@@ -59,6 +59,20 @@ body {
     list-style-type: none;
 }
 
+/* Calendar */
+
+#loading {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#calendar {
+    width: 500px;
+    margin: 0 auto;
+}
+
+
 /*
 #doublebar {
     background:transparent url(/images/doublebar.gif) repeat-x scroll 0 0;
