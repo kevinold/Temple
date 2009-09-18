@@ -18,7 +18,7 @@
  
 .droppy { background-color: #8c0d0d; height: 30px; }
 .droppy *:hover { background-color: none; }
-.droppy a { border-right: 1px dotted white; color: #ffffff; font-size: 16px; padding: 8px; line-height: 1; text-decoration: none; font-weight: bold;}
+.droppy a { border-right: 1px dotted white; color: #ffffff; font-size: 16px; padding: 7px; line-height: 1; text-decoration: none; font-weight: bold;}
   .droppy li.hover a { background-color: #A94A4A; }
   .droppy ul { top: 30px; }
     .droppy ul li a { background-color: #C68787; font-size: 14px;}
