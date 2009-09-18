@@ -64,7 +64,7 @@
 	    
         $('li', this).hover(
 	      function() { $(this).addClass('hover'); $('> a', this).addClass('hover'); },
-	      function() { $(this).removeClass('hover'); $('> a', this).removeClass('hover'); }
+	      function() { if (!$(this).hasClass('sticky')) { $(this).removeClass('hover'); $('> a', this).removeClass('hover'); } }
 	    );
 
 	  });
