@@ -72,6 +72,13 @@ body {
     margin: 0 auto;
 }
 
+/* fullcalendar.css overrides */
+.full-calendar-month .event td {
+    background: #8c0d0d;
+    color: #ffffff;
+    font-weight: bold;
+	padding: 0;
+	}
 
 /*
 #doublebar {
