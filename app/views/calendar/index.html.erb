@@ -8,19 +8,19 @@
 				'http://www.google.com/calendar/feeds/m2mhi9aoueuujgalci739t8iqc%40group.calendar.google.com/private-b6e1fd08128e7120611022cad150e6d1/basic',
 				{draggable: false, className: 'mygcal'}
 			),
-            eventRender: function(event, element) {
-                element.attr('title', event.title);
+            eventMouseover: function(calEvent,jsEvent) {
+                    $(this).append('<div id="tooltip" class="tooltip">' + calEvent.description + '</div>');
+                    $(jsEvent).tooltip({tip: 'tooltip'});
             },
-			eventClick: function(event) {
-				window.open(event.url, 'gcalevent', 'width=700,height=600');
-				return false;
-			},
+            eventMouseout: function(calEvent,jsEvent) {
+                $('#tooltip').remove();
+            },
 			loading: function(bool) {
 				if (bool) $('#loading').show();
 				else $('#loading').hide();
 			}
 		});
-		
+
 	});
 
 </script>
