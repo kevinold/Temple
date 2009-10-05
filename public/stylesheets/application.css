@@ -1,8 +1,17 @@
 /* Brown shades - http://slayeroffice.com/tools/color_palette/?hex=38200D */
 /* Cranberry shades - http://slayeroffice.com/tools/color_palette/?hex=8c0d0d */
 
+/* Firetruck - http://kuler.adobe.com/#themeID/449308 
+ * D8E2E9 - light gray
+ * 8B8C80 - gray
+ * BF9F56 - yellowish brown
+ * 8C0D0D - lighter cranberry (base color)
+ * 51100C - darker cranberry
+ *
+ * */
+
 body {
-    /*background: #cccccc;*/
+    /*background: #BF9F56;*/
     background: #fff url(/images/back_cont.jpg) repeat-x;
     font-family: "Trebuchet MS","Helvetica Neue",Arial,sans-serif;
 }
@@ -10,7 +19,7 @@ body {
 #header {
     background: url(/images/temple_header_bg_bw.jpg) no-repeat 0 0;
     height: 200px;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 3px solid #BF9F56;
 }
 
 .logo {
@@ -20,11 +29,12 @@ body {
 }
 
 .sidebox {
-    background:#F4E7E7 none repeat scroll 0 0;
-    border:1px solid #C68787;
+    background:#fff none repeat scroll 0 0;
+    border:2px solid #BF9F56;
     margin-bottom:10px;
     padding: 10px 20px 0 20px;
     font-size: 14px;
+    color: #51100C;
 }
 
 .sidebox ul li {
@@ -49,7 +59,7 @@ body {
 }
 
 #footer {
-    border-top: 5px #C68787 solid;
+    border-top: 5px #51100C solid;
     background: #8c0d0d;
     color: #CDC7C2;
     padding-top: 20px;
