@@ -12,20 +12,20 @@
 
 body {
     /*background: #BF9F56;*/
-    background: #fff url(/images/back_cont.jpg) repeat-x;
+    /*background: #fff url(/images/back_cont.jpg) repeat-x;*/
     font-family: "Trebuchet MS","Helvetica Neue",Arial,sans-serif;
 }
 
 #header {
-    background: url(/images/temple_header_bg_bw.jpg) no-repeat 0 0;
-    height: 200px;
-    border-bottom: 3px solid #BF9F56;
+    /*background: url(/images/temple_header_bg.jpg) no-repeat 0 -25px;*/
+    height: 240px;
+    border-bottom: 4px solid #fff;
 }
 
 .logo {
     /*background: url(/images/temple_logo_white_ds.png) no-repeat 0 20px;*/
-    background: url(/images/temple_logo.png) no-repeat 0 20px;
-    height: 180px;
+    background: url(/images/temple_logo.png) no-repeat 0 0;
+    height: 240px;
 }
 
 .sidebox {
@@ -44,6 +44,7 @@ body {
 
 #content {
     margin-top: 10px;
+    line-height: 22px;
 }
 
 .content_box {
