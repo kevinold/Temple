@@ -1,22 +1,39 @@
 /* Brown shades - http://slayeroffice.com/tools/color_palette/?hex=38200D */
 /* Cranberry shades - http://slayeroffice.com/tools/color_palette/?hex=8c0d0d */
 
+/* Firetruck - http://kuler.adobe.com/#themeID/449308 
+ * D8E2E9 - light gray
+ * 8B8C80 - gray
+ * BF9F56 - yellowish brown
+ * 8C0D0D - lighter cranberry (base color)
+ * 51100C - darker cranberry
+ *
+ * */
+
 body {
-    /*background: #cccccc;*/
-    background: #fff url(/images/back_cont.jpg) repeat-x;
+    /*background-color: #ccc;*/
+    /*background: #8c0d0d url(/images/back_cont.jpg) repeat-x;*/
+    /*background: #8c0d0d url(/images/backgrounds/background.jpg) repeat-y;*/
     font-family: "Trebuchet MS","Helvetica Neue",Arial,sans-serif;
 }
 
 #header {
-    background: url(/images/temple_header_bg_bw.jpg) no-repeat 0 0;
-    height: 200px;
-    border-bottom: 2px solid #ccc;
+    /*background: url(/images/backgrounds/red-flourish_2408_1680x1050.jpg) no-repeat 0 0;*/
+    height: 260px;
+            /*background: #8c0d0d;*/
+    /*padding-left: 4%;*/
+    /*width: 100%;*/
+            /*border-bottom: 4px solid #8c0d0d;*/
 }
 
-.logo {
+#logo h1 a {
     /*background: url(/images/temple_logo_white_ds.png) no-repeat 0 20px;*/
-    background: url(/images/temple_logo.png) no-repeat 0 20px;
-    height: 180px;
+    background: transparent url(/images/temple_logo_white.png) no-repeat scroll 0 -10px;
+    height: 260px;
+    width: 370px;
+    float: left;
+    overflow:hidden;
+    text-indent:-9000px;
 }
 
 .sidebox {
@@ -89,6 +106,29 @@ body {
 	background: #C68787;
     color: #ffffff;
 	}
+
+/* navbar */
+
+#navbar {
+    float: right;
+           /*display: inline;*/
+    font-size: 18px;
+    margin: 30px 0 0 0;
+}
+
+#navbar li {
+    display: inline;
+    margin: 0 20px 0 0;
+}
+
+#navbar li a {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
 
 /*
 #doublebar {
