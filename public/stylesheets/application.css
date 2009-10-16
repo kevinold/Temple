@@ -13,13 +13,22 @@
 body {
     /*background-color: #ccc;*/
     /*background: #8c0d0d url(/images/back_cont.jpg) repeat-x;*/
+    background: url(/images/slices/bodybg.jpg) repeat;
     /*background: #8c0d0d url(/images/backgrounds/background.jpg) repeat-y;*/
     font-family: "Trebuchet MS","Helvetica Neue",Arial,sans-serif;
 }
 
+#headerwrap {
+    background: url(/images/slices/headerbg.jpg) repeat-x 0 0;
+}
+
+#contentwrap {
+    background: url(/images/slices/contentbg.png) repeat 0 0;
+}
+
 #header {
-    /*background: url(/images/backgrounds/red-flourish_2408_1680x1050.jpg) no-repeat 0 0;*/
-    height: 260px;
+    background: url(/images/slices/headerbg.jpg) repeat-x 0 0;
+    height: 200px;
             /*background: #8c0d0d;*/
     /*padding-left: 4%;*/
     /*width: 100%;*/
@@ -66,10 +75,12 @@ body {
 }
 
 #footer {
-    border-top: 5px #C68787 solid;
-    background: #8c0d0d;
+    background: url(/images/slices/footerbg.jpg) repeat 0 0;
+                /*border-top: 5px #C68787 solid;*/
+    /*background: #51100C;*/
     color: #CDC7C2;
     padding-top: 20px;
+    height: 200px;
 }
 
 .footer_section {

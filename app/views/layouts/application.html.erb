@@ -13,7 +13,7 @@
 
 <body>
 
-<div style="background: url(/images/temple_header_bg_textured.png) no-repeat 0 0;">
+<div id="headerwrap">
 <div class="container_12" id="header">
     <!-- header -->
     <div class="grid_12">
@@ -32,10 +32,9 @@
     </div>
 </div>
 </div>
-<div class="clear"></div>
 
-<div class="container_12">
-    <div class="grid_12" id="doublebar"></div>
+<div class="container_12" id="contentwrap">
+    <!--<div class="grid_12" id="doublebar"></div> -->
 
     <!-- header 
     <div class="grid_12" id="header">
@@ -114,8 +113,9 @@
     <%= render :partial => "shared/sidebar" %>
     <div class="clear"></div>
 
+</div> <!-- end contentwrap -->
     <!-- footer -->
-    <div class="grid_12" id="footer">
+    <div class="container_12" id="footer">
         <div class="grid_4 alpha">
             <ul class="footer_section">
                 <li><strong>Temple Baptist Church</strong>
@@ -147,7 +147,6 @@
             </ul>
         </div>
     </div>
-</div>
 
     <script type='text/javascript'>
     $(function() {
