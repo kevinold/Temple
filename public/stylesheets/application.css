@@ -13,7 +13,7 @@
 body {
     /*background-color: #ccc;*/
     /*background: #8c0d0d url(/images/back_cont.jpg) repeat-x;*/
-    background: url(/images/slices/bodybg.jpg) repeat;
+    background: url(/images/slices/bodybg.jpg) repeat 0 190px;
     /*background: #8c0d0d url(/images/backgrounds/background.jpg) repeat-y;*/
     font-family: "Trebuchet MS","Helvetica Neue",Arial,sans-serif;
 }
