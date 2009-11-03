@@ -38,6 +38,7 @@ body {
     right: 20px;
     text-indent: -9999px;
     width: 248px;
+    cursor:pointer;
 }
 
 #services-overlay #services-tab span {
@@ -85,6 +86,7 @@ body {
 
 #content {
     margin-top: 10px;
+    margin-left: 60px;
 }
 
 .content_box {
