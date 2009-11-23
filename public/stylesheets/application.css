@@ -114,6 +114,16 @@ body {
     list-style-type: none;
 }
 
+.footer_section li a {
+    letter-spacing: 2px;
+    line-height: 1.7em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 /* Calendar */
 
 #loading {
