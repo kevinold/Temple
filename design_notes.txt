@@ -1,0 +1,13 @@
+Notes about the design and sites of inspriation:
+
+http://www.northlandchurch.net/
+Like the footer content organization.
+
+http://www.yourchurch.com/
+Also like the footer content organization.
+
+http://www.stonebriar.org/home.html
+Like the "navbar" (superfish)
+
+http://www.thecity.org
+Like the sections and links in the footer and the "navbar" (superfish)
