@@ -178,6 +178,10 @@ body {
     font-weight: bold;
 }
 
+
+.sf-menu {
+    width: 100%;
+}
 /*
 #doublebar {
     background:transparent url(/images/doublebar.gif) repeat-x scroll 0 0;
