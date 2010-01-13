@@ -1,0 +1,13 @@
+<h2>Newsletters</h2>
+
+<% unless @newsletters.empty? %>
+
+  <ul><% @newsletters.each do |newsletter| %>
+    <li><%= link_to newsletter.subject, :action => 'show', :id => newsletter %></li>
+  <% end %></ul>
+
+<% else %>
+
+  <p>No available newsletters.</p>
+
+<% end %>

@@ -1,0 +1,86 @@
+.box {
+  background: #F5F5F5;
+  font-size: 10px!important;
+  margin: 0px 0px 0px 0px;
+  padding: 10px;
+}
+
+  .box form {
+    margin: 0px!important;
+  }
+
+.separator {
+  border-top: 1px dotted #D3D3D3;
+  margin: 15px 0px;
+}
+
+.bucket {
+  height: 50px;
+  margin: 20px 0px 20px 0px;
+}
+
+.bucket h3 {
+  background: url("/images/admin/amazon_s3/bucket.png") no-repeat top left;
+  font-size: 20px;
+  height: 50px;
+  margin: 0px 0px 5px 0px;
+  padding: 15px 0px 0px 70px;
+}
+
+h3 small {
+  font-size: 12px;
+}
+
+.file {
+  height: 40px;
+  margin: 10px 0px;
+}
+
+.package {
+  background: url("/images/admin/amazon_s3/package.png") no-repeat left top;
+  height: 50px;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 50px;
+}
+
+.image {
+  background: url("/images/admin/amazon_s3/image.png") no-repeat left top;
+  height: 50px;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 50px;
+}
+
+.unknown {
+  background: url("/images/admin/amazon_s3/unknown.png") no-repeat left top;
+  height: 50px;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 50px;
+}
+
+.document {
+  background: url("/images/admin/amazon_s3/document.png") no-repeat left top;
+  height: 50px;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 50px;
+}
+
+.video {
+  background: url("/images/admin/amazon_s3/video.png") no-repeat left top;
+  height: 50px;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 50px;
+}
+
+.audio {
+  background: url("/images/admin/amazon_s3/audio.png") no-repeat left top;
+  height: 50px;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 50px;
+}
+
+.keynote {
+  background: url("/images/admin/amazon_s3/keynote.png") no-repeat left top;
+  height: 50px;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 50px;
+}

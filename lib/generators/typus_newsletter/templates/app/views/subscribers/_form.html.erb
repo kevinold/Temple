@@ -1,0 +1,7 @@
+<% form_for @subscriber, :url  => { :action => 'create' } do |f| %>
+  <ul>
+  <li><label for="subscriber_name">Name</label> <%= text_field :subscriber, :name %></li>
+  <li><label for="subscriber_email">Email</label> <%= text_field :subscriber, :email %></li>
+  <li><%= submit_tag "Subscribe", :disable_with => "Subscribing ..." %></li>
+  </ul>
+<% end %>

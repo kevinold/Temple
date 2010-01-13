@@ -1,0 +1,9 @@
+<div class="file">
+
+  <% kbsize = (file.size.to_f / 1024).round %>
+  <% kbsize = 1 unless kbsize > 0 %>
+
+  <h3 class="file <%= get_extension(file.key) %>"><a href="<%= file.url %>"><%= file.key.split("#{params[:folder]}/")[-1] %></a> <small><strong><%= kbsize.round + 1 %> Kb by <%= file.owner.display_name %></strong></small><br />
+  <small><%= link_to 'Rename', :action => 'edit_file', :file_id => file.key, :id => params[:id], :folder => params[:folder] %> | <%= link_to 'Share', { :action => 'share_file', :file_id => file.key, :id => params[:id], :folder => params[:folder] } %> | <%= link_to 'Public', { :action => 'grant_to_file', :file_id => file.key, :id => params[:id], :acl => 'public', :folder => params[:folder] } %> or <%= link_to 'Private', { :action => 'grant_to_file', :file_id => file.key, :id => params[:id], :acl => 'private', :folder => params[:folder] } %>&nbsp;|&nbsp;<%= link_to 'Delete', { :action => 'delete_file', :file_id => file.key, :id => params[:id], :folder => params[:folder] }, :confirm => 'Are you sure?' %></small></h3>
+
+</div>

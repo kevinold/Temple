@@ -1,0 +1,17 @@
+Contact:
+  fields:
+    list: first_name, last_name, email, phone
+    form: first_name, last_name, company, email, phone, url, note
+  order_by: last_name
+  search: first_name, last_name, company, note
+  application: Personal Information Manager
+  description:
+
+Note:
+  fields:
+    list: title
+    form: title, content
+  order_by: -created_at
+  search: title, content
+  application: Personal Information Manager
+  description: 

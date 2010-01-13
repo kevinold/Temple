@@ -1,0 +1,16 @@
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'admin/amazon_s3' %>
+<% end %>
+
+<h2><%= link_to "Buckets", admin_amazon_s3_index_path %> &rsaquo; 
+    <%= link_to params[:id], admin_amazon_s3_path(params[:id]) %> &rsaquo; 
+    Edit file</h2>
+
+<% form_tag :action => 'edit_file', :file_id => params[:file_id], :id => params[:id] do %>
+  <ul>
+  <li><label>Filename</label>
+  <%= text_field_tag :new_filename, params[:file_id], :class => 'text' %></li>
+  <li><%= submit_tag "Rename file" %></li>
+<% end %>
+
+<p><strong>Note:</strong> You're changing a file name. Changing file extension can make the file appear to be invalid.</p>

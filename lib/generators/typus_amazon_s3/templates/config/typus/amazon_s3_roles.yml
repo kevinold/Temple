@@ -1,0 +1,2 @@
+admin:
+  AmazonS3: index, new, create, show, grant, grant_file, remove_all_files, destroy, delete_file, edit_file, upload_file, share_file, , grant_to_file

@@ -1,0 +1,5 @@
+admin:
+  ContentBlock: create, read, update, delete
+  FlatPage: create, read, update, delete
+  Page: create, read, update, delete
+  Stylesheet: create, read, update, delete

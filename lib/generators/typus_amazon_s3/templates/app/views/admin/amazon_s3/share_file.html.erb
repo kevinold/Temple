@@ -1,0 +1,31 @@
+<% content_for :sidebar do %>
+
+  <h2>Actions</h2>
+
+  <ul>
+    <li><%= link_to "Back to bucket", admin_amazon_s3_path(params[:id], :folder => params[:folder]) %></li>
+  </ul>
+
+<% end %>
+
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'admin/amazon_s3' %>
+<% end %>
+
+<h2><%= link_to "Buckets", admin_amazon_s3_index_path %> &rsaquo; 
+    <%= link_to params[:id], admin_amazon_s3_path %> &rsaquo; 
+    Share file</h2>
+
+<% form_tag :action => 'share_file', :id => params[:id], :file_id => params[:file_id] do %>
+
+<ul>
+  <li><label>Email</label>
+  <%= text_field :email, :recipients, :class => 'text' %></li>
+  <li><label>Subject</label>
+  <%= text_field :email, :subject, :value => params[:file_id], :class => 'text' %></li>
+  <li><label>Message</label>
+  <%= text_area :email, :body, :rows => 7 %></li>
+  <li><%= submit_tag "Send email with link to file", :disable_with => 'Sending email ...' %></li>
+</ul>
+
+<% end %>

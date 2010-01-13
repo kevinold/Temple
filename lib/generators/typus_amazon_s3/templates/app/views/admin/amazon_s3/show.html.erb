@@ -1,0 +1,37 @@
+<% content_for :sidebar do %>
+
+  <h2>Actions</h2>
+
+  <ul>
+    <li><%= link_to "Remove bucket", { :action => 'destroy', :id => @bucket.name }, 
+                                                :method => :delete, 
+                                                :confirm => "Remove this bucket?" %></li>
+    <li><%= link_to "Remove all files", remove_all_files_admin_amazon_s3_path(@bucket.name), :confirm => "Are you sure?" %></li>
+  </ul>
+
+  <ul>
+    <li><%= link_to "Make bucket private", grant_admin_amazon_s3_path(@bucket.name, :acl => 'private') %></li>
+    <li><%= link_to "Make bucket public", grant_admin_amazon_s3_path(@bucket.name, :acl => 'public') %></li>
+  </ul>
+
+<% end %>
+
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'admin/amazon_s3' %>
+<% end %>
+
+<h2><%= link_to "Amazon S3", admin_amazon_s3_index_path %> &rsaquo; 
+    <%= @bucket.name %></h2>
+
+<div class="box">
+  <% form_for :bucket, 
+              :url => { :action => 'upload_file', :id => params[:id] }, 
+              :html => { :multipart => true } do %>
+    <ul>
+    <li><%= file_field_tag :file %></li>
+    <li><%= submit_tag 'Upload File', :disable_with => 'Uploading file ...' %></li>
+    </ul>
+  <% end %>
+</div>
+
+<%= render :partial => 'file', :collection => @files, :spacer_template => 'spacer' %>

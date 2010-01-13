@@ -1,0 +1,24 @@
+Newsletter:
+  fields:
+    list: subject, template
+    form: subject, introduction, footer, template
+    options:
+      selectors: template
+  actions:
+    index: generate
+    edit: preview, deliver, aprove
+  order_by: -created_at
+  filters: status
+  application: Newsletter
+  description:
+
+Subscriber:
+  fields:
+    list: name, email, token, status
+    form: name, email, status
+    options:
+      selectors: status
+  order_by: -updated_at
+  filters: status
+  search: name, email
+  application: Newsletter

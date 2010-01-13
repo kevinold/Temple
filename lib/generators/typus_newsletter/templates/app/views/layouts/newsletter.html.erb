@@ -1,0 +1,85 @@
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>SiteName - <%= @newsletter.subject %></title>
+   <%= stylesheet_link_tag 'newsletter' %>
+</head>
+
+<body>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+      <td align="center">
+         
+         <table width="580" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+               <td align="center" class="permission">
+
+                 <% if params[:token] %>
+
+                  <p>You're receiving this newsletter because you <em><strong>SIGNED UP AT <a href="http://www.yoursite.com" name="top">YOURSITE.COM</a> / BOUGHT WIDGETS FROM US</strong></em>.<br />
+                     Having trouble reading this email? <a href="#">View it in your browser</a>. Not interested anymore? <a href="#">Unsubscribe Instantly</a>.</p>
+
+                 <% end %>
+
+               </td>
+            </tr>
+            <tr>
+               <td class="header" height="77">
+                  <img src="http://www.campaignmonitor.com/templates/testing/6/header.gif" width="580" height="77" alt="ABC Widgets" />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  
+                  <table width="580" border="0" cellspacing="20" cellpadding="0">
+                     
+                     <tr>
+                        <td width="580" align="left" valign="top" class="mainbar">
+                           <h4 class="meta"><%= @newsletter.created_at %></h4>
+                           
+                           <!-- Monday 28th, April 2008 -->
+                           
+                           <h2>Donec placerat. Nullam nibh dolor landit</h2>
+                           <p>Blandit sed, fermentum id, imperdiet sit amet, neque. Nam mollis ultrices justo.
+                           Sed tempor. Sed vitae tellus. Etiam sem arcu, eleifend sit amet, gravida eget, porta at, wisi. Nam non lacus vitae ipsum viverra pretium phasellus massa. <a href="#">Read More »</a></p>
+                           
+                           <p class="top"><a href="#top">back to top</a></p>
+                           
+                           <h2>Maecenas adipiscing mollis massa</h2>
+                           <p><img src="http://www.campaignmonitor.com/templates/testing/6/main-content-inline-small.jpg" width="72" height="72" alt="Main Content Inline Small" align="left" hspace="10"> Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. <a href="#">Read More »</a></p>
+                           
+                           <p class="top"><a href="#top">back to top</a></p>
+                           
+                           <h2>Phasellus aliquam enim et tortor</h2>
+                           <p>Cras sed ante. Phasellus in massa. Curabitur dolor eros, gravida et, hendrerit ac, cursus non, massa. Aliquam lorem. In hac habitasse platea dictumst. Cras eu mauris. Quisque lacus—tristique sit amet, molestie dignissim, malesuada et, urna. <a href="#">Read More »</a></p>
+                           
+                           <p class="top"><a href="#top">back to top</a></p>
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td align="center" valign="top" class="footer">
+
+                 <% if params[:token] %>
+
+                  <p><a href="#">Forward this email</a> to a friend. Not interested anymore? <a href="#">Unsubscribe</a>.</p>
+
+                  <% end %>
+
+                  abcWidgets and the abcWidgets Logo are registered trademarks of <span>abcWidgets Corp</span>.<br>ABCWidgets Corp - 123 Some Street, City, ST 99999. ph +1 4 1477 89 745
+               </td>
+            </tr>
+         </table>
+         
+      </td>
+   </tr>
+</table>
+
+</body>
+</html>

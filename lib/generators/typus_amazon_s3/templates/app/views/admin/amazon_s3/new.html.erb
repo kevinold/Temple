@@ -1,0 +1,20 @@
+<% content_for :sidebar do %>
+  <h2>Actions</h2>
+  <ul>
+    <li><%= link_to "Back to list", admin_amazon_s3_index_path %></li>
+  </ul>
+<% end %>
+
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'admin/amazon_s3' %>
+<% end %>
+
+<h2><%= link_to "Amazon S3", admin_amazon_s3_index_path %> &rsaquo; 
+    New</h2>
+
+<% form_tag :action => 'create' do %>
+  <ul>
+  <li><label>Bucket Name</label><%= text_field :bucket, :name, :class => 'text' %></li>
+  <li><%= submit_tag 'Create entry' %></li>
+  </ul>
+<% end %>

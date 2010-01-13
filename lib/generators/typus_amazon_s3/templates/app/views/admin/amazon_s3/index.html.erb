@@ -1,0 +1,24 @@
+<% content_for :sidebar do %>
+  <h2>Actions</h2>
+  <ul>
+    <li><%= link_to "Add new", new_admin_amazon_s3_path %></li>
+  </ul>
+<% end %>
+
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'admin/amazon_s3' %>
+<% end %>
+
+<h2>Amazon S3</h2>
+
+<% if @buckets.empty? %>
+
+  <div id="flash" class="notice">
+    <p><%= "There are no buckets." %></p>
+  </div>
+
+<% else %>
+
+  <%= render :partial => 'bucket', :collection => @buckets, :spacer_template => 'spacer' %>
+
+<% end %>

@@ -1,0 +1,3 @@
+admin:
+  Contact: create, read, update, delete
+  Note: create, read, update, delete

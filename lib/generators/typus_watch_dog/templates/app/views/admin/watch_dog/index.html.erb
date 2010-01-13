@@ -1,0 +1,15 @@
+<% content_for :sidebar do %>
+  <%= typus_block :location => 'dashboard', :partial => 'sidebar' %>
+<% end %>
+
+<h2>Watch Dog</h2>
+
+<% unless @crontab.empty? %>
+  <h3>Crontab Setup</h3>
+  <pre><%= @crontab %></pre>
+<% end %>
+
+<% unless @application_log.empty? %>
+  <h3>Application Log</h3>
+  <pre><%= @application_log %></pre>
+<% end %>

@@ -1,0 +1,3 @@
+admin:
+  Newsletter: create, read, update, delete
+  Subscriber: create, read, update, delete

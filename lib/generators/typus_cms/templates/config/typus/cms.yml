@@ -1,0 +1,38 @@
+Page:
+  fields:
+    list: title, permalink, status
+    form: title, permalink, body, excerpt, status
+  order_by: title
+  filters: status
+  search: title, permalink, body
+  application: Content Management System
+  description:
+
+Stylesheet:
+  fields:
+    list: name
+    form: name, content
+  order_by: name
+  search: name
+  application: Content Management System
+  description:
+
+ContentBlock:
+  fields:
+    list: block
+    form: block, content
+    options:
+      selectors: block
+  order_by: block
+  application: Content Management System
+  description: 
+
+FlatPage:
+  fields:
+    list: title, permalink, status
+    form: title, permalink, body, status
+  order_by: title
+  filters: status
+  search: title, permalink, body
+  application: Content Management System
+  description: 

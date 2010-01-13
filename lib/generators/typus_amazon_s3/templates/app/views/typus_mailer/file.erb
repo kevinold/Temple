@@ -1,0 +1,9 @@
+
+Sender:  <%= TYPUS_AWS_S3[:email] %>
+File:    <%= @filename %>
+
+<%= @url %>
+
+<%= @body %>
+
+Note: This link will expire on <%= (Time.now + 3.day).to_s(:db) %>
