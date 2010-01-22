@@ -1,0 +1,26 @@
+<h1>Listing prayerandpraises</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Email</th>
+    <th>Body</th>
+    <th>Published</th>
+  </tr>
+
+<% @prayerandpraises.each do |prayerandpraise| %>
+  <tr>
+    <td><%=h prayerandpraise.title %></td>
+    <td><%=h prayerandpraise.email %></td>
+    <td><%=h prayerandpraise.body %></td>
+    <td><%=h prayerandpraise.published %></td>
+    <td><%= link_to 'Show', prayerandpraise %></td>
+    <td><%= link_to 'Edit', edit_prayerandpraise_path(prayerandpraise) %></td>
+    <td><%= link_to 'Destroy', prayerandpraise, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New prayerandpraise', new_prayerandpraise_path %>

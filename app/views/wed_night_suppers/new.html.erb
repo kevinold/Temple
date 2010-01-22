@@ -1,0 +1,23 @@
+<h1>New wed_night_supper</h1>
+
+<% form_for(@wed_night_supper) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :meal %><br />
+    <%= f.text_field :meal %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label :published %><br />
+    <%= f.check_box :published %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', wed_night_suppers_path %>

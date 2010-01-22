@@ -1,0 +1,2 @@
+module WedNightSuppersHelper
+end

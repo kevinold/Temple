@@ -1,0 +1,13 @@
+one:
+  title: MyString
+  description: MyText
+  podcast_filename: MyString
+  video_filename: MyString
+  published: false
+
+two:
+  title: MyString
+  description: MyText
+  podcast_filename: MyString
+  video_filename: MyString
+  published: false

@@ -1,0 +1,28 @@
+Sermon
+
+<p>
+  <strong>Title:</strong>
+  <%=h @sermon.title %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%=h @sermon.description %>
+</p>
+<p>
+  <strong>Podcast Filename:</strong>
+  <%=h @sermon.podcast_filename %>
+</p>
+<p>
+  <strong>Video Filename:</strong>
+  <%=h @sermon.video_filename %>
+</p>
+<p>
+  <strong>Published:</strong>
+  <%=h @sermon.published %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_sermon_path(@sermon) %> |
+  <%= link_to "Destroy", @sermon, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", sermons_path %>
+</p>

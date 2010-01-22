@@ -1,0 +1,14 @@
+# Typus Models Configuration File
+#
+# Use the README file as a reference to customize settings.
+
+Sermon:
+  fields:
+    list: title, podcast_filename, video_filename, published
+    form: title, description, podcast_filename, video_filename, published
+  order_by: 
+  relationships: 
+  filters: 
+  search: 
+  application: temple_rails
+

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  meal: MyString
+  date: 2010-01-22
+  published: false
+
+two:
+  meal: MyString
+  date: 2010-01-22
+  published: false
