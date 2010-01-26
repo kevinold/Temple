@@ -14,8 +14,8 @@
     <td><%=h prayerandpraise.email %></td>
     <td><%=h prayerandpraise.body %></td>
     <td><%=h prayerandpraise.published %></td>
-    <td><%= link_to 'Show', prayerandpraise %></td>
-    <td><%= link_to 'Edit', edit_prayerandpraise_path(prayerandpraise) %></td>
+    <td><%= link_to 'Show', :controller => 'prayerandpraises', :action => 'show', :id => prayerandpraise %></td>
+    <td><%= link_to 'Edit', :controller => 'prayerandpraises', :action => 'edit', :id => prayerandpraise %></td>
     <td><%= link_to 'Destroy', prayerandpraise, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
