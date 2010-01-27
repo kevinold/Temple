@@ -1,49 +1,14 @@
-<h1>Listing prayerandpraises</h1>
+<h1>Prayers and Praises</h1>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Email</th>
-    <th>Body</th>
-    <th>Published</th>
-  </tr>
-
+<ul>
 <% @prayerandpraises.each do |prayerandpraise| %>
-  <tr>
-    <td><%=h prayerandpraise.title %></td>
-    <td><%=h prayerandpraise.email %></td>
-    <td><%=h prayerandpraise.body %></td>
-    <td><%=h prayerandpraise.published %></td>
-    <td><%= link_to 'Show', prayerandpraise %></td>
-    <td><%= link_to 'Edit', edit_prayerandpraise_path(prayerandpraise) %></td>
-    <td><%= link_to 'Destroy', prayerandpraise, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+    <li>
+      <%=h prayerandpraise.title %>
+      <%=h prayerandpraise.body %>
+      <%=h prayerandpraise.created_at %>
+    </li>
 <% end %>
-</table>
+</ul>
 
+<% will_paginate @prayerandpraises %>
 
-Unpublished
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Email</th>
-    <th>Body</th>
-    <th>Published</th>
-  </tr>
-
-<% @unpublished.each do |up| %>
-  <tr>
-    <td><%=h up.title %></td>
-    <td><%=h up.email %></td>
-    <td><%=h up.body %></td>
-    <td><%=h up.published %></td>
-    <td><%= link_to 'Show', up %></td>
-    <td><%= link_to 'Edit', edit_prayerandpraise_path(up) %></td>
-    <td><%= link_to 'Destroy', up, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New prayerandpraise', new_prayerandpraise_path %>
