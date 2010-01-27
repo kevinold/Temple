@@ -1,4 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
+  map.connect 'prayer', :controller => 'prayerandpraises', :action => 'index'
   map.resources :blogs
 
   map.resources :wed_night_suppers
