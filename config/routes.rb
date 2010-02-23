@@ -1,4 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
+
+  map.resources :pages
+
+  map.namespace :admin do |admin|
+    admin.resources :pages
+  end
+
   map.signup '/signup', :controller => 'users', :action => 'create', :conditions => { :method => :post}
   map.signup '/signup', :controller => 'users', :action => 'new', :conditions => { :method => :get}
   map.resource :account, :controller => 'users'
