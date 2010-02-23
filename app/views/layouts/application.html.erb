@@ -7,7 +7,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <title>Temple Baptist Church, White House, TN</title>
     <%= javascript_include_tag "jquery", "jquery.tools.min", "jquery.droppy", "fullcalendar/fullcalendar", "fullcalendar/gcal", "flowplayer-3.1.4.min", "hoverIntent", "superfish", "application" %> 
-    <%= stylesheet_link_tag "960/reset", "960/text", "960/960", "droppy", "tabs-slideshow", "fullcalendar", "superfish", "superfish-navbar", "application" %> 
+    <%= stylesheet_link_tag "960/reset", "960/text", "960/960", "droppy", "tabs-slideshow", "fullcalendar", "application" %> 
 
 </head>
 
@@ -57,196 +57,16 @@
     <div id="logo">
     <h1><a href="/">Temple Baptist Church</a></h1>
     </div>
-    <ul id='navbar'>
-    <li><a href='/'>Home</a></li>
-    <li><a href='/'>About Us</a></li>
-    <li><a href='/'>Children</a></li>
-    <li><a href='/'>Youth</a></li>
-    <li><a href='/'>Adults</a></li>
-    <li><a href='/'>Calendar</a></li>
-    </ul>
-
     </div>
 </div>
 </div>
+
+<%= render :partial => "layouts/droppy_nav" %>
 
 <div class="container_12" id="contentwrap">
 
-    <div class="grid_12" id="navigation">
-		<ul class="sf-menu sf-navbar">
-			<li class="current">
-				<a href="#">Home</a>
-			</li>
-			<li>
-				<a href="#a">Ministries</a>
-				<ul>
-					<li>
-						<a href="#aa">Adults</a>
-					</li>
-					<li>
-						<a href="#ab">menu item</a>
-						<ul>
-							<li class="current"><a href="#">menu item</a></li>
-							<li><a href="#aba">menu item</a></li>
-							<li><a href="#abb">menu item</a></li>
-							<li><a href="#abc">menu item</a></li>
-							<li><a href="#abd">menu item</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">menu item</a>
-						<ul>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">menu item</a>
-						<ul>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">menu item</a>
-				<ul>
-					<li>
-						<a href="#">menu item</a>
-						<ul>
-							<li><a href="#">short</a></li>
-							<li><a href="#">short</a></li>
-							<li><a href="#">short</a></li>
-							<li><a href="#">short</a></li>
-							<li><a href="#">short</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">menu item</a>
-						<ul>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">menu item</a>
-						<ul>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">menu item</a>
-						<ul>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">menu item</a>
-						<ul>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-							<li><a href="#">menu item</a></li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">menu item</a>
-			</li>	
-		</ul>
-    </div>
-
-    <!--<div class="grid_12" id="doublebar"></div> -->
-
-    <!-- header 
-    <div class="grid_12" id="header">
-    <div id="logo">
-    <h1><a href="/">Temple Baptist Church</a></h1>
-    </div>
+    <div class="clear"></div>
     
-    <ul id='navbar'>
-    <li><a href='/'>Home</a></li>
-    <li><a href='/'>About Us</a></li>
-    <li><a href='/'>Children</a></li>
-    <li><a href='/'>Youth</a></li>
-    <li><a href='/'>Adults</a></li>
-    <li><a href='/'>Calendar</a></li>
-    </ul>
-
-    </div>
-    <div class="clear"></div>
-    -->
-
-    <!-- nav 
-    <div class="grid_12" id="navigation">
-    <ul id='nav'>
-    <li><a href='/'>Home</a></li>
-
-    <li><a href='#'>About Us</a>
-        <ul>
-        <li><a href='#'>Contact Us</a></li>
-        <li><a href='#'>Location</a></li>
-        <li><a href='#'>Meet Our Pastor</a></li>
-        <li><a href='#'>Meet Our Staff</a></li>
-        <li><a href='#'>Church Covenant</a></li>
-        <li><a href='#'>Church Character</a></li>
-        </ul>
-    </li>
-
-    <li><a href='#'>Children</a>
-        <ul>
-        <li><a href='#'>Nursery</a></li>
-        <li><a href='#'>Sunday School</a></li>
-        <li><a href='#'>Vacation Bible School</a></li>
-        </ul>
-    </li>
-
-    <li><a href='#'>Youth</a>
-        <ul>
-        <li><a href='#'>Sunday School</a></li>
-        <li><a href='#'>Missions</a></li>
-        <li><a href='#'>Special Events</a></li>
-        </ul>
-    </li>
-
-    <li><a href='#'>Adults</a>
-        <ul>
-        <li><a href='#'>Sunday School</a></li>
-        <li><a href='#'>Music</a></li>
-        <li><a href='#'>G.R.O.W.</a></li>
-        <li><a href='#'>Discipleship</a></li>
-        </ul>
-    </li>
-
-    <li <%= params[:controller] == 'calendar' ? 'class="hover sticky"' : '' %>><a href='/calendar'>Calendar</a></li>
-
-    </ul>
-
-
-    </div>
-    <div class="clear"></div>
-    -->
-
     <!-- body -->
     <div class="grid_8" id="content">
     <%= yield %>
@@ -310,10 +130,10 @@
 -->
     <script type='text/javascript'>
     $(function() {
-        $("ul.sf-menu").superfish({ 
+        /*$("ul.sf-menu").superfish({ 
             pathClass:  'current' 
-        });
-        //$('#nav').droppy({speed: 150});
+        });*/
+        $('#nav').droppy({speed: 150});
     });
     </script>
 

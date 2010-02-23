@@ -63,9 +63,9 @@ body {
 
 #logo h1 a {
     /*background: url(/images/temple_logo_white_ds.png) no-repeat 0 20px;*/
-    background: transparent url(/images/temple_logo_white.png) no-repeat scroll 0 -10px;
-    height: 260px;
-    width: 370px;
+    background: transparent url(/images/temple_logo_white_small.png) no-repeat scroll 0 -10px;
+    height: 190px;
+    width: 254px;
     float: left;
     overflow:hidden;
     text-indent:-9000px;
