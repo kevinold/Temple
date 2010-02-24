@@ -1,6 +1,7 @@
 class Admin::PagesController < ApplicationController
 
   before_filter :require_user
+  layout 'admin'
 
   # GET /pages
   # GET /pages.xml
