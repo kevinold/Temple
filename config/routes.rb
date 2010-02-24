@@ -4,6 +4,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.namespace :admin do |admin|
     admin.resources :pages
+    admin.root :controller => "home"
   end
 
   map.signup '/signup', :controller => 'users', :action => 'create', :conditions => { :method => :post}
