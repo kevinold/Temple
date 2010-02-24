@@ -1,4 +1,7 @@
 class Admin::PagesController < ApplicationController
+
+  before_filter :require_user
+
   # GET /pages
   # GET /pages.xml
   def index
