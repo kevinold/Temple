@@ -2,7 +2,9 @@
 /* container for slides */
 .images {
     /*background:#fff url(/images/jquery_tools_slideshow/h300.png) repeat-x;*/
-	border:1px solid #ccc;
+	border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #BF9F56;
 	position:relative;	
 	height:250px;
 	
@@ -33,8 +35,8 @@
 .images h3 {
 	font-size:22px;
 	font-weight:normal;
-	margin:0 0 20px 0;
-	color:#456;
+	margin:0 0 10px 0;
+    color: #8c0d0d;
 }
 
 /* tabs (those little circles below slides) */

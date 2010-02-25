@@ -22,6 +22,15 @@ body {
     font-family: "Trebuchet MS","Helvetica Neue",Arial,sans-serif;
 }
 
+a {
+    color: #8C0D0D;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 #services-overlay {
     z-index: 1000;
     height: 150px;
