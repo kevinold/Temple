@@ -1,6 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
 
   map.resources :pages
+  # Allow pages urls to be accessed via events prefix
+  # i.e. templetoday.com/events/beth-moore-simulcast
+  map.events 'events/:id', :controller => 'pages', :action => 'show'
 
   map.namespace :admin do |admin|
     admin.resources :pages
