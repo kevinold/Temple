@@ -1,3 +1,6 @@
+<%= javascript_include_tag :ckeditor %>
+
+
 <h1>Editing page</h1>
 
 <% form_for([:admin, @page]) do |f| %>
@@ -13,7 +16,7 @@
   </p>
   <p>
     <%= f.label :body %><br />
-    <%= f.text_area :body %>
+    <%= f.cktext_area :body, :swf_params=>{:assetable_type=>'Demo', :assetable_id=>0}, :width => 700 %>
   </p>
   <p>
     <%= f.label :published %><br />
