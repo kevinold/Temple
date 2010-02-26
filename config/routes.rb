@@ -1,4 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
+  map.new_contact '/contact/new', :controller => 'contact', :action => 'new', :conditions => { :method => :get }
+  map.contact '/contact', :controller => 'contact', :action => 'new', :conditions => { :method => :get }
+  map.contact '/contact', :controller => 'contact', :action => 'create', :conditions => { :method => :post }
 
   map.resources :pages
   # Allow pages urls to be accessed via events prefix
