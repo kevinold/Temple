@@ -1,7 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
+
+  # Contact form routes
   map.new_contact '/contact/new', :controller => 'contact', :action => 'new', :conditions => { :method => :get }
   map.contact '/contact', :controller => 'contact', :action => 'new', :conditions => { :method => :get }
   map.contact '/contact', :controller => 'contact', :action => 'create', :conditions => { :method => :post }
+
+  # Prayer form routes
+  map.new_prayer '/prayer/new', :controller => 'prayer', :action => 'new', :conditions => { :method => :get }
+  map.prayer '/prayer', :controller => 'prayer', :action => 'new', :conditions => { :method => :get }
+  map.prayer '/prayer', :controller => 'prayer', :action => 'create', :conditions => { :method => :post }
 
   map.resources :pages
   # Allow pages urls to be accessed via events prefix
