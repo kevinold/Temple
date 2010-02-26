@@ -10,7 +10,13 @@ ActionController::Routing::Routes.draw do |map|
   map.prayer '/prayer', :controller => 'prayer', :action => 'new', :conditions => { :method => :get }
   map.prayer '/prayer', :controller => 'prayer', :action => 'create', :conditions => { :method => :post }
 
+  # Explicitly set routes (also needed for use with navigation_helper)
+  # TODO: should change all to show actions
+  map.calendar '/calendar', :controller => 'calendar', :action => 'index'
+  map.home '/', :controller => 'home', :action => 'index'
+
   map.resources :pages
+
   # Allow pages urls to be accessed via events prefix
   # i.e. templetoday.com/events/beth-moore-simulcast
   map.events 'events/:id', :controller => 'pages', :action => 'show'

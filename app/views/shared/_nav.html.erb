@@ -2,7 +2,14 @@
 <!-- end #header_wrap -->
 <div id="nav_main_wrap">
   <div id="nav_main">
-  <ol>
+  <%= navigation([
+    :home,    'Home',
+    :calendar , 'Calendar',
+    :prayer, 'Prayer',
+    :contact, 'Contact Us',
+  ], :hover_text => true) %>
+
+  <!--<ol>
   <li class="current"><a href="/home.html">Home</a></li>
   <li><a href="#">About Us</a></li>
   <li><a href="#">Adult Ministries</a></li>
@@ -12,7 +19,7 @@
   <li><a href="#">Prayer</a></li>
   <li><a href="#">Calendar</a></li>
   <li><a href="#">Contact</a></li>
-  </ol>
+  </ol>-->
   <span class="clear">&nbsp;</span>
   </div>
 </div>
