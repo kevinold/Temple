@@ -71,11 +71,13 @@
     <div class="clear"></div>
     
     <!-- body -->
-    <div class="grid_8" id="content">
+    <div class="grid_<%= @show_sidebar ? 8 : 12 %>" id="content">
     <%= yield %>
     </div>  
 
+    <% if @show_sidebar %>
     <%= render :partial => "shared/sidebar" %>
+    <% end %>
     <div class="clear"></div>
 
 </div> <!-- end contentwrap -->
