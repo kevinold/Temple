@@ -79,3 +79,28 @@ a {
   font-size: 12px;
   list-style: disc;
 }
+
+
+/* navbar */
+
+#navbar {
+    float: right;
+           /*display: inline;*/
+    font-size: 18px;
+    margin-top: 0;
+    display: block;
+}
+
+#navbar li {
+    display: inline;
+    margin: 0 20px 0 0;
+}
+
+#navbar li a {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}

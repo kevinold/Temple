@@ -8,6 +8,14 @@
   </head>
   <body>
     <div id="container">
+      <div id="admin_navbar">
+        <ul id="navbar">
+          <li><a href="/admin">Home</a></li>
+          <!--<li><a href="/admin/pages">Pages</a></li>-->
+          <li><a href="/admin/sermons">Sermons</a></li>
+        </ul>
+      </div>
+      <br/>
       <%- flash.each do |name, msg| -%>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <%- end -%>
