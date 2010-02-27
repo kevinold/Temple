@@ -335,3 +335,29 @@ body {
     color: #fff;
 }
 
+
+/* Sermons */
+
+#sermon_index {
+    list-style: none;
+}
+
+#sermon_index h2 {
+  margin-bottom: 5px;
+}
+
+#sermon_index li {
+  padding-bottom: 20px;
+  margin: 20px 0 0 0;
+  border-bottom: 1px solid #BF9F56
+}
+
+#sermon_index li:last-child {border-bottom: none}
+
+#sermon_index li .date {
+    float: right;
+    font-size: 20px;
+}
+/*#sermon_index li:nth-child(even) {background: #BF9F56}*/
+/*#sermon_index li:nth-child(odd) {background: #FFF}*/
+

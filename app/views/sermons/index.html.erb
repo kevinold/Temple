@@ -1,23 +1,16 @@
-<h1>Listing sermons</h1>
+<h1>Sermons</h1>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Permalink</th>
-    <th>Published</th>
-  </tr>
-
+<ul id="sermon_index">
 <% @sermons.each do |sermon| %>
-  <tr>
-    <td><%=h sermon.title %></td>
-    <td><%=h sermon.permalink %></td>
-    <td><%=h sermon.published ? 'Y' : 'N' %></td>
-    <td><%= link_to 'Show', sermon %></td>
-    <td><%= link_to 'Edit', edit_admin_sermon_path(sermon) %></td>
-  </tr>
+  <li>
+    <span class="date"><%=h sermon.date %></span>
+    <h2><%= link_to sermon.title, sermon %></h2>
+    <h5><%=h sermon.verses %></h5>
+    <p><%=h sermon.notes %></p>
+    <b><%= link_to 'View Sermon', sermon %></b>
+  </li>
 <% end %>
-</table>
+</ul>
 
-<br />
 
-<%= link_to 'New sermon', new_admin_sermon_path %>
+

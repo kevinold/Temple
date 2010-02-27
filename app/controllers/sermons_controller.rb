@@ -1,6 +1,6 @@
 class SermonsController < ApplicationController
   def index
-    @sermons = Sermon.all
+    @sermons = Sermon.all :conditions => { :published => 1 }
 
     respond_to do |format|
       format.html # index.html.erb
