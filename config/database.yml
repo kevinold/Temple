@@ -24,7 +24,9 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+  adapter: mysql
+  host: localhost
+  reconnect: false
+  database: temple
+  username: temple
+  password: t2mpl3
