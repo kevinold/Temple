@@ -1,0 +1,16 @@
+  <p>
+    <%= form.label :title %><br />
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :permalink %><br />
+    <%= form.text_field :permalink %>
+  </p>
+  <p>
+    <%= form.label :body %><br />
+    <%= form.cktext_area :body, :swf_params=>{:assetable_type=>'Demo', :assetable_id=>0}, :width => 700 %>
+  </p>
+  <p>
+    <%= form.label :published %><br />
+    <%= form.check_box :published %>
+  </p>

@@ -1,27 +1,11 @@
 <%= javascript_include_tag :ckeditor %>
 
-
-<h1>Editing page</h1>
+<h1>Edit page</h1>
 
 <% form_for([:admin, @page]) do |f| %>
   <%= f.error_messages %>
+  <%= render :partial => "form", :object => f %>
 
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :permalink %><br />
-    <%= f.text_field :permalink %>
-  </p>
-  <p>
-    <%= f.label :body %><br />
-    <%= f.cktext_area :body, :swf_params=>{:assetable_type=>'Demo', :assetable_id=>0}, :width => 700 %>
-  </p>
-  <p>
-    <%= f.label :published %><br />
-    <%= f.check_box :published %>
-  </p>
   <p>
     <%= f.submit 'Update' %>
   </p>
