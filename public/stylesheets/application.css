@@ -354,7 +354,7 @@ body {
 
 #sermon_index li:last-child {border-bottom: none}
 
-#sermon_index li .date {
+.sermon_date {
     float: right;
     font-size: 20px;
 }
