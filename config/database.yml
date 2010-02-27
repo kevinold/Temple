@@ -26,7 +26,6 @@ test:
 production:
   adapter: mysql
   host: localhost
-  reconnect: false
   database: temple
   username: temple
   password: t2mpl3
