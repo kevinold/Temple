@@ -15,6 +15,7 @@ ActionController::Routing::Routes.draw do |map|
   map.calendar '/calendar', :controller => 'calendar', :action => 'index'
   map.home '/', :controller => 'home', :action => 'index'
 
+  map.resources :sermons
   map.resources :pages
 
   # Allow pages urls to be accessed via events prefix
@@ -23,6 +24,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.namespace :admin do |admin|
     admin.resources :pages
+    admin.resources :sermons
     admin.root :controller => "home"
   end
 

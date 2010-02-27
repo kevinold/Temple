@@ -1,0 +1,22 @@
+<p>
+  <b>Title:</b>
+  <%=h @sermon.title %>
+</p>
+
+<p>
+  <b>Permalink:</b>
+  <%=h @sermon.permalink %>
+</p>
+
+<%=h @sermon.url %>
+<%=h @sermon.verses %>
+<%=h @sermon.notes %>
+
+<p>
+  <b>Published:</b>
+  <%=h @sermon.published %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_sermon_path(@sermon) %> |
+<%= link_to 'Back', sermons_path %>
