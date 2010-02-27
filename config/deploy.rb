@@ -3,7 +3,7 @@ set :application, "temple"
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
 set :scm, :git
-set :repository, "git@temple.kevinold.com:#{application}.git"
+set :repository, "git@temple.kevinold.com:#{application}_rails.git"
 set :branch, "master"
 #set :deploy_via, :remote_cache
 default_run_options[:pty] = true
