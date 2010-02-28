@@ -349,7 +349,7 @@ body {
 #sermon_index li {
   padding-bottom: 20px;
   margin: 20px 0 0 0;
-  border-bottom: 1px solid #BF9F56
+  border-bottom: 1px solid #BF9F56;
 }
 
 #sermon_index li:last-child {border-bottom: none}
@@ -361,3 +361,26 @@ body {
 /*#sermon_index li:nth-child(even) {background: #BF9F56}*/
 /*#sermon_index li:nth-child(odd) {background: #FFF}*/
 
+/* Staff */
+#staff_index {
+    list-style: none;
+}
+
+#staff_index h2 {
+  margin-bottom: 5px;
+}
+
+#staff_index li {
+  padding-bottom: 20px;
+  margin: 20px 20px 50px 0;
+  border-bottom: 1px solid #BF9F56;
+  clear: both;
+  height: 350px;
+}
+
+#staff_index li:last-child {border-bottom: none}
+
+#staff_index img {
+    float: left;
+    padding-right: 20px;
+}

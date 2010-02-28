@@ -12,6 +12,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # Explicitly set routes (also needed for use with navigation_helper)
   # TODO: should change all to show actions
+  map.about '/about', :controller => 'about', :action => 'index'
   map.calendar '/calendar', :controller => 'calendar', :action => 'index'
   map.home '/', :controller => 'home', :action => 'index'
 
