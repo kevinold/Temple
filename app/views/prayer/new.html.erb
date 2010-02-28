@@ -1,8 +1,10 @@
 <h1>Prayer Ministry</h1>
 
-<p></p>
+<p>Please use the form below to securely submit your prayer/praise request to the Temple Prayer Ministry.  You may also email <a href="mailto:prayer@tbwh.org">prayer@tbwh.org</a>.</p>
 
-<%= flash[:notice] %>
+<h3 class="temple_red"><%= flash[:notice] %></h3>
+<br/>
+
 <%= error_messages_for('prayer_handler') %>
 
 <% form_for(:prayer_handler, :url => prayer_url, :html => { :class => 'prayer' }) do |f| %>
