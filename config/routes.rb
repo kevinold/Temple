@@ -18,6 +18,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :sermons
   map.resources :pages
+  map.page '/:id', :controller => 'pages', :action => 'show'
 
   # Allow pages urls to be accessed via events prefix
   # i.e. templetoday.com/events/beth-moore-simulcast
