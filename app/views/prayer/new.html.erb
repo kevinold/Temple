@@ -2,6 +2,7 @@
 
 <p></p>
 
+<%= flash[:notice] %>
 <%= error_messages_for('prayer_handler') %>
 
 <% form_for(:prayer_handler, :url => prayer_url, :html => { :class => 'prayer' }) do |f| %>
