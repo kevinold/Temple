@@ -1,14 +1,13 @@
+<h1>Prayer Ministry</h1>
+
+<p></p>
+
 <%= error_messages_for('prayer_handler') %>
 
 <% form_for(:prayer_handler, :url => prayer_url, :html => { :class => 'prayer' }) do |f| %>
   <div>
-    <%= f.label :subject %><br />
-    <%= f.text_field :subject %>
-  </div>
-
-	<div>
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
   </div>
 
   <div>
@@ -16,6 +15,23 @@
     <%= f.text_field :email %>
   </div>
 
+  <div>
+    <%= f.label :subject %><br />
+    <%= f.text_field :subject %>
+  </div>
+    <br/>
+   <div>
+    <%= f.label 'Prayer/Praise Request' %><br />
+    <%= f.text_area :body %>
+   </div>
+
+    <br/>
+   <div>
+    <%= f.check_box :add_to_bulletin %>
+    <%= f.label 'Add to printed prayer list' %>
+   </div>
+
+    <br/>
 	<div>
     <%= f.submit 'send' %>
 	</div>

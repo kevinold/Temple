@@ -50,8 +50,8 @@ Rails::Initializer.run do |config|
     :address => 'smtp.gmail.com',
     :port => 587,
     :authentication => :plain,
-    :domain => 'kevinold.com',
-    :user_name => 'kevinold@gmail.com',
-    :password => 'eYWCFgt1'
+    :domain => 'templetoday.com',
+    :user_name => 'noreply@templetoday.com',
+    :password => 'NoPassword316'
   }
 end
