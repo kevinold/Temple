@@ -23,6 +23,7 @@ Rails::Initializer.run do |config|
   config.gem 'searchlogic'
   config.gem 'will_paginate'
   config.gem 'vestal_versions'
+  config.gem "openrain-action_mailer_tls", :lib => "smtp_tls.rb", :source => "http://gems.github.com"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
@@ -45,13 +46,13 @@ Rails::Initializer.run do |config|
   
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    :enable_starttls_auto => true,
-    :address => 'smtp.gmail.com',
-    :port => 587,
-    :authentication => :plain,
-    :domain => 'templetoday.com',
-    :user_name => 'noreply@templetoday.com',
-    :password => 'NoPassword316'
-  }
+  #config.action_mailer.smtp_settings = {
+    #:enable_starttls_auto => true,
+    #:address => 'smtp.gmail.com',
+    #:port => 587,
+    #:authentication => :plain,
+    #:domain => 'templetoday.com',
+    #:user_name => 'noreply@templetoday.com',
+    #:password => 'NoPassword316'
+  #}
 end
