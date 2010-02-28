@@ -22,6 +22,10 @@ body {
     font-family: "Trebuchet MS","Helvetica Neue",Arial,sans-serif;
 }
 
+.temple_red {
+  color: #8c0d0d;
+}
+
 a {
     color: #8C0D0D;
     text-decoration: none;
@@ -101,6 +105,10 @@ a:hover {
 #content {
     margin-top: 10px;
     margin-left: 15px;
+}
+
+#content p {
+    margin-right: 15px;
 }
 
 .content_box {
