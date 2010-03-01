@@ -20,7 +20,9 @@ set :deploy_to, "/home/#{user}/#{application}"
 role :app, "temple.kevinold.com"
 role :web, "temple.kevinold.com"
 role :db,  "temple.kevinold.com", :primary => true
- 
+
+after "deploy", "deploy:cleanup"
+
 namespace :deploy do
   desc "Restarting mod_rails with restart.txt"
   task :restart, :roles => :app, :except => { :no_release => true } do
