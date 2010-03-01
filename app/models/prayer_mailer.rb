@@ -2,7 +2,7 @@ class PrayerMailer < ActionMailer::Base
   
   def prayer_notification(prayer_handler)
 
-    @recipients  = "tech@tbwh.org"
+    @recipients  = "prayer@tbwh.org, tech@tbwh.org"
     @name        = prayer_handler.name
     @from        = prayer_handler.email
     @subject     = "[Prayer/Praise form] #{prayer_handler.subject}"
