@@ -2,7 +2,7 @@ class ContactMailer < ActionMailer::Base
   
   def contact_notification(contact_handler)
     
-    @recipients  = "info@tbwh.org, tech@tbwh.org"
+    @recipients  = "info@templetoday.com, tech@templetoday.com"
     @from        = contact_handler.email
     @name        = contact_handler.name
     @subject     = "[Contact form] #{contact_handler.subject}"
