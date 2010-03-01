@@ -9,7 +9,7 @@ class PrayerController < ApplicationController
 
     if @prayer_handler.save
       PrayerMailer.deliver_prayer_notification(@prayer_handler)
-      flash[:notice] = 'Thanks for your message'
+      flash[:notice] = 'Thanks for your request.  It will be reviewed and mailed to the Prayer Ministry.'
       redirect_to :back
     else
       render :action => "new"
