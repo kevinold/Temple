@@ -11,3 +11,6 @@ Like the "navbar" (superfish)
 
 http://www.thecity.org
 Like the sections and links in the footer and the "navbar" (superfish)
+
+http://www.regretsy.com/
+Like the pagination at the bottom
