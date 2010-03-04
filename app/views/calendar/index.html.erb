@@ -3,7 +3,7 @@
     $(function() {
 	
 		$('#calendar').fullCalendar({
-            timeFormat: 'g:ix',
+            editable: false,
 			events: $.fullCalendar.gcalFeed(
 				'http://www.google.com/calendar/feeds/m2mhi9aoueuujgalci739t8iqc%40group.calendar.google.com/private-b6e1fd08128e7120611022cad150e6d1/basic',
 				{draggable: false, className: 'mygcal'}
@@ -12,6 +12,10 @@
                 element.attr('title', event.title);
             },
 			eventClick: function(event) {
+				//window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			eventMouseover: function(event) {
 				//window.open(event.url, 'gcalevent', 'width=700,height=600');
 				return false;
 			},
