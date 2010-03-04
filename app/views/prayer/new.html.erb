@@ -1,41 +1,39 @@
 <h1>Prayer Ministry</h1>
 
-<p>Please use the form below to securely submit your prayer/praise request to the Temple Prayer Ministry.  You may also email <a href="mailto:prayer@templetoday.com">prayer@templetoday.com</a>.</p>
+<p>Please use the form below to securely submit your prayer/praise request to the Temple Prayer Ministry.  You may also email <b><%= mail_to 'prayer@templetoday.com' %></b>.</p>
 
 <h3 class="temple_red"><%= flash[:notice] %></h3>
 <br/>
 
 <%= error_messages_for('prayer_handler') %>
 
-<% form_for(:prayer_handler, :url => prayer_url, :html => { :class => 'prayer' }) do |f| %>
-  <div>
-    <%= f.label :name %><br />
+<% form_for(:prayer_handler, :url => prayer_url, :html => { :class => 'form' }) do |f| %>
+  <p>
+    <%= f.label :name %>
     <%= f.text_field :name %>
-  </div>
+  </p>
 
-  <div>
-    <%= f.label :email %><br />
+  <p>
+    <%= f.label :email %>
     <%= f.text_field :email %>
-  </div>
+  </p>
 
-  <div>
-    <%= f.label :subject %><br />
+  <p>
+    <%= f.label :subject %>
     <%= f.text_field :subject %>
-  </div>
-    <br/>
-   <div>
-    <%= f.label 'Prayer/Praise Request' %><br />
+  </p>
+
+   <p>
+    <%= f.label 'Prayer/Praise' %>
     <%= f.text_area :body %>
-   </div>
+   </p>
 
-    <br/>
-   <div>
-    <%= f.check_box :add_to_bulletin %>
+   <p>
     <%= f.label 'Add to printed prayer list' %>
-   </div>
+    <%= f.check_box :add_to_bulletin %>
+   </p>
 
-    <br/>
-	<div>
-    <%= f.submit 'send' %>
-	</div>
+	<p class="submit">
+    <%= f.submit 'Send' %>
+	</p>
 <% end %>
