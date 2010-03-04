@@ -21,7 +21,13 @@ role :app, "temple.kevinold.com"
 role :web, "temple.kevinold.com"
 role :db,  "temple.kevinold.com", :primary => true
 
-after "deploy", "deploy:cleanup"
+task :prime_cache, :roles => :app do
+    run <<-CMD
+        wget --spider http://#{web};
+    CMD
+end
+
+after "deploy", "deploy:cleanup", :prime_cache
 
 namespace :deploy do
   desc "Restarting mod_rails with restart.txt"
@@ -33,4 +39,5 @@ namespace :deploy do
     desc "#{t} task is a no-op with mod_rails"
     task t, :roles => :app do ; end
   end
+
 end
