@@ -23,7 +23,7 @@ role :db,  "temple.kevinold.com", :primary => true
 
 task :prime_cache, :roles => :app do
     run <<-CMD
-        wget --spider http://#{web};
+        wget --spider http://www.templetoday.com;
     CMD
 end
 
