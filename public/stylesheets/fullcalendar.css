@@ -212,7 +212,8 @@ table.fc-header {
 	}
 	
 .fc-content .fc-state-highlight { /* today */
-	background: #ffc;
+	background: #51100C;
+    color: #fff;
 	}
 	
 .fc-content .fc-not-today {
@@ -239,8 +240,8 @@ table.fc-header {
 .fc-agenda .fc-event-time,
 .fc-event a {
 	border-style: solid; 
-	border-color: #36c;     /* default BORDER color (probably the same as background-color) */
-	background-color: #36c; /* default BACKGROUND color */
+	border-color: #8C0D0D;     /* default BORDER color (probably the same as background-color) */
+	background-color: #8C0D0D; /* default BACKGROUND color */
 	color: #fff;            /* default TEXT color */
 	}
 	
