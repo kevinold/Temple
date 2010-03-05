@@ -1,6 +1,7 @@
-module TempleCalendar
 require 'open-uri'
 require 'hpricot'
+
+module TempleCalendar
 
     def self.get_cal
         url = 'http://www.google.com/calendar/feeds/m2mhi9aoueuujgalci739t8iqc%40group.calendar.google.com/private-b6e1fd08128e7120611022cad150e6d1/basic'
