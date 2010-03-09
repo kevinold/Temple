@@ -9,6 +9,18 @@ CKEDITOR.editorConfig = function( config )
   // Define changes to default configuration here. For example:
   config.language = 'en';
   // config.uiColor = '#AADC6E';
+  config.enterMode = CKEDITOR.ENTER_BR;
+
+  // via http://stackoverflow.com/questions/1739552/preserving-script-tags-and-more-in-ckeditor
+  // protect <anytag class="preserve"></anytag>
+  //config.protectedSource.push( /<([\S]+)[^>]*class="preserve"[^>]*>.*<\/\1>/g );
+
+  // preserve any html tag
+  config.protectedSource.push( /<([\S]+)[^>]*[^>]*>.*<\/\1>/g );
+
+  // protect <anytag class="preserve" /><
+  //CKEDITOR.config.protectedSource.push( /<[^>]+class="preserve"[^>\/]*\/>/g );
+
 
   //config.ContextMenu = ['Generic','Anchor','Flash','Select','Textarea','Checkbox','Radio','TextField','HiddenField','ImageButton','Button','BulletedList','NumberedList','Table','Form'] ;
   
