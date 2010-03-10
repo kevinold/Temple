@@ -1,29 +1,22 @@
 require 'open-uri'
-require 'hpricot'
+require 'nokogiri'
+require 'pp'
 
 class Gcal
     def get
-        url = 'http://www.google.com/calendar/feeds/m2mhi9aoueuujgalci739t8iqc%40group.calendar.google.com/private-b6e1fd08128e7120611022cad150e6d1/basic'
+        reader = Nokogiri::XML(open('http://www.google.com/calendar/feeds/m2mhi9aoueuujgalci739t8iqc%40group.calendar.google.com/private-b6e1fd08128e7120611022cad150e6d1/full'))
 
-        recurring = /recurring/i
-        dat = /When: (.*)(?=&)/i
-        events = []
+        reader.remove_namespaces!
 
-        xml = Hpricot.XML(open(url).read)
-        xml.search('entry').each do |e|
-            title = e.search('/title').inner_html
-            summary = e.search('/summary').inner_html
-            next if summary =~ recurring
-            
-            #puts e.search('/summary').inner_html
-            
-            summary =~ dat
-            date_and_time = $1
-            puts title +  " : " + date_and_time
-            #data = Regexp.last_match
-            #puts title + " : " + data[0]
-
+        reader.xpath("//feed/entry").each do |e|
+            when_node = e.at_xpath("./when")
+            if when_node
+                puts when_node.attribute('startTime').text
+            else
+                puts "No time"
+            end
         end
+
     end
 
 end
