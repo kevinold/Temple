@@ -380,10 +380,10 @@ body {
 
 #staff_index li {
   padding-bottom: 20px;
-  margin: 20px 20px 50px 0;
+  margin: 20px 20px 20px 0;
   border-bottom: 1px solid #BF9F56;
   clear: both;
-  height: 350px;
+  min-height: 250px;
 }
 
 #staff_index li:last-child {border-bottom: none}
