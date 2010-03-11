@@ -390,7 +390,8 @@ body {
 
 #staff_index img {
     float: left;
-    padding-right: 20px;
+    margin-right: 20px;
+    padding: 2px;
 }
 
 #homepage_list {
