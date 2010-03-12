@@ -1,53 +1,27 @@
-/* Brown shades - http://slayeroffice.com/tools/color_palette/?hex=38200D */
-/* Cranberry shades - http://slayeroffice.com/tools/color_palette/?hex=8c0d0d */
-
-/* Firetruck - http://kuler.adobe.com/#themeID/449308 
- * D8E2E9 - light gray
- * 8B8C80 - gray
- * BF9F56 - yellowish brown
- * 8C0D0D - lighter cranberry (base color)
- * 51100C - darker cranberry
- *
- * */
-
-/* #E1D2B0 - light cream for content area
- *
- * */
-
 body {
-    /*background-color: #BF9F56;*/
-    /*background: #8c0d0d url(/images/back_cont.jpg) repeat-x;*/
-    background: url(/images/slices/bodybg.jpg) repeat 0 190px;
-    /*background: #8c0d0d url(/images/backgrounds/background.jpg) repeat-y;*/
-    font-family: "Trebuchet MS","Helvetica Neue",Arial,sans-serif;
-}
+  background: url(/images/slices/bodybg.jpg) repeat 0 190px;
+  font-family: "Trebuchet MS","Helvetica Neue",Arial,sans-serif; }
 
 .temple_red {
-  color: #8c0d0d;
-}
+  color: #8c0d0d; }
 
 a {
-    color: #8C0D0D;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
+  color: #8c0d0d;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
 #services-overlay {
-    z-index: 1000;
-    height: 150px;
-    position: absolute;
-    background: url(/images/slices/headerbg.jpg) repeat-x 0 0;
-    padding-top: 20px;
-    border-width: 0 2px 2px 2px;
-    border-color: #BF9F56;
-    border-style: solid;
-    top: -175px;
-}
-
-#services-overlay #services-tab span {
+  z-index: 1000;
+  height: 150px;
+  position: absolute;
+  background: url(/images/slices/headerbg.jpg) repeat-x 0 0;
+  padding-top: 20px;
+  border-width: 0 2px 2px 2px;
+  border-color: #BF9F56;
+  border-style: solid;
+  top: -175px; }
+  #services-overlay #services-tab span {
     bottom: -40px;
     display: block;
     height: 42px;
@@ -55,391 +29,243 @@ a:hover {
     right: 20px;
     text-indent: -9999px;
     width: 248px;
-    cursor:pointer;
-}
-
-#services-overlay #services-tab span {
-    background: url(/images/slices/servicestab.png);
-}
+    cursor: pointer;
+    background: url(/images/slices/servicestab.png); }
 
 #headerwrap {
-    background: url(/images/slices/headerbg.jpg) repeat-x 0 0;
-}
+  background: url(/images/slices/headerbg.jpg) repeat-x 0 0; }
 
 #contentwrap {
-    background: url(/images/slices/contentbg.png) repeat 0 0;
-}
+  background: url(/images/slices/contentbg.png) repeat 0 0; }
 
 #header {
-    height: 175px;
-            /*background: #8c0d0d;*/
-    /*padding-left: 4%;*/
-    /*width: 100%;*/
-            /*border-bottom: 4px solid #8c0d0d;*/
-}
+  height: 175px; }
 
 #logo a {
-    /*background: url(/images/temple_logo_white_ds.png) no-repeat 0 20px;*/
-    background: transparent url(/images/temple_logo_white_small.png) no-repeat scroll 0 -10px;
-    height: 180px;
-    width: 254px;
-    float: left;
-    overflow:hidden;
-    text-indent:-9000px;
-    display: block;
-}
+  background: transparent url(/images/temple_logo_white_small.png) no-repeat scroll 0 -10px;
+  height: 180px;
+  width: 254px;
+  float: left;
+  overflow: hidden;
+  text-indent: -9000px;
+  display: block; }
 
 .sidebox {
-    background:#F4E7E7 none repeat scroll 0 0;
-    border:1px solid #C68787;
-    margin-bottom:10px;
-    padding: 10px 20px 0 20px;
-    font-size: 14px;
-}
-
-.sidebox ul li {
-    list-style: none; 
-    margin: 0;
-}
+  background: #F4E7E7 none repeat scroll 0 0;
+  border: 1px solid #C68787;
+  margin-bottom: 10px;
+  padding: 10px 20px 0 20px;
+  font-size: 14px; }
+  .sidebox ul li {
+    list-style: none;
+    margin: 0; }
 
 #content {
-    margin-top: 10px;
-    margin-left: 15px;
-}
-
-#content p {
-    margin-right: 15px;
-}
+  margin-top: 10px;
+  margin-left: 15px; }
+  #content p {
+    margin-right: 15px; }
 
 .content_box {
-    /* needs definition */
-    margin-top: 20px;
-}
-
-.content_box h3 {
-    color: #8c0d0d;
-}
+  margin-top: 20px; }
+  .content_box h3 {
+    color: #8c0d0d; }
 
 #sidebar {
-    margin-top: 10px;
-}
+  margin-top: 10px; }
 
 #footer {
-    background: url(/images/slices/footerbg.jpg) repeat 0 0;
-                /*border-top: 5px #C68787 solid;*/
-    /*background: #51100C;*/
-    color: #CDC7C2;
-    padding-top: 20px;
-    height: 125px;
-}
+  background: url(/images/slices/footerbg.jpg) repeat 0 0;
+  color: #CDC7C2;
+  padding-top: 20px;
+  height: 125px; }
 
 .footer_section {
-    list-style-type: none;
-}
-
-.footer_section li a {
+  list-style-type: none; }
+  .footer_section li a {
     letter-spacing: 2px;
     line-height: 1.7em;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
     font-size: 15px;
-    font-weight: bold;
-}
-
-/* Calendar */
+    font-weight: bold; }
 
 #loading {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-}
+  position: absolute;
+  top: 5px;
+  right: 5px; }
 
 #calendar {
-    width: 100%;
-    margin: 0 auto;
-}
+  width: 100%;
+  margin: 0 auto; }
 
-/* fullcalendar.css overrides */
 .full-calendar-month .event td {
-    background: #8c0d0d;
-    color: #ffffff;
-    font-weight: bold;
-	padding: 0;
-	}
+  background-color: #8c0d0d;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0; }
 
 .full-calendar-title {
-    color: #8c0d0d;
-	text-align: left;
-	}
+  color: #8c0d0d;
+  text-align: left; }
 
 .full-calendar-month td.today {
-	background: #C68787;
-    color: #ffffff;
-	}
-
-/* navbar */
+  background: #C68787;
+  color: #ffffff; }
 
 #navbar {
-    float: right;
-           /*display: inline;*/
-    font-size: 18px;
-    margin: 30px 0 0 0;
-}
-
-#navbar li {
+  float: right;
+  font-size: 18px;
+  margin: 30px 0 0 0; }
+  #navbar li {
     display: inline;
-    margin: 0 20px 0 0;
-}
-
-#navbar li a {
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-}
-
+    margin: 0 20px 0 0; }
+    #navbar li a {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold; }
 
 .sf-menu {
-    width: 100%;
-}
-/*
-#doublebar {
-    background:transparent url(/images/doublebar.gif) repeat-x scroll 0 0;
-    height:10px;
-    left:0;
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:2;
-    margin-left: 0;
-}
+  width: 100%; }
 
-body {
-    background:#EFEFEF none repeat scroll 0 0;
-}
-*/
+#nav_main_wrap {
+  background: #51100C;
+  border-top: 5px solid #8c0d0d;
+  border-bottom: 5px solid #8c0d0d;
+  width: 100%; }
 
-
-
-/* =Navigation - Main --- from stonebriar.org
-----------------------------------------------------------------------*/
-
-#nav_main_wrap
-{
-    background: #51100C;
-    border-top: 5px solid #8C0D0D;
-    border-bottom: 5px solid #8C0D0D;
-    width: 100%;
-}
-
-#nav_main
-{
-    background: #51100C;
-    border-top: 5px solid #8C0D0D;
-    border-bottom: 5px solid #8C0D0D;
-    font-size: 14px;
-    margin: -5px auto;
-    width: 960px;
-}
-
-#nav_main li
-{
+#nav_main {
+  background: #51100C;
+  border-top: 5px solid #8c0d0d;
+  border-bottom: 5px solid #8c0d0d;
+  font-size: 14px;
+  margin: -5px auto;
+  width: 960px; }
+  #nav_main li {
     float: left;
     list-style: none;
-    margin-left: 0px; /* override 30px set in text.css */
-}
-
-#nav_main li.current
-{
-  /*background: #8C0D0D url(../img/nav_cap_lf.gif) no-repeat left center;*/
-  background: #8C0D0D;
-}
-
-#nav_main a
-{
+    margin-left: 0px; }
+    #nav_main li.current {
+      background: #8c0d0d; }
+  #nav_main a {
     color: #BF9F56;
     display: block;
     padding: 8px 20px;
-    white-space: nowrap;
-}
+    white-space: nowrap; }
+    #nav_main a:hover {
+      color: #fff;
+      text-decoration: underline; }
+  #nav_main li.current a {
+    color: #fff; }
 
-#nav_main a:hover
-{
-    color: #fff;
-    text-decoration: underline;
-}
+#nav_sub_wrap {
+  background-color: #8c0d0d;
+  margin: 0 0 -2px;
+  width: 100%; }
 
-#nav_main li.current a
-{
-  /*background: url(../img/nav_cap_rt.gif) no-repeat right center;*/
-    color: #fff;
-}
-
-/* =Navigation - Sub
-----------------------------------------------------------------------*/
-
-#nav_sub_wrap
-{
-    background: #8C0D0D;
-    margin: 0 0 -2px;
-    width: 100%;
-}
-
-#nav_sub
-{
-    background: #8C0D0D;
-    font-size: 11px;
-    margin: -5px auto 0;
-    width: 960px;
-}
-
-#nav_sub ul
-{
+#nav_sub {
+  background-color: #8c0d0d;
+  font-size: 11px;
+  margin: -5px auto 0;
+  width: 960px; }
+  #nav_sub ul {
     padding: 0 0 0 10px;
-    margin-bottom: 0; /* clear margin-bottom set in text.css */
-}
-
-#nav_sub li
-{
+    margin-bottom: 0; }
+  #nav_sub li {
     float: left;
     list-style: none;
-    padding: 6px 0 8px;
-}
-
-#nav_sub a
-{
+    padding: 6px 0 8px; }
+  #nav_sub a {
     border-left: 1px solid #876;
     color: #fff;
     display: block;
     padding: 0 10px;
-    white-space: nowrap;
-}
-
-#nav_sub a:hover
-{
-    color: #fff;
-    text-decoration: underline;
-}
-
-#nav_sub a.first
-{
-    border: 0;
-}
-
-#nav_sub li.current
-{
-  /*background: url(../img/nav_sub_arrow.gif) no-repeat center bottom;*/
+    white-space: nowrap; }
+    #nav_sub a:hover {
+      color: #fff;
+      text-decoration: underline; }
+    #nav_sub a.first {
+      border: 0; }
+  #nav_sub li.current {
     color: #fff;
     font-size: 100%;
     position: relative;
-    z-index: 10;
-}
-
-#nav_sub li.current a
-{
-    color: #fff;
-}
-
-
-/* Sermons */
+    z-index: 10; }
+    #nav_sub li.current a {
+      color: #fff; }
 
 #sermon_index {
-    list-style: none;
-}
-
-#sermon_index h2 {
-  margin-bottom: 5px;
-}
-
-#sermon_index li {
-  padding-bottom: 20px;
-  margin: 20px 0 0 0;
-  border-bottom: 1px solid #BF9F56;
-}
-
-#sermon_index li:last-child {border-bottom: none}
+  list-style: none; }
+  #sermon_index h2 {
+    margin-bottom: 5px; }
+  #sermon_index li {
+    padding-bottom: 20px;
+    margin: 20px 0 0 0;
+    border-bottom: 1px solid #BF9F56; }
+    #sermon_index li:last-child {
+      border-bottom: none; }
 
 .sermon_date {
-    float: right;
-    font-size: 20px;
-}
-/*#sermon_index li:nth-child(even) {background: #BF9F56}*/
-/*#sermon_index li:nth-child(odd) {background: #FFF}*/
+  float: right;
+  font-size: 20px; }
 
-/* Staff */
 #staff_index {
-    list-style: none;
-}
-
-#staff_index h2 {
-  margin-bottom: 5px;
-}
-
-#staff_index li {
-  padding-bottom: 20px;
-  margin: 20px 20px 20px 0;
-  border-bottom: 1px solid #BF9F56;
-  clear: both;
-  min-height: 250px;
-}
-
-#staff_index li:last-child {border-bottom: none}
-
-#staff_index img {
+  list-style: none; }
+  #staff_index h2 {
+    margin-bottom: 5px; }
+  #staff_index li {
+    padding-bottom: 20px;
+    margin: 20px 20px 20px 0;
+    border-bottom: 1px solid #BF9F56;
+    clear: both;
+    min-height: 250px; }
+    #staff_index li:last-child {
+      border-bottom: none; }
+  #staff_index img {
     float: left;
     margin-right: 20px;
-    padding: 2px;
-}
+    padding: 2px; }
 
 #homepage_list {
-  list-style: none;
-}
-
-#homepage_list li {
-  font-size: 16px;
-  margin-left: 5px;
-
-}
-
-/* Front facing forms (Prayer, Contact) */
-
-.form input[type="text"], .form textarea { 
-    padding: 9px;
-    border: solid 1px #E5E5E5;
-    outline: 0;
-    font: normal 13px/100% Verdana, Tahoma, sans-serif;
-    width: 200px;
-    background: #FFFFFF;
-    }
-
-.form textarea { 
-    width: 400px;
-    max-width: 400px;
-    height: 150px;
-    line-height: 150%;
-    }
-
-.form input:hover, .form textarea:hover,
-.form input:focus, .form textarea:focus { 
-    border-color: #8C0D0D; 
-    }
-
-.form label { 
-    float: left;
-    width: 200px;
+  list-style: none; }
+  #homepage_list li {
     font-size: 16px;
-    font-weight: bold;
-    }
+    margin-left: 5px; }
+
+.form input[type="text"] {
+  padding: 9px;
+  border: solid 1px #E5E5E5;
+  outline: 0;
+  font: normal 13px/100% Verdana, Tahoma, sans-serif;
+  width: 200px;
+  background: #FFFFFF; }
+.form textarea {
+  padding: 9px;
+  border: solid 1px #E5E5E5;
+  outline: 0;
+  font: normal 13px/100% Verdana, Tahoma, sans-serif;
+  width: 200px;
+  background: #FFFFFF;
+  width: 400px;
+  max-width: 400px;
+  height: 150px;
+  line-height: 150%; }
+.form input:hover, .form textarea:hover, .form input:focus, .form textarea:focus {
+  border-color: #8c0d0d; }
+.form label {
+  float: left;
+  width: 200px;
+  font-size: 16px;
+  font-weight: bold; }
 
 .submit input {
-    width: auto;
-    padding: 9px 15px;
-    background: #51100C;
-    border: 0;
-    font-size: 14px;
-    color: #FFFFFF;
-    }
-
+  width: auto;
+  padding: 9px 15px;
+  background: #51100C;
+  border: 0;
+  font-size: 14px;
+  color: #FFFFFF; }
