@@ -269,3 +269,22 @@ a {
   border: 0;
   font-size: 14px;
   color: #FFFFFF; }
+
+.event-item {
+  border-bottom: 1px solid #EAEAE8;
+  color: !temple_dark_red;
+  margin-left: 5px;
+  margin-top: 12px;
+  padding: 0 2px 11px; }
+  .event-item a {
+    color: #444443;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 14pt;
+    padding-bottom: 2px;
+    text-decoration: none; }
+  .event-item strong {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase; }
