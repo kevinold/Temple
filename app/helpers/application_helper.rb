@@ -17,4 +17,8 @@ module ApplicationHelper
     end
   end
 
+  def upcoming_events
+      e = Gcal.new.get
+  end
+
 end

@@ -9,6 +9,12 @@
             </ul>
         </div>
     <h6>Members: Looking for the old templetoday.com?  <a target="_blank" href="http://mc.templetoday.com">Click here</a>.</h6>
+    
+    <% upcoming_events.each do |event| %>
+    <%= event[:title] %><br />
+    <%= event[:start] %><br />
+    <%= event[:end] %><br />
+    <% end %>
     <!--
     <ul>
         <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
