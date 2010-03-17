@@ -1,0 +1,27 @@
+#accordion {
+  width: 300px;
+  -background: #666; }
+  #accordion h2 {
+    background: #bf9f56;
+    margin: 0;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer; }
+    #accordion h2.current {
+      cursor: default;
+      background-color: #8c0d0d;
+      color: #fff; }
+  #accordion div.pane {
+    border-width: 0 2px;
+    display: none;
+    height: 180px;
+    padding: 15px;
+    color: #fff;
+    font-size: 12px; }
+    #accordion div.pane h3 {
+      font-weight: normal;
+      margin: 0 0 -5px 0;
+      font-size: 16px;
+      color: #999; }

@@ -1,0 +1,18 @@
+
+    <div id="accordion"> 
+ 
+    <h2 class="current">First pane</h2> 
+    <div class="pane" style="display:block">... pane content ...</div> 
+ 
+    <h2>Second pane</h2> 
+    <div class="pane">... pane content ...</div> 
+ 
+    <h2>Third pane</h2> 
+    <div class="pane">... pane content ...</div> 
+ 
+    </div>
+
+    <script type='text/javascript'>
+    $("#accordion").tabs("#accordion div.pane", {tabs: 'h2', effect: 'slide', initialIndex: null});
+    </script>
+
