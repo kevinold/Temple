@@ -20,7 +20,8 @@ a {
   border-width: 0 2px 2px 2px;
   border-color: #BF9F56;
   border-style: solid;
-  top: -175px; }
+  top: -175px;
+  left: 16%; }
   #services-overlay #services-tab span {
     bottom: -40px;
     display: block;
