@@ -120,15 +120,14 @@ under the Lordship of Jesus Christ and the Leadership of the Holy Spirit to... <
     </div>
 
     <div class="grid_4 omega content_box" id="col-2">
-    <h3>Discipleship Classes</h3>
-    <h6>Join us Sunday evenings as we look more closely at God's word.</h6>
-    <ul id="homepage_list">
-        <li>Men's Fraternity - Begins at 5pm</li>
-        <li>This is My Story - Begins at 5:30pm</li>
-        <li>Balanced - Begins at 5:30pm</li>
-        <li>My Identity In Christ - Begins at 5:30pm</li>
-        <li>New Members Class - Begins at 5:30pm</li>
+    <h3>Sermons</h3>
+    <h5>Watch our sermons online.</h5>
+    <ul>
+    <% @sermons.each do |sermon| %>
+    <li><%=h sermon.date %> - <%= link_to sermon.title, sermon %></li>
+    <% end %>
     </ul>
+    <%= link_to 'View All Sermons', sermons_path %>
     </div>
 <!--
     <div class="grid_4 omega content_box" id="col-4">
