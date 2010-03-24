@@ -5,6 +5,17 @@ body {
 .temple_red {
   color: #8c0d0d; }
 
+.red_button {
+  width: auto;
+  padding: 9px 15px;
+  background: #51100C;
+  border: 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  display: block; }
+
 a {
   color: #8c0d0d;
   text-decoration: none; }
