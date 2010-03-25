@@ -1,4 +1,4 @@
-%h1 Login
+%h1 Temple Admin
 
 - form_for @user_session, :url => login_url do |f|
   = f.error_messages
@@ -12,3 +12,8 @@
     = f.password_field :password
   %p
     = f.submit "Login"
+  
+  :javascript
+    $(function() {
+      $('#user_session_login').focus();
+    })

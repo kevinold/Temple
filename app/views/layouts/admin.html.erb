@@ -2,7 +2,8 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title><%= h(yield(:title) || "Untitled") %></title>
+    <title><%= h(yield(:title) || "Temple Admin") %></title>
+    <%= javascript_include_tag "jquery" %> 
     <%= stylesheet_link_tag 'admin' %>
     <%= yield(:head) %>
   </head>
