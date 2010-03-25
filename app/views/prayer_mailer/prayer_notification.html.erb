@@ -2,7 +2,7 @@
 Name: <%= @prayer_handler.name %>
 Subject: <%= @prayer_handler.subject %>
 E-mail: <%= @prayer_handler.email %>
-Add to printed list: <%= @prayer_handler.add_to_bulletin ? 'Yes' : 'No' %>
+Add to printed list: <%= @prayer_handler.add_to_bulletin.to_i == 1 ? 'Yes' : 'No' %>
 
 Prayer/Praise Request:
 <%= @prayer_handler.body %>
