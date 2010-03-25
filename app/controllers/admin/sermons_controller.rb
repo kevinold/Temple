@@ -6,7 +6,7 @@ class Admin::SermonsController < ApplicationController
   # GET /sermons
   # GET /sermons.xml
   def index
-    @sermons = Sermon.all
+    @sermons = Sermon.all :order => "date DESC"
 
     respond_to do |format|
       format.html # index.html.erb
