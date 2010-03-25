@@ -4,4 +4,8 @@ class Sermon < ActiveRecord::Base
   def to_param
     permalink
   end
+
+  def display_date
+    date.strftime('%m-%d-%y')
+  end
 end
