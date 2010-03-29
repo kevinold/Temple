@@ -115,10 +115,9 @@
 
     <div class="grid_4 omega content_box" id="col-2">
     <h3>Sermons</h3>
-    <h5>Watch our sermons online.</h5>
     <ul>
     <% @sermons.each do |sermon| %>
-    <li><%=h sermon.date %> - <%= link_to sermon.title, sermon %></li>
+    <li><b><%=h sermon.date %></b> - <%= link_to sermon.title, sermon %></li>
     <% end %>
     </ul>
     <%= link_to 'View All Sermons', sermons_path %>

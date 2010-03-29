@@ -83,6 +83,12 @@ a {
   margin-top: 20px; }
   .content_box h3 {
     color: #8c0d0d; }
+  .content_box h3, .content_box h4, .content_box h5, .content_box h6 {
+    margin-bottom: 10px; }
+  .content_box ul {
+    list-style: none; }
+  .content_box li {
+    margin-left: 0; }
 
 #sidebar {
   margin-top: 10px; }
