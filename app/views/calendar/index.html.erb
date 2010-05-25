@@ -1,11 +1,12 @@
 <script type='text/javascript'>
 
+//				'http://www.google.com/calendar/feeds/m2mhi9aoueuujgalci739t8iqc%40group.calendar.google.com/private-b6e1fd08128e7120611022cad150e6d1/basic',
     $(function() {
 	
 		$('#calendar').fullCalendar({
             editable: false,
 			events: $.fullCalendar.gcalFeed(
-				'http://www.google.com/calendar/feeds/m2mhi9aoueuujgalci739t8iqc%40group.calendar.google.com/private-b6e1fd08128e7120611022cad150e6d1/basic',
+				'https://www.google.com/calendar/feeds/tracie%40templetoday.com/private-9a89d99aa461cce0fe823b163bf7f886/basic',
 				{draggable: false, className: 'mygcal'}
 			),
             eventRender: function(event, element) {
