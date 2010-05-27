@@ -1,0 +1,3 @@
+[submodule "vendor/extensions/wym_editor_filter"]
+	path = vendor/extensions/wym_editor_filter
+	url = git://github.com/jomz/radiant-wym-editor-filter-extension.git
