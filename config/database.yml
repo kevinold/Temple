@@ -10,7 +10,7 @@ development:
   adapter: mysql
   host: localhost
   reconnect: false
-  database: temple_rails
+  database: temple_rails_radiant
   username: root
   password:
 
@@ -26,6 +26,6 @@ test:
 production:
   adapter: mysql
   host: localhost
-  database: temple
+  database: temple_radiant
   username: temple
   password: t3mpl3
