@@ -4,9 +4,9 @@ begin
     gem.name = "radiant-sermons-extension"
     gem.summary = %Q{Sermons Extension for Radiant CMS}
     gem.description = %Q{Describe your extension here}
-    gem.email = "your email"
+    gem.email = "kevin@kevinold.com"
     gem.homepage = "http://yourwebsite.com/sermons"
-    gem.authors = ["Your Name"]
+    gem.authors = ["Kevin Old"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError

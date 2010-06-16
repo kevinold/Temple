@@ -1,0 +1,54 @@
+- content_for 'page_css' do
+  :sass
+    p.new
+      a
+        color: #000
+        border: 1px solid #ddf
+        padding: 6px
+        text-decoration: none
+
+        &:hover
+          background: #efefff
+
+    th.remove
+      width: 100px
+
+    td.remove
+      width: 100px
+      font-size: 0.8em
+      vertical-align: center
+
+      a
+        text-decoration: none
+        color: #000
+
+      img
+        margin-bottom: 3px
+
+    #content #sermons.index .page .info
+      top: 0
+
+%h1 Upcoming Sermons
+
+%table#sermons.index{:summary => "Listing of Sermons"}
+  %thead
+    %tr
+      %th.name Name
+      %th.date Date
+      %th.modify Modify
+  %tbody
+    - if @sermons.empty?
+      %tr
+        %td.note{:colspan => 3} No Sermons
+    - else 
+      - @sermons.each do |sermon|
+        %tr.node.level-1{:id => "sermon-#{sermon.id}"}
+          %td.page
+            %span.w1
+              = link_to sermon.name, edit_admin_sermon_url(sermon)
+
+          %td.sermon= sermon.scheduled_at
+          %td.remove
+            = link_to("#{image('minus.png')} Remove", admin_sermon_url(sermon), :method => :delete, :alt => 'remove sermon', :confirm => 'Are you sure? This will delete the sermon!')
+
+%p.new= link_to('New Sermon', new_admin_sermon_url)
