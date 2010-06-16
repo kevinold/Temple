@@ -1,6 +1,6 @@
 class Admin::SermonsController < ApplicationController
   def index
-    @sermons = Sermon.find(:all, :order => "scheduled_at DESC, name")
+    @sermons = Sermon.find(:all, :order => "date DESC")
     render(:action => 'index')
   end
 
