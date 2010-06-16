@@ -9,18 +9,25 @@
         font-size: 200%
         width: 100%
 
-= calendar_date_select_includes
-
 %h1= @sermon.new_record? ? 'New Sermon' : 'Edit Sermon'
 
 - form_for [:admin, @sermon] do |f|
   .form-area
     %p.title
-      %label Name
-      = f.text_field :name, :class => 'textbox'
+      %label Title
+      = f.text_field :title, :class => 'textbox'
     %p.title
       %label Date
-      = calendar_date_select :sermon, :scheduled_at, :time => true, :embedded => true, :class => 'textbox'
+      = f.date_select :date, :class => 'textbox'
+    %p.title
+      %label Verses
+      = f.text_field :verses, :class => 'textbox'
+    %p.title
+      %label Notes
+      = f.text_area :notes, :class => 'textbox'
+    %p.title
+      %label Published
+      = f.check_box :published, :class => 'textbox'
     
   %p.buttons
     - button_text = @sermon.new_record? ? 'Create' : 'Save Changes'

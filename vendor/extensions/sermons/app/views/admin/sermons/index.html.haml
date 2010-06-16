@@ -33,9 +33,9 @@
 %table#sermons.index{:summary => "Listing of Sermons"}
   %thead
     %tr
-      %th.name Name
+      %th.title Title
       %th.date Date
-      %th.modify Modify
+      %th.published Published
   %tbody
     - if @sermons.empty?
       %tr
@@ -45,9 +45,9 @@
         %tr.node.level-1{:id => "sermon-#{sermon.id}"}
           %td.page
             %span.w1
-              = link_to sermon.name, edit_admin_sermon_url(sermon)
+              = link_to sermon.title, edit_admin_sermon_url(sermon)
 
-          %td.sermon= sermon.scheduled_at
+          %td.sermon= sermon.date
           %td.remove
             = link_to("#{image('minus.png')} Remove", admin_sermon_url(sermon), :method => :delete, :alt => 'remove sermon', :confirm => 'Are you sure? This will delete the sermon!')
 
