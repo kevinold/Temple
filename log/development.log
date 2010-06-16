@@ -3847,3 +3847,28 @@ DEPRECATION WARNING: define_routes has been deprecated in favor of your extensio
   [4;35;1mSQL (95.3ms)[0m   [0mSHOW TABLES[0m
   [4;36;1mPage Columns (20.0ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
   [4;35;1mSQL (0.4ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+DEPRECATION WARNING: define_routes has been deprecated in favor of your extension's config/routes.rb. (called from /Users/kold/projects/radiant_temple/vendor/extensions/page_preview/page_preview_extension.rb:9)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+DEPRECATION WARNING: define_routes has been deprecated in favor of your extension's config/routes.rb. (called from /Users/kold/projects/radiant_temple/vendor/extensions/page_preview/page_preview_extension.rb:9)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+DEPRECATION WARNING: define_routes has been deprecated in favor of your extension's config/routes.rb. (called from /Users/kold/projects/radiant_temple/vendor/extensions/page_preview/page_preview_extension.rb:9)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+DEPRECATION WARNING: define_routes has been deprecated in favor of your extension's config/routes.rb. (called from /Users/kold/projects/radiant_temple/vendor/extensions/page_preview/page_preview_extension.rb:9)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+DEPRECATION WARNING: define_routes has been deprecated in favor of your extension's config/routes.rb. (called from /Users/kold/projects/radiant_temple/vendor/extensions/page_preview/page_preview_extension.rb:9)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
