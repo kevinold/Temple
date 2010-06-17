@@ -1,0 +1,16 @@
+<h1>Sermons</h1>
+
+<ul id="sermon_index">
+<% @sermons.each do |sermon| %>
+  <li>
+    <span class="sermon_date"><%=h sermon.date %></span>
+    <h2><%= link_to sermon.title, sermon %></h2>
+    <h5><%=h sermon.verses %></h5>
+    <p><%=h sermon.notes %></p>
+    <b><%= link_to 'View Sermon', sermon %></b>
+  </li>
+<% end %>
+</ul>
+
+
+

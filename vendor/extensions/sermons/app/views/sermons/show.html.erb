@@ -1,0 +1,21 @@
+
+
+<span class="sermon_date"><%=h @sermon.date %></span>
+<h2><%=h @sermon.title %></h2>
+<h5><%=h @sermon.verses %></h5>
+<p><%=h @sermon.notes %></p>
+
+		<a href="http://media.templetoday.com/onlinesermons/<%= @sermon.date.strftime('%m-%d-%y') %>_sermon.flv", style="display:block;width:500px;height:400px;margin: 0 auto;" id="player"></a> 
+        <script type='text/javascript'>
+			flowplayer("player", "/flowplayer-3.1.3.swf", { 
+                        clip: { 
+                            autoPlay: false,  
+                            autoBuffering: false
+                        } 
+                    });
+        </script>
+
+<br/>
+<%= link_to 'View All Sermons', sermons_path %>
+
+<br/>
