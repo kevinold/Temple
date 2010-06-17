@@ -9,79 +9,105 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100317012403) do
+ActiveRecord::Schema.define(:version => 20091003095744) do
 
-  create_table "assets", :force => true do |t|
-    t.string   "data_file_name"
-    t.string   "data_content_type"
-    t.integer  "data_file_size"
-    t.integer  "assetable_id"
-    t.string   "assetable_type",    :limit => 25
-    t.string   "type",              :limit => 25
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "config", :force => true do |t|
+    t.string "key",   :limit => 40, :default => "", :null => false
+    t.string "value",               :default => ""
   end
 
-  add_index "assets", ["assetable_id", "assetable_type", "type"], :name => "ndx_type_assetable"
-  add_index "assets", ["assetable_id", "assetable_type"], :name => "fk_assets"
-  add_index "assets", ["user_id"], :name => "fk_user"
+  add_index "config", ["key"], :name => "key", :unique => true
+
+  create_table "extension_meta", :force => true do |t|
+    t.string  "name"
+    t.integer "schema_version", :default => 0
+    t.boolean "enabled",        :default => true
+  end
+
+  create_table "layouts", :force => true do |t|
+    t.string   "name",          :limit => 100
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "created_by_id"
+    t.integer  "updated_by_id"
+    t.string   "content_type",  :limit => 40
+    t.integer  "lock_version",                 :default => 0
+  end
+
+  create_table "page_parts", :force => true do |t|
+    t.string  "name",      :limit => 100
+    t.string  "filter_id", :limit => 25
+    t.text    "content"
+    t.integer "page_id"
+  end
+
+  add_index "page_parts", ["page_id", "name"], :name => "parts_by_page"
 
   create_table "pages", :force => true do |t|
     t.string   "title"
-    t.string   "permalink"
-    t.text     "body"
-    t.boolean  "published"
+    t.string   "slug",          :limit => 100
+    t.string   "breadcrumb",    :limit => 160
+    t.string   "class_name",    :limit => 25
+    t.integer  "status_id",                    :default => 1,     :null => false
+    t.integer  "parent_id"
+    t.integer  "layout_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "section"
+    t.datetime "published_at"
+    t.integer  "created_by_id"
+    t.integer  "updated_by_id"
+    t.boolean  "virtual",                      :default => false, :null => false
+    t.integer  "lock_version",                 :default => 0
+    t.string   "description"
+    t.string   "keywords"
   end
 
-  create_table "sermons", :force => true do |t|
-    t.string   "title"
-    t.string   "permalink"
-    t.string   "url"
-    t.string   "verses"
-    t.text     "notes"
-    t.boolean  "published"
+  add_index "pages", ["class_name"], :name => "pages_class_name"
+  add_index "pages", ["parent_id"], :name => "pages_parent_id"
+  add_index "pages", ["slug", "parent_id"], :name => "pages_child_slug"
+  add_index "pages", ["virtual", "status_id"], :name => "pages_published"
+
+  create_table "sessions", :force => true do |t|
+    t.string   "session_id"
+    t.text     "data"
+    t.datetime "updated_at"
+  end
+
+  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
+  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "snippets", :force => true do |t|
+    t.string   "name",          :limit => 100, :default => "", :null => false
+    t.string   "filter_id",     :limit => 25
+    t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.date     "date"
+    t.integer  "created_by_id"
+    t.integer  "updated_by_id"
+    t.integer  "lock_version",                 :default => 0
   end
+
+  add_index "snippets", ["name"], :name => "name", :unique => true
 
   create_table "users", :force => true do |t|
-    t.string   "login"
-    t.string   "crypted_password"
-    t.string   "password_salt"
-    t.string   "persistence_token"
-    t.integer  "login_count"
-    t.datetime "last_request_at"
-    t.datetime "last_login_at"
-    t.datetime "current_login_at"
-    t.string   "last_login_ip"
-    t.string   "current_login_ip"
+    t.string   "name",          :limit => 100
+    t.string   "email"
+    t.string   "login",         :limit => 40,  :default => "",    :null => false
+    t.string   "password",      :limit => 40
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "created_by_id"
+    t.integer  "updated_by_id"
+    t.boolean  "admin",                        :default => false, :null => false
+    t.boolean  "designer",                     :default => false, :null => false
+    t.text     "notes"
+    t.integer  "lock_version",                 :default => 0
+    t.string   "salt"
+    t.string   "session_token"
+    t.string   "locale"
   end
 
-  create_table "versions", :force => true do |t|
-    t.integer  "versioned_id"
-    t.string   "versioned_type"
-    t.integer  "user_id"
-    t.string   "user_type"
-    t.string   "user_name"
-    t.text     "changes"
-    t.integer  "number"
-    t.string   "tag"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "versions", ["created_at"], :name => "index_versions_on_created_at"
-  add_index "versions", ["number"], :name => "index_versions_on_number"
-  add_index "versions", ["tag"], :name => "index_versions_on_tag"
-  add_index "versions", ["user_id", "user_type"], :name => "index_versions_on_user_id_and_user_type"
-  add_index "versions", ["user_name"], :name => "index_versions_on_user_name"
-  add_index "versions", ["versioned_id", "versioned_type"], :name => "index_versions_on_versioned_id_and_versioned_type"
+  add_index "users", ["login"], :name => "login", :unique => true
 
 end
