@@ -7,7 +7,7 @@
 <div class="images">
 
 	<!-- first slide -->
-	<div style="display:block;width: 90%;height: 80%;background-color: #fff;">
+	<div style="display:hide;width: 90%;height: 80%;background-color: #fff;">
 
     <h2>Relay For Life of White House</h3>
     <img src="/images/promos/rfl_logo.gif" alt="Relay For Life" style="float:right;" />
@@ -16,7 +16,7 @@
     <h5><a class="red_button" style="width:200px" href="http://teamtbc.templetoday.com">Register for Team TBC</a></h5>
   </div>
 
-	<div style="width: 90%;">
+	<div style="display:hide;width: 90%;">
 
     <img src="/images/promos/SRR_logo_4color_sm.png" alt="Saddle Ridge Ranch" style="float:left;margin-right: 50px;" />
     <h2>Temple VBS 2010</h3>
@@ -27,7 +27,7 @@
     <h5><a class="red_button" style="width:200px;float:left;margin-top:-20px;margin-left: 30px;" href="/images/promos/VBS_Newsletter_June.pdf">More Information</a></h5>
   </div>
 
-	<div style="display:block;width: 100%">
+	<div style="width: 100%">
 
     <h3>Mother's Day Out at Temple</h3>
     <img src="/images/promos/mdo_learning_garden.png" alt="Mother's Day Out - Learning Garden" style="float:right;" />
@@ -69,7 +69,9 @@
 </div>-->
 
     <script type='text/javascript'>
-    $(function() {
+      $(function() {
+        //hide all divs first
+        $(".images > div").hide();
         $("div.tabs").tabs(".images > div", {
             effect: 'fade',
             fadeOutSpeed: "slow",
