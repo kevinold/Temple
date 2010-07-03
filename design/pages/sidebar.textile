@@ -1,0 +1,26 @@
+h3. About Me
+
+I'm just a demonstration of how easy it is to use Radiant to power a blog. "More...":/about/
+
+h3. Favorite Sites
+
+* "Radiant CMS":http://radiantcms.org
+* "Ruby-Lang":http://ruby-lang.org
+* "Wiseheart Design":http://wiseheartdesign.com
+* "AVLUX Hosting":http://avlux.net
+
+h3. Recent Entries
+<r:if_url matches="^/$">
+<r:find url="/articles/"><r:children:each limit="10" offset="5" order="desc">
+* <r:link /></r:children:each></r:find>
+</r:if_url>
+<r:unless_url matches="^/$">
+<r:find url="/articles/"><r:children:each limit="10" order="desc">
+* <r:link /></r:children:each></r:find>
+</r:unless_url>
+
+"Archives...":/articles/
+
+h3. Syndicate
+
+"Articles RSS Feed":/rss/

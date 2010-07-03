@@ -1,0 +1,13 @@
+--- 
+class_name: ArchiveMonthIndexPage
+slug: monthly-archives
+updated_by_id: 
+layout_name: <inherit> [Normal]
+title: "%B %Y Archives"
+virtual: true
+created_by_id: 1
+breadcrumb: Monthly Archives
+description: 
+published_at: 2010-06-16 22:52:33 Z
+status_id: 100
+keywords: 

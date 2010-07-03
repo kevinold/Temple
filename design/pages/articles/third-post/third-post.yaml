@@ -1,0 +1,13 @@
+--- 
+class_name: 
+slug: third-post
+updated_by_id: 
+layout_name: <inherit> [Normal]
+title: Third Post
+virtual: false
+created_by_id: 1
+breadcrumb: Third Post
+description: 
+published_at: 2010-06-16 22:52:33 Z
+status_id: 100
+keywords: 

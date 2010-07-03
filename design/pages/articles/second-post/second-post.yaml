@@ -1,0 +1,13 @@
+--- 
+class_name: 
+slug: second-post
+updated_by_id: 
+layout_name: <inherit> [Normal]
+title: Second Post
+virtual: false
+created_by_id: 1
+breadcrumb: Second Post
+description: 
+published_at: 2006-06-10 00:00:00 Z
+status_id: 100
+keywords: 

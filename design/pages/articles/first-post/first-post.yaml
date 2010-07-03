@@ -1,0 +1,13 @@
+--- 
+class_name: 
+slug: first-post
+updated_by_id: 
+layout_name: <inherit> [Normal]
+title: First Post
+virtual: false
+created_by_id: 1
+breadcrumb: First Post
+description: 
+published_at: 2006-06-09 00:00:00 Z
+status_id: 100
+keywords: 

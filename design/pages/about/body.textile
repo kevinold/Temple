@@ -1,0 +1,1 @@
+This is just an example of how Radiant can be used to power a Weblog.
