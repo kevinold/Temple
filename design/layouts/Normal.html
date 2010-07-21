@@ -104,9 +104,9 @@
     });
     </script>
 
-    <r:if cond="RAILS_ENV == 'production'">
+    <r:unless_dev>
       <r:snippet name="google_analytics" />
-    </r:if>
+    </r:unless_dev>
 
 </body>
 </html>
