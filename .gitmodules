@@ -16,3 +16,6 @@
 [submodule "vendor/extensions/no_dev_cache"]
 	path = vendor/extensions/no_dev_cache
 	url = git://github.com/jgarber/radiant-no_dev_cache-extension.git
+[submodule "vendor/extensions/back_door"]
+	path = vendor/extensions/back_door
+	url = git://github.com/aitorgr/radiant-backdoor.git
