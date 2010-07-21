@@ -1,8 +1,26 @@
+
 <!-- end #header_wrap -->
 <div id="nav_main_wrap">
   <div id="nav_main">
-    <ul class="navigation"><li class="current"><a href="/" class="current">Home</a></li><li><a href="/sermons">Sermons</a></li><li><a href="/calendar">Calendar</a></li><li><a href="/prayer">Prayer</a></li><li><a href="http://directory.templetoday.com">Directory</a></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li></ul>
-
+    <ul class="navigation">
+<r:navigation urls="Home: / |
+                    Sermons: /sermons |
+                    Calendar: /calendar |
+                    Prayer: /prayer">
+  <r:normal><li><a href="<r:url />"><r:title /></a></li></r:normal>
+  <r:here><li class="current"><a href="<r:url />" class="current"><r:title /></a></li></r:here>
+  <r:selected><li class="current"><a href="<r:url />" class="current"><r:title /></a></li></r:selected>
+  <r:between></r:between> 
+</r:navigation>
+  <li><a href="http://directory.templetoday.com">Directory</a></li>
+<r:navigation urls="About: /about |
+                    Contact: /contact">
+  <r:normal><li><a href="<r:url />"><r:title /></a></li></r:normal>
+  <r:here><li class="current"><a href="<r:url />" class="current"><r:title /></a></li></r:here>
+  <r:selected><li class="current"><a href="<r:url />" class="current"><r:title /></a></li></r:selected>
+  <r:between></r:between> 
+</r:navigation>
+    </ul>
   <span class="clear">&nbsp;</span>
   </div>
 </div>
