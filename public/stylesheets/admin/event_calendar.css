@@ -1,0 +1,521 @@
+.container_12 {
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; }
+  .container_12 .grid_1 {
+    width: 6.333%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  .container_12 .prefix_1 {
+    padding-left: 8.333%; }
+  .container_12 .suffix_1 {
+    padding-right: 8.333%; }
+  .container_12 .push_1 {
+    left: 8.333%; }
+  .container_12 .pull_1 {
+    left: -8.333%; }
+  .container_12 .grid_2 {
+    width: 14.667%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  .container_12 .prefix_2 {
+    padding-left: 16.667%; }
+  .container_12 .suffix_2 {
+    padding-right: 16.667%; }
+  .container_12 .push_2 {
+    left: 16.667%; }
+  .container_12 .pull_2 {
+    left: -16.667%; }
+  .container_12 .grid_3 {
+    width: 23%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  .container_12 .prefix_3 {
+    padding-left: 25%; }
+  .container_12 .suffix_3 {
+    padding-right: 25%; }
+  .container_12 .push_3 {
+    left: 25%; }
+  .container_12 .pull_3 {
+    left: -25%; }
+  .container_12 .grid_4 {
+    width: 31.333%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  .container_12 .prefix_4 {
+    padding-left: 33.333%; }
+  .container_12 .suffix_4 {
+    padding-right: 33.333%; }
+  .container_12 .push_4 {
+    left: 33.333%; }
+  .container_12 .pull_4 {
+    left: -33.333%; }
+  .container_12 .grid_5 {
+    width: 39.667%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  .container_12 .prefix_5 {
+    padding-left: 41.667%; }
+  .container_12 .suffix_5 {
+    padding-right: 41.667%; }
+  .container_12 .push_5 {
+    left: 41.667%; }
+  .container_12 .pull_5 {
+    left: -41.667%; }
+  .container_12 .grid_6 {
+    width: 48%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  .container_12 .prefix_6 {
+    padding-left: 50%; }
+  .container_12 .suffix_6 {
+    padding-right: 50%; }
+  .container_12 .push_6 {
+    left: 50%; }
+  .container_12 .pull_6 {
+    left: -50%; }
+  .container_12 .grid_7 {
+    width: 56.333%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  .container_12 .prefix_7 {
+    padding-left: 58.333%; }
+  .container_12 .suffix_7 {
+    padding-right: 58.333%; }
+  .container_12 .push_7 {
+    left: 58.333%; }
+  .container_12 .pull_7 {
+    left: -58.333%; }
+  .container_12 .grid_8 {
+    width: 64.667%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  .container_12 .prefix_8 {
+    padding-left: 66.667%; }
+  .container_12 .suffix_8 {
+    padding-right: 66.667%; }
+  .container_12 .push_8 {
+    left: 66.667%; }
+  .container_12 .pull_8 {
+    left: -66.667%; }
+  .container_12 .grid_9 {
+    width: 73%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  .container_12 .prefix_9 {
+    padding-left: 75%; }
+  .container_12 .suffix_9 {
+    padding-right: 75%; }
+  .container_12 .push_9 {
+    left: 75%; }
+  .container_12 .pull_9 {
+    left: -75%; }
+  .container_12 .grid_10 {
+    width: 81.333%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  .container_12 .prefix_10 {
+    padding-left: 83.333%; }
+  .container_12 .suffix_10 {
+    padding-right: 83.333%; }
+  .container_12 .push_10 {
+    left: 83.333%; }
+  .container_12 .pull_10 {
+    left: -83.333%; }
+  .container_12 .grid_11 {
+    width: 89.667%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  .container_12 .prefix_11 {
+    padding-left: 91.667%; }
+  .container_12 .suffix_11 {
+    padding-right: 91.667%; }
+  .container_12 .push_11 {
+    left: 91.667%; }
+  .container_12 .pull_11 {
+    left: -91.667%; }
+  .container_12 .grid_12 {
+    width: 98%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  .container_12 .prefix_12 {
+    padding-left: 100%; }
+  .container_12 .suffix_12 {
+    padding-right: 100%; }
+  .container_12 .push_12 {
+    left: 100%; }
+  .container_12 .pull_12 {
+    left: -100%; }
+  .container_12 .flush_left, .container_12 .alpha {
+    margin-left: 0; }
+  .container_12 .flush_right, .container_12 .omega {
+    margin-right: 0; }
+  .container_12 .flush {
+    margin-left: 0;
+    margin-right: 0; }
+  .container_12 .row, .container_12 .newline {
+    clear: left; }
+
+table.index td.subscription-title {
+  font-size: 115%;
+  font-weight: bold; }
+
+span.calendar_actions img {
+  opacity: 0.5; }
+span.calendar_actions a img {
+  opacity: 1; }
+
+table#events tr td.datemark {
+  width: 40px;
+  vertical-align: top;
+  text-align: center;
+  line-height: 1; }
+  table#events tr td.datemark a {
+    text-decoration: none; }
+  table#events tr td.datemark span.month {
+    display: block;
+    margin-top: 5px;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: lighter;
+    font-size: 80%;
+    text-transform: uppercase; }
+  table#events tr td.datemark span.day {
+    display: block;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: 160%; }
+table#events tr td.event {
+  width: 40%;
+  vertical-align: top; }
+  table#events tr td.event h3 {
+    margin: 0;
+    line-height: 1.2; }
+    table#events tr td.event h3 a {
+      text-decoration: none; }
+  table#events tr td.event p.description {
+    margin: 4px 0;
+    font-size: 80%;
+    color: #999; }
+  table#events tr td.event p.keywords {
+    margin: 4px 0;
+    font-size: 80%; }
+table#events tr td.time, table#events tr td.location, table#events tr td.keywords, table#events tr td.recurrence {
+  font-size: 80%;
+  padding-top: 28px;
+  vertical-align: top; }
+table#events tr td.remove {
+  padding-top: 28px;
+  vertical-align: top; }
+  table#events tr td.remove span.ineditable {
+    color: #666;
+    font-size: 80%;
+    background: url(/images/admin/minus.png) no-repeat scroll 4px 0;
+    padding-left: 20px;
+    opacity: 0.3; }
+table#events tr.continuing td.datemark a {
+  color: #b2aaa4; }
+table#events tr.continuing td.event h3 a {
+  color: #b2aaa4; }
+
+table#event_venues td.event_venue {
+  width: 40%;
+  vertical-align: top; }
+  table#event_venues td.event_venue h3 {
+    margin: 0;
+    line-height: 1.2; }
+    table#event_venues td.event_venue h3 a {
+      text-decoration: none; }
+  table#event_venues td.event_venue p.description {
+    margin: 4px 0;
+    font-size: 80%;
+    color: #999; }
+table#event_venues td.location, table#event_venues td.url {
+  font-size: 80%;
+  vertical-align: top; }
+
+#content #event_form div p input.textbox, #content #event_form div p select.textbox, #content #event_form div p textarea, #content #calendar_form div p input.textbox, #content #calendar_form div p select.textbox, #content #calendar_form div p textarea, #content #venue_form div p input.textbox, #content #venue_form div p select.textbox, #content #venue_form div p textarea {
+  width: 100%;
+  padding: 6px 0;
+  font-family: Monaco,"Courier New",Courier,monospace;
+  font-size: 95%;
+  margin-top: 0.3em; }
+#content #event_form div p.note, #content #calendar_form div p.note, #content #venue_form div p.note {
+  width: 31.333%;
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-top: 1.7em; }
+#content #event_form div.title, #content #calendar_form div.title, #content #venue_form div.title {
+  clear: left; }
+  #content #event_form div.title p.event_title, #content #event_form div.title p.calendar_title, #content #event_form div.title p.keywords, #content #event_form div.title p.venue_title, #content #calendar_form div.title p.event_title, #content #calendar_form div.title p.calendar_title, #content #calendar_form div.title p.keywords, #content #calendar_form div.title p.venue_title, #content #venue_form div.title p.event_title, #content #venue_form div.title p.calendar_title, #content #venue_form div.title p.keywords, #content #venue_form div.title p.venue_title {
+    margin-bottom: 1em; }
+    #content #event_form div.title p.event_title input, #content #event_form div.title p.calendar_title input, #content #event_form div.title p.keywords input, #content #event_form div.title p.venue_title input, #content #calendar_form div.title p.event_title input, #content #calendar_form div.title p.calendar_title input, #content #calendar_form div.title p.keywords input, #content #calendar_form div.title p.venue_title input, #content #venue_form div.title p.event_title input, #content #venue_form div.title p.calendar_title input, #content #venue_form div.title p.keywords input, #content #venue_form div.title p.venue_title input {
+      font-family: Georgia,Palatino,"Times New Roman",Times,serif;
+      font-size: 200%; }
+  #content #event_form div.title p.event_title, #content #calendar_form div.title p.event_title, #content #venue_form div.title p.event_title {
+    width: 64.667%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  #content #event_form div.title p.keywords, #content #calendar_form div.title p.keywords, #content #venue_form div.title p.keywords {
+    width: 31.333%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+    #content #event_form div.title p.keywords input, #content #calendar_form div.title p.keywords input, #content #venue_form div.title p.keywords input {
+      color: #cc0000; }
+  #content #event_form div.title p.calendar_category, #content #event_form div.title p.calendar_slug, #content #calendar_form div.title p.calendar_category, #content #calendar_form div.title p.calendar_slug, #content #venue_form div.title p.calendar_category, #content #venue_form div.title p.calendar_slug {
+    width: 31.333%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+#content #event_form div.url, #content #calendar_form div.url, #content #venue_form div.url {
+  width: 98%;
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+  clear: left; }
+#content #event_form div.description, #content #calendar_form div.description, #content #venue_form div.description {
+  clear: left; }
+  #content #event_form div.description p.description, #content #calendar_form div.description p.description, #content #venue_form div.description p.description {
+    width: 64.667%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+    #content #event_form div.description p.description textarea, #content #calendar_form div.description p.description textarea, #content #venue_form div.description p.description textarea {
+      height: 16em; }
+  #content #event_form div.description p.calendar, #content #calendar_form div.description p.calendar, #content #venue_form div.description p.calendar {
+    width: 31.333%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+#content #event_form div.ical, #content #calendar_form div.ical, #content #venue_form div.ical {
+  clear: left; }
+  #content #event_form div.ical p.url, #content #calendar_form div.ical p.url, #content #venue_form div.ical p.url {
+    width: 64.667%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0; }
+  #content #event_form div.ical p.username, #content #event_form div.ical p.password, #content #calendar_form div.ical p.username, #content #calendar_form div.ical p.password, #content #venue_form div.ical p.username, #content #venue_form div.ical p.password {
+    width: 31.333%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  #content #event_form div.ical p.username, #content #calendar_form div.ical p.username, #content #venue_form div.ical p.username {
+    margin-right: 2%; }
+#content #event_form div.date, #content #calendar_form div.date, #content #venue_form div.date {
+  clear: left; }
+  #content #event_form div.date p.start_date, #content #event_form div.date p.end_date, #content #calendar_form div.date p.start_date, #content #calendar_form div.date p.end_date, #content #venue_form div.date p.start_date, #content #venue_form div.date p.end_date {
+    width: 31.333%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 0; }
+  #content #event_form div.date p.problematic, #content #calendar_form div.date p.problematic, #content #venue_form div.date p.problematic {
+    color: #cc0000; }
+#content #event_form div.recurrence, #content #calendar_form div.recurrence, #content #venue_form div.recurrence {
+  clear: left; }
+  #content #event_form div.recurrence p.recurrence, #content #calendar_form div.recurrence p.recurrence, #content #venue_form div.recurrence p.recurrence {
+    margin-top: 0; }
+    #content #event_form div.recurrence p.recurrence span.recurrence_detail, #content #calendar_form div.recurrence p.recurrence span.recurrence_detail, #content #venue_form div.recurrence p.recurrence span.recurrence_detail {
+      display: block; }
+    #content #event_form div.recurrence p.recurrence span#recurrence_interval, #content #calendar_form div.recurrence p.recurrence span#recurrence_interval, #content #venue_form div.recurrence p.recurrence span#recurrence_interval {
+      width: 14.667%;
+      display: inline;
+      float: left;
+      position: relative;
+      margin-left: 1%;
+      margin-right: 1%; }
+    #content #event_form div.recurrence p.recurrence span#recurrence_period, #content #calendar_form div.recurrence p.recurrence span#recurrence_period, #content #venue_form div.recurrence p.recurrence span#recurrence_period {
+      width: 14.667%;
+      display: inline;
+      float: left;
+      position: relative;
+      margin-left: 1%;
+      margin-right: 1%; }
+    #content #event_form div.recurrence p.recurrence span#recurrence_basis, #content #calendar_form div.recurrence p.recurrence span#recurrence_basis, #content #venue_form div.recurrence p.recurrence span#recurrence_basis {
+      width: 14.667%;
+      display: inline;
+      float: left;
+      position: relative;
+      margin-left: 1%;
+      margin-right: 1%; }
+    #content #event_form div.recurrence p.recurrence span#recurrence_limit, #content #calendar_form div.recurrence p.recurrence span#recurrence_limit, #content #venue_form div.recurrence p.recurrence span#recurrence_limit {
+      width: 14.667%;
+      display: inline;
+      float: left;
+      position: relative;
+      margin-left: 1%;
+      margin-right: 1%;
+      margin-right: 0; }
+    #content #event_form div.recurrence p.recurrence span#recurrence_count, #content #calendar_form div.recurrence p.recurrence span#recurrence_count, #content #venue_form div.recurrence p.recurrence span#recurrence_count {
+      width: 14.667%;
+      display: inline;
+      float: left;
+      position: relative;
+      margin-left: 1%;
+      margin-right: 1%;
+      margin-right: 0; }
+#content #event_form div.venue, #content #event_form div.newvenue, #content #calendar_form div.venue, #content #calendar_form div.newvenue, #content #venue_form div.venue, #content #venue_form div.newvenue {
+  overflow: auto; }
+#content #event_form div#venue, #content #calendar_form div#venue, #content #venue_form div#venue {
+  clear: left; }
+  #content #event_form div#venue p#existing_venue, #content #calendar_form div#venue p#existing_venue, #content #venue_form div#venue p#existing_venue {
+    width: 64.667%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+#content #event_form div#new_venue, #content #calendar_form div#new_venue, #content #venue_form div#new_venue {
+  clear: left; }
+  #content #event_form div#new_venue p.venue_title, #content #calendar_form div#new_venue p.venue_title, #content #venue_form div#new_venue p.venue_title {
+    width: 64.667%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  #content #event_form div#new_venue p.url, #content #calendar_form div#new_venue p.url, #content #venue_form div#new_venue p.url {
+    clear: left;
+    width: 64.667%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+  #content #event_form div#new_venue p.venue_location, #content #calendar_form div#new_venue p.venue_location, #content #venue_form div#new_venue p.venue_location {
+    width: 64.667%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+    #content #event_form div#new_venue p.venue_location textarea, #content #calendar_form div#new_venue p.venue_location textarea, #content #venue_form div#new_venue p.venue_location textarea {
+      height: 5em; }
+  #content #event_form div#new_venue p.venue_postcode, #content #calendar_form div#new_venue p.venue_postcode, #content #venue_form div#new_venue p.venue_postcode {
+    width: 31.333%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%; }
+    #content #event_form div#new_venue p.venue_postcode span.note, #content #calendar_form div#new_venue p.venue_postcode span.note, #content #venue_form div#new_venue p.venue_postcode span.note {
+      display: block;
+      margin-top: 4px; }
+  #content #event_form div#new_venue p.venue_description, #content #calendar_form div#new_venue p.venue_description, #content #venue_form div#new_venue p.venue_description {
+    width: 98%;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    clear: both; }
+    #content #event_form div#new_venue p.venue_description textarea, #content #calendar_form div#new_venue p.venue_description textarea, #content #venue_form div#new_venue p.venue_description textarea {
+      height: 5em; }
+#content #event_form .note, #content #event_form label.minor, #content #calendar_form .note, #content #calendar_form label.minor, #content #venue_form .note, #content #venue_form label.minor {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: lighter;
+  font-size: 85%;
+  color: #ccc;
+  line-height: 1.3;
+  text-shadow: none;
+  display: inline; }
+#content #event_form label.inline, #content #calendar_form label.inline, #content #venue_form label.inline {
+  display: inline; }
+#content #event_form .hidden, #content #calendar_form .hidden, #content #venue_form .hidden {
+  display: none; }
+
+a.toggleMCE {
+  display: block;
+  width: 24px;
+  height: 24px;
+  padding-left: 24px;
+  float: right; }
+
+.calendar_popup div.clock_control {
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 200px; }
+  .calendar_popup div.clock_control form {
+    text-align: center; }
+    .calendar_popup div.clock_control form h4 {
+      margin: 10px;
+      color: #999;
+      font-weight: lighter; }
+    .calendar_popup div.clock_control form input.hours, .calendar_popup div.clock_control form input.minutes {
+      width: 60px;
+      border: 1px solid #ccc;
+      padding: 4px;
+      font-size: 40px; }
+    .calendar_popup div.clock_control form span.colon {
+      padding: 4px;
+      font-size: 40px;
+      color: #333;
+      width: 10px; }
+    .calendar_popup div.clock_control form input.set_time {
+      font-size: 30px;
+      width: 114px;
+      margin: 20px 0; }
+    .calendar_popup div.clock_control form a.cancel {
+      cursor: pointer; }

@@ -19,3 +19,6 @@
 [submodule "vendor/extensions/back_door"]
 	path = vendor/extensions/back_door
 	url = git://github.com/aitorgr/radiant-backdoor.git
+[submodule "vendor/extensions/event_calendar"]
+	path = vendor/extensions/event_calendar
+	url = git://github.com/radiant/radiant-event-calendar-extension.git

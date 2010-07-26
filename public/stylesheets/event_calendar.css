@@ -1,0 +1,183 @@
+#events .event {
+  position: relative;
+  margin-bottom: 20px; }
+  #events .event .dateholder {
+    position: absolute;
+    left: 15px;
+    top: 2px;
+    padding: 5px 5px 0 5px;
+    border: 0;
+    font-family: helvetica, arial, sans-serif;
+    letter-spacing: -0.03em;
+    text-align: center;
+    line-height: 1.05;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eeeeee; }
+    #events .event .dateholder span.month, #events .event .dateholder span.dow {
+      display: block;
+      font-weight: lighter;
+      font-size: 80%;
+      text-transform: uppercase; }
+    #events .event .dateholder span.day, #events .event .dateholder span.dom {
+      display: block;
+      font-weight: bold;
+      font-size: 160%; }
+  #events .event .detail h3 {
+    margin: 0;
+    font-size: 180%; }
+  #events .event .detail p {
+    margin-top: 0;
+    font-size: 90%;
+    line-height: 1.4; }
+  #events .event .detail p.venue {
+    font-style: italic;
+    margin-bottom: 6px; }
+  #events .event .detail p.description {
+    margin-bottom: 16px; }
+
+#continuing h3 {
+  font-family: helvetica, arial, sans-serif;
+  letter-spacing: -0.03em;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 0; }
+#continuing ul {
+  font-family: helvetica, arial, sans-serif;
+  letter-spacing: -0.03em;
+  font-size: 90%;
+  line-height: 1.2;
+  padding-left: 0; }
+  #continuing ul li {
+    margin-top: 10px;
+    font-style: normal; }
+    #continuing ul li a.title {
+      font-weight: bold; }
+    #continuing ul li span.detail {
+      font-size: 80%; }
+
+#faceting a.defilter {
+  padding-left: 14px;
+  background: transparent url(/images/furniture/detag.png) no-repeat top left;
+  color: #c00; }
+
+table.minimonth {
+  font-family: helvetica, arial, sans-serif;
+  letter-spacing: -0.03em;
+  font-size: 80%;
+  font-style: normal;
+  border-collapse: collapse;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eeeeee;
+  color: black;
+  margin: 5px 0; }
+  table.minimonth a {
+    display: block;
+    color: #990000;
+    font-weight: lighter;
+    text-decoration: none; }
+  table.minimonth a:hover {
+    background-color: #cc0000;
+    color: white; }
+  table.minimonth th, table.minimonth td {
+    font-weight: normal;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eeeeee;
+    vertical-align: top;
+    text-align: center;
+    height: 30px;
+    width: 28px;
+    line-height: 30px;
+    padding: 0;
+    overflow: hidden; }
+  table.minimonth th.month_link {
+    font-size: 120%; }
+  table.minimonth th.day_name {
+    color: #eeeeee; }
+  table.minimonth td.other_month {
+    color: #999999; }
+    table.minimonth td.other_month a {
+      color: #999999; }
+    table.minimonth td.other_month a:hover {
+      color: white; }
+  table.minimonth td.today {
+    background-color: white; }
+  table.minimonth td.uneventful {
+    text-shadow: #eeeeee 0 0 2px;
+    color: #eeeeee; }
+  table.minimonth td.today {
+    font-weight: bold; }
+  table.minimonth td.past {
+    opacity: 0.75; }
+
+p.help {
+  font-family: helvetica, arial, sans-serif;
+  letter-spacing: -0.03em;
+  color: #999999;
+  font-size: 80%; }
+
+#view_control p {
+  font-family: helvetica, arial, sans-serif;
+  letter-spacing: -0.03em;
+  color: #cccccc;
+  margin: 0 0 10px 0;
+  line-height: 30px;
+  height: 25px;
+  overflow: hidden;
+  font-size: 80%; }
+  #view_control p a {
+    color: #999999;
+    padding-top: 4px; }
+  #view_control p a.fg {
+    color: black; }
+  #view_control p a:hover {
+    color: #cc0000; }
+#view_control p.views {
+  font-size: 100%; }
+  #view_control p.views a.map {
+    padding: 7px 3px 3px 17px;
+    background: transparent url(/images/event_calendar/maplinkbg.png) no-repeat top left; }
+  #view_control p.views a.calendar {
+    padding: 7px 3px 3px 20px;
+    background: transparent url(/images/event_calendar/calendarlinkbg.png) no-repeat top left; }
+#view_control p.feeds a.rss, #view_control p.feeds a.ical {
+  padding: 3px 3px 3px 17px;
+  height: 24px; }
+#view_control p.feeds a.rss {
+  background: transparent url(/images/icons/rss.png) no-repeat top left; }
+#view_control p.feeds a.ical {
+  background: transparent url(/images/icons/ical.png) no-repeat top left; }
+
+div.pagination {
+  font-family: helvetica, arial, sans-serif;
+  letter-spacing: -0.03em;
+  color: black;
+  line-height: 2;
+  margin-top: 50px;
+  margin-bottom: 20px; }
+  div.pagination a, div.pagination span.current, div.pagination span.disabled {
+    padding: 6px 7px 3px 7px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #990000; }
+  div.pagination a:hover {
+    border-color: #cc0000; }
+  div.pagination span.current {
+    color: black;
+    font-weight: bold;
+    border-color: black; }
+  div.pagination span.separator {
+    visibility: hidden; }
+  div.pagination span.disabled {
+    display: none;
+    color: #eeeeee;
+    border-color: #eeeeee;
+    text-shadow: #eeeeee 0 0 2px; }
+  div.pagination span.summary {
+    padding: 6px;
+    font-size: 75%;
+    color: #eeeeee;
+    margin-left: 10px; }
