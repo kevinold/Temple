@@ -1,0 +1,20 @@
+<div class="event_list">
+  <r:events:each calendar_months="1">
+    <r:event:header name="date">
+      <h2 id="<r:event:year />_<r:event:month />"><r:event:month /> <r:event:year /></h2>
+    </r:event:header>
+    <p id="event_<r:event:id />">
+      <acronym class="date">
+        <r:event:date /> <r:event:start format="%l:%M:%S" />
+      </acronym>
+      <r:event:link class="title" />
+      <r:event:if_location>
+        <span class="location"><r:event:location /></span>
+      </r:event:if_location>
+      <r:event:if_description>
+        <br />
+        <span class="description"><r:event:description /></span>
+      </r:event:if_description>
+    </p>
+  </r:events:each>
+</div>  

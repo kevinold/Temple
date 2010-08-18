@@ -1,0 +1,13 @@
+--- 
+class_name: EventCalendarPage
+slug: events
+updated_by_id: 1
+layout_name: Normal
+title: Events
+virtual: false
+created_by_id: 1
+breadcrumb: Events
+description: ""
+published_at: 
+status_id: 1
+keywords: ""

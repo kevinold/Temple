@@ -83,3 +83,6 @@ Radiant::Initializer.run do |config|
     end
   end
 end
+
+Radiant::Config['event_calendar.time_format'] = '%l:%M%p'
+Radiant::Config['event_calendar.default_refresh_interval'] = 0
