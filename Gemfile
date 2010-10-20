@@ -21,7 +21,8 @@ end
 
 group :test do
   # bundler requires these gems while running tests
-  # gem "rspec"
+  gem "rspec", "1.3.0"
+  gem "rspec-rails", "1.3.2"
   # gem "faker"
 end
 
