@@ -1,23 +1,10 @@
 # Be sure to restart your server when you modify this file
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.3.10' unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
-
-# Fixes warning for this issue (https://rails.lighthouseapp.com/projects/8994/tickets/4026)
-# until rails 2.3.6 is released
-if Gem::VERSION >= "1.3.6"
-    module Rails
-        class GemDependency
-            def requirement
-                r = super
-                (r == Gem::Requirement.default) ? nil : r
-            end
-        end
-    end
-end
 
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
