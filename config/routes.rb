@@ -1,5 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :announcements
 
 
   # Contact form routes
@@ -20,6 +19,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :sermons
   map.resources :pages
+  map.resources :announcements
 
   # Allow pages urls to be accessed via events prefix
   # i.e. templetoday.com/events/beth-moore-simulcast
@@ -28,6 +28,7 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :admin do |admin|
     admin.resources :pages
     admin.resources :sermons
+    admin.resources :announcements
     admin.root :controller => "home"
   end
 
