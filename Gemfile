@@ -1,6 +1,7 @@
 source :gemcutter
 gem "rails", "~> 2.3.10"
 gem "sqlite3-ruby", :require => "sqlite3"
+gem "mysql"
 
 # bundler requires these gems in all environments
 # gem "nokogiri", "1.4.2"
@@ -11,7 +12,7 @@ gem 'will_paginate'
 gem 'vestal_versions'
 gem 'hpricot'
 gem 'formtastic'
-#gem 'nifty_generators'
+gem 'nifty-generators'
 
 group :development do
   # bundler requires these gems in development
