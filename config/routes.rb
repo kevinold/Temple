@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :announcements
+
 
   # Contact form routes
   map.new_contact '/contact/new', :controller => 'contact', :action => 'new', :conditions => { :method => :get }

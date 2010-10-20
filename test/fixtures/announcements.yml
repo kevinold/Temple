@@ -1,0 +1,13 @@
+one:
+  what: MyString
+  when: 2010-10-20 06:55:26
+  where: MyString
+  details: MyText
+  published: false
+
+two:
+  what: MyString
+  when: 2010-10-20 06:55:26
+  where: MyString
+  details: MyText
+  published: false

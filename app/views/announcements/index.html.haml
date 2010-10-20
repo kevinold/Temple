@@ -1,0 +1,21 @@
+- title "Announcements"
+
+%table
+  %tr
+    %th What
+    %th When
+    %th Where
+    %th Details
+    %th Published
+  - for announcement in @announcements
+    %tr
+      %td= h announcement.what
+      %td= h announcement.when
+      %td= h announcement.where
+      %td= h announcement.details
+      %td= h announcement.published
+      %td= link_to 'Show', announcement
+      %td= link_to 'Edit', edit_announcement_path(announcement)
+      %td= link_to 'Destroy', announcement, :confirm => 'Are you sure?', :method => :delete
+
+%p= link_to "New Announcement", new_announcement_path
