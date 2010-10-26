@@ -7,6 +7,7 @@ gem "mysql"
 # gem "nokogiri", "1.4.2"
 # gem "geokit"
 gem 'haml'
+#gem 'sass'
 gem 'searchlogic'
 gem 'will_paginate'
 gem 'vestal_versions'
@@ -18,6 +19,7 @@ group :development do
   # bundler requires these gems in development
   gem "rspec", "1.3.0"
   gem "rspec-rails", "1.3.2"
+  gem "factory_girl", "1.2.4"
   # gem "rails-footnotes"
 end
 
@@ -25,6 +27,7 @@ group :test do
   # bundler requires these gems while running tests
   gem "rspec", "1.3.0"
   gem "rspec-rails", "1.3.2"
+  gem "factory_girl", "1.2.4"
   # gem "faker"
 end
 

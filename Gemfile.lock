@@ -11,6 +11,7 @@ GEM
     activeresource (2.3.10)
       activesupport (= 2.3.10)
     activesupport (2.3.10)
+    factory_girl (1.2.4)
     formtastic (1.1.0)
       actionpack (>= 2.3.0)
       activesupport (>= 2.3.0)
@@ -44,6 +45,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  factory_girl (= 1.2.4)
   formtastic
   haml
   hpricot
