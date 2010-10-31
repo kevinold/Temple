@@ -14,6 +14,8 @@ gem 'vestal_versions'
 gem 'hpricot'
 gem 'formtastic'
 gem 'nifty-generators'
+gem 'populator'
+gem 'faker'
 
 group :development do
   # bundler requires these gems in development
