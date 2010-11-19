@@ -140,8 +140,17 @@ under the Lordship of Jesus Christ and the Leadership of the Holy Spirit to... <
     <%= link_to 'View All Sermons', sermons_path %>
     </div>
 
-    <br clear="all" />
+    <div class="grid_4 omega content_box" id="col-2">
+    <h3>Announcements</h3>
+    <ul>
+    <% @announcements.each do |a| %>
+      <li><b><%=h a.display_annoucement_date %></b> - <%= link_to a.what, a %></li>
+    <% end %>
+    </ul>
+    <%= link_to 'View All Announcements', announcements_path %>
+    </div>
 
+    <br clear="all" />
 <!--
     <div class="grid_4 omega content_box" id="col-4">
     <h3>Discipleship Classes</h3>

@@ -3,15 +3,15 @@
 %table
   %tr
     %th What
-    %th When
-    %th Where
+    %th Date
+    %th Location
     %th Details
     %th Published
   - for announcement in @announcements
     %tr
       %td= h announcement.what
-      %td= h announcement.when
-      %td= h announcement.where
+      %td= h announcement.announcement_date
+      %td= h announcement.location
       %td= h announcement.details
       %td= h announcement.published
       %td= link_to 'Show', [:admin, announcement]
