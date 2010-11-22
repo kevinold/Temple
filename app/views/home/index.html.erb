@@ -124,13 +124,8 @@
     <h5><a class="red_button" style="width:200px" href="/children/kids-quest-2010">More Information</a></h5>
   </div>
   -->
-    <div class="grid_4 alpha content_box" id="col-1">
-    <h3>About Us</h3>
-    <h6>Temple Baptist Church is a fellowship of caring believers who have joined together
-under the Lordship of Jesus Christ and the Leadership of the Holy Spirit to... <a href="/about">Read more</a></h6>
-    </div>
 
-    <div class="grid_4 omega content_box" id="col-2">
+    <div class="grid_4 alpha content_box" id="col-1">
     <h3>Sermons</h3>
     <ul>
     <% @sermons.each do |sermon| %>
@@ -140,6 +135,7 @@ under the Lordship of Jesus Christ and the Leadership of the Holy Spirit to... <
     <%= link_to 'View All Sermons', sermons_path %>
     </div>
 
+    <% if @announcements %>
     <div class="grid_4 omega content_box" id="col-2">
     <h3>Announcements</h3>
     <ul>
@@ -147,7 +143,14 @@ under the Lordship of Jesus Christ and the Leadership of the Holy Spirit to... <
       <li><b><%=h a.display_annoucement_date %></b> - <%= link_to a.what, a %></li>
     <% end %>
     </ul>
-    <%= link_to 'View All Announcements', announcements_path %>
+    <!--<%= link_to 'View All Announcements', announcements_path %>-->
+    </div>
+  <% end %>
+
+    <div class="grid_8 alpha content_box" id="col-3">
+    <h3>About Us</h3>
+    <h6>Temple Baptist Church is a fellowship of caring believers who have joined together
+under the Lordship of Jesus Christ and the Leadership of the Holy Spirit to... <a href="/about">Read more</a></h6>
     </div>
 
     <br clear="all" />
