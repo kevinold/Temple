@@ -1,0 +1,8 @@
+- title "Edit Announcement"
+
+= render :partial => 'form'
+
+%p
+  = link_to "Show", admin_announcement_path(@announcement)
+  |
+  = link_to "View All", admin_announcements_path

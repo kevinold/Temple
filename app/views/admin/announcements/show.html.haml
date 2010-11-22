@@ -1,0 +1,24 @@
+- title "Announcement"
+
+%p
+  %strong What:
+  =h @announcement.what
+%p
+  %strong Date:
+  =h @announcement.announcement_date
+%p
+  %strong Location:
+  =h @announcement.location
+%p
+  %strong Details:
+  =h @announcement.details
+%p
+  %strong Published:
+  =h @announcement.published
+
+%p
+  = link_to "Edit", edit_admin_announcement_path(@announcement)
+  |
+  = link_to "Destroy", [:admin, @announcement], :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", admin_announcements_path

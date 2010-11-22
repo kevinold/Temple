@@ -1,0 +1,16 @@
+- title "Announcements"
+
+%table
+  %tr
+    %th What
+    %th Date
+    %th Location
+    %th Details
+    %th Published
+  - for announcement in @announcements
+    %tr
+      %td= h announcement.what
+      %td= h announcement.announcement_date
+      %td= h announcement.location
+      %td= h announcement.details
+      %td= h announcement.published

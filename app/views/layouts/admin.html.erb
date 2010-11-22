@@ -4,7 +4,7 @@
   <head>
     <title><%= h(yield(:title) || "Temple Admin") %></title>
     <%= javascript_include_tag "jquery" %> 
-    <%= stylesheet_link_tag 'admin' %>
+    <%= stylesheet_link_tag 'admin', 'formtastic', 'formtastic_changes' %>
     <%= yield(:head) %>
   </head>
   <body>
@@ -15,6 +15,7 @@
           <li><a href="/admin">Home</a></li>
           <li><a href="/admin/pages">Pages</a></li>
           <li><a href="/admin/sermons">Sermons</a></li>
+          <li><a href="/admin/announcements">Announcements</a></li>
           <li><a href="/logout">Logout</a></li>
         </ul>
       </div>

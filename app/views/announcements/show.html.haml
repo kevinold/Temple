@@ -1,0 +1,20 @@
+- title "Announcement"
+
+%p
+  %strong What:
+  =h @announcement.what
+%p
+  %strong Date:
+  =h @announcement.announcement_date
+%p
+  %strong Location:
+  =h @announcement.location
+%p
+  %strong Details:
+  =h @announcement.details
+%p
+  %strong Published:
+  =h @announcement.published
+
+%p
+  = link_to "View All", announcements_path
