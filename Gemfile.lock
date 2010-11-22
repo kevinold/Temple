@@ -11,6 +11,12 @@ GEM
     activeresource (2.3.10)
       activesupport (= 2.3.10)
     activesupport (2.3.10)
+    capistrano (2.5.19)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.0.0)
     factory_girl (1.2.4)
     faker (0.3.1)
     formtastic (1.1.0)
@@ -18,9 +24,17 @@ GEM
       activesupport (>= 2.3.0)
       i18n (>= 0.4.0)
     haml (3.0.22)
+    highline (1.6.1)
     hpricot (0.8.2)
     i18n (0.4.1)
     mysql (2.8.1)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-sftp (2.0.5)
+      net-ssh (>= 2.0.9)
+    net-ssh (2.0.23)
+    net-ssh-gateway (1.0.1)
+      net-ssh (>= 1.99.1)
     nifty-generators (0.4.2)
     populator (0.2.5)
     rack (1.1.0)
@@ -47,6 +61,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  capistrano
   factory_girl (= 1.2.4)
   faker
   formtastic
