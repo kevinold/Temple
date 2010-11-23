@@ -1,6 +1,5 @@
 source :gemcutter
 gem "rails", "~> 2.3.10"
-gem "sqlite3-ruby", :require => "sqlite3"
 gem "mysql"
 
 # bundler requires these gems in all environments
@@ -19,6 +18,7 @@ gem 'faker'
 
 group :development do
   # bundler requires these gems in development
+  gem "sqlite3-ruby", :require => "sqlite3"
   gem 'capistrano'
   gem "rspec", "1.3.0"
   gem "rspec-rails", "1.3.2"
