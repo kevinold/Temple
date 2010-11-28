@@ -11,7 +11,7 @@ gem 'searchlogic'
 gem 'will_paginate'
 gem 'vestal_versions'
 gem 'hpricot'
-gem 'formtastic'
+gem 'formtastic', "~> 1.2.1"
 gem 'nifty-generators'
 gem 'populator'
 gem 'faker'

@@ -140,7 +140,8 @@
     <h3>Announcements</h3>
     <ul>
     <% @announcements.each do |a| %>
-      <li><b><%=h a.display_annoucement_date %></b> - <%= link_to a.what, a %></li>
+      <!--<li><b><%=h a.display_date_and_time %></b> - <%= link_to a.what, a %></li>-->
+      <li><b><%=h a.display_date_and_time %></b> - <%= a.what %></li>
     <% end %>
     </ul>
     <!--<%= link_to 'View All Announcements', announcements_path %>-->

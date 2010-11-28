@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101119015214) do
+ActiveRecord::Schema.define(:version => 20101124221241) do
 
   create_table "announcements", :force => true do |t|
     t.string   "what"
@@ -17,8 +17,9 @@ ActiveRecord::Schema.define(:version => 20101119015214) do
     t.boolean  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.datetime "announcement_date"
     t.string   "location"
+    t.date     "ann_date"
+    t.time     "ann_time"
   end
 
   create_table "assets", :force => true do |t|
