@@ -8,7 +8,8 @@ namespace :db do
 
     Announcement.populate 50 do |a|
       a.what = Populator.words(1..5).titleize
-      a.announcement_date = Time.now..6.months.from_now
+      a.ann_date = Time.now..6.months.from_now
+      a.ann_time = Time.now..6.months.from_now
       a.location = Populator.words(1..5)
       a.details = Populator.sentences(1..4)
       a.published = true

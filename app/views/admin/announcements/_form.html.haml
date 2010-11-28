@@ -1,3 +1,11 @@
 - semantic_form_for ([:admin, @announcement]) do |f|
-    = f.inputs
-    = f.buttons
+  %fieldset.inputs
+    %ol
+      %li
+        = f.input :what, :as => :string, :label => "Title"
+        = f.input :location, :as => :string, :label => "Location"
+        = f.input :ann_date, :label => "Date"
+        = f.input :ann_time, :label => "Time", :simple_time_select => true, :minute_interval => 15, :time_separator => ""
+        = f.input :details, :as => :text, :label => "Details/Additional Info"
+        = f.input :published, :as => :boolean, :label => "Published"
+        = f.buttons

@@ -12,7 +12,7 @@ class Admin::AnnouncementsController < ApplicationController
   end
   
   def new
-    @announcement = Announcement.new
+    @announcement = Announcement.new(:ann_date => Time.now, :ann_time => Time.now)
   end
   
   def create
