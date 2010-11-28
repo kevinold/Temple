@@ -1,5 +1,6 @@
 class Announcement < ActiveRecord::Base
   attr_accessible :what, :ann_date, :ann_time, :location, :details, :published
+  validates_presence_of :what, :ann_date, :ann_time, :location, :details
 
   def display_ann_date
     ann_date.strftime('%m-%d-%y')
