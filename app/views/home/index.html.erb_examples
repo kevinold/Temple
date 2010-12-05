@@ -1,0 +1,180 @@
+
+
+<!-- "previous slide" button 
+<a class="backward">prev</a> -->
+
+<!-- container for the slides -->
+<div class="images">
+
+  <!-- first slide -->
+	<div style="display:hide;width: 90%;">
+
+    <!--<img src="/images/promos/SRR_logo_4color_sm.png" alt="Saddle Ridge Ranch" style="float:left;margin-right: 50px;" />-->
+    <h2>Jackson Friends & Family Acoustic Christmas</h2>
+    <h3>December 17th - 7PM</h3>
+    <h5>A free acoustic music concert hosted by Mike Jackson & HoneyRun featuring bluegrass and acoustic music in a warm inviting family atmosphere.  Caroling, horse & carraige rides and Christmas piano favorites beginning at 6:15.  Old fashion brown bag treats for everyone after the show.<h5>
+    <br clear="all"/>
+    <br clear="all"/>
+    <!--<h5><a class="red_button" style="width:200px;float:left;" href="/vbs-2010">Photos &amp; Video from VBS 2010</a></h5>-->
+  </div>
+	<div style="width: 90%;">
+
+    <img src="/images/promos/TempleBaptist_MDO_rev_small.gif" alt="Mother's Day Out" style="float:left;margin-right: 50px;" />
+    <h2>Mother's Day Out</h2>
+    <h5>Tuesday &amp; Thursdays 9:00am - 2:00pm</h5>
+    <h5>$30 Registration fee.  $15 per day.</h5>
+    <h6>Contact Becky Jenkins at 330-3707 or <a href="mailto:becky@templetoday.com?subject=MDO%20at%20Temple">becky@templetoday.com</a> for more info.</h6>
+    <br clear="all"/>
+  </div>
+
+
+	<!--<div style="width: 100%">
+
+    <h3>Mother's Day Out at Temple</h3>
+    <img src="/images/promos/mdo_learning_garden.png" alt="Mother's Day Out - Learning Garden" style="float:right;" />
+    <h4>"The Learning Garden"</h4>
+    <h5>Tuesday &amp; Thursdays 9:00am - 2:00pm</h5>
+    <h5>$30 Registration fee.  $15 per day.</h5>
+    <h6>Contact Becky Jenkins at 330-3707 or <a href="mailto:becky@templetoday.com?subject=MDO%20at%20Temple">becky@templetoday.com</a> for more info.</h6>
+
+  </div> -->
+
+  <!--
+	<div style="width: 100%">
+
+    <h3>Kid's Quest 2010</h3>
+    <h4>Summer Care Program</h4>
+    <h5>June 7th - July 30th, 7AM-5PM, Kindergarten - 5th Grade</h5>
+    <h5><a class="red_button" style="width:200px" href="/children/kids-quest-2010">More Information</a></h5>
+
+  </div>
+  -->
+
+</div>
+
+<!-- "next slide" button 
+<a class="forward">next</a><p> -->
+
+<!-- the tabs -->
+<div class="tabs">
+	<a href="#"></a>
+	<a href="#"></a>
+</div>
+
+<!--
+<div style="clear:both;margin:30px 0;text-align:center;padding-right:40px">
+
+<button onClick='$("div.tabs").tabs().play();'>Play</button>
+<button onClick='$("div.tabs").tabs().stop();'>Stop</button>
+</div>-->
+
+    <script type='text/javascript'>
+      $(function() {
+        //hide all divs first
+        $(".images > div").hide();
+        $("div.tabs").tabs(".images > div", {
+            effect: 'fade',
+            fadeOutSpeed: "slow",
+            rotate: true
+        }).slideshow({autoplay: true, interval: 15000});
+    });
+    </script>
+
+    <div class="clear"></div>
+    <div class="clear"></div>
+<!--
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+
+    <div class="grid_4 alpha content_box" id="col-1">
+    <h3>Last Week's Sermon</h3>
+    <h4>The Lord's Supper</h4>
+-->
+    <!-- http://media.templetoday.com/onlinesermons/09-13-09_sermon.flv -->
+
+<!--
+		<a  
+			 href="http://media.templetoday.com/onlinesermons/09-13-09_sermon.flv",
+			 style="display:block;width:100%;height:300px;"  
+			 id="player"> 
+		</a> 
+        <script type='text/javascript'>
+			flowplayer("player", "/flowplayer-3.1.3.swf", { 
+                        clip: { 
+                            autoPlay: false,  
+                            autoBuffering: false
+                        } 
+                    });
+        </script>
+    <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
+    </div>
+
+    <div class="grid_4 omega content_box" id="col-2">
+    <h3>Recent Activities</h3>
+    <h4>Donec non enim in turpis pulvinar facilisis.</h4>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+    </div>
+
+
+    <div class="grid_4 alpha content_box" id="col-1">
+    <h3>Kid's Quest 2010</h3>
+    <h4>Summer Care Program</h4>
+    <h5>June 7th - July 30th, 7AM-5PM<br>Kindergarten - 5th Grade</h5>
+    <h5><a class="red_button" style="width:200px" href="/children/kids-quest-2010">More Information</a></h5>
+  </div>
+  -->
+
+    <div class="grid_4 alpha content_box" id="col-1">
+    <h3>Sermons</h3>
+    <ul>
+    <% @sermons.each do |sermon| %>
+    <li><b><%=h sermon.date %></b> - <%= link_to sermon.title, sermon %></li>
+    <% end %>
+    </ul>
+    <%= link_to 'View All Sermons', sermons_path %>
+    </div>
+
+    <% if @announcements %>
+    <div class="grid_4 omega content_box" id="col-2">
+    <h3>Announcements</h3>
+    <ul>
+    <% @announcements.each do |a| %>
+      <% if a.ann_date >= Date.today %>
+      <!--<li><b><%=h a.display_date_and_time %></b> - <%= link_to a.what, a %></li>-->
+      <li><b><%=h a.display_date_and_time %></b> - <%= a.what %></li>
+      <% end %>
+    <% end %>
+    </ul>
+    <!--<%= link_to 'View All Announcements', announcements_path %>-->
+    </div>
+  <% end %>
+
+    <div class="grid_8 alpha content_box" id="col-3">
+    <h3>About Us</h3>
+    <h6>Temple Baptist Church is a fellowship of caring believers who have joined together
+under the Lordship of Jesus Christ and the Leadership of the Holy Spirit to... <a href="/about">Read more</a></h6>
+    </div>
+
+    <br clear="all" />
+<!--
+    <div class="grid_4 omega content_box" id="col-4">
+    <h3>Discipleship Classes</h3>
+    <h4>Join us Sunday evenings as we look more closely at God's word.</h4>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </div>
+-->
+<!--
+    <div class="grid_4 alpha content_box" id="col-3">
+    <h3>Calendar</h3>
+    <h4></h4>
+    <ul>
+        <li>Pellentesque habitant</li>
+        <li>Pellentesque habitant</li>
+        <li>Pellentesque habitant</li>
+        <li>Pellentesque habitant</li>
+        <li>Pellentesque habitant</li>
+    </ul>
+    </div>
+-->
