@@ -136,20 +136,13 @@
     <%= link_to 'View All Sermons', sermons_path %>
     </div>
 
-    <% if @announcements %>
     <div class="grid_4 omega content_box" id="col-2">
-    <h3>Announcements</h3>
-    <ul>
-    <% @announcements.each do |a| %>
-      <% if a.ann_date >= Date.today %>
-      <!--<li><b><%=h a.display_date_and_time %></b> - <%= link_to a.what, a %></li>-->
-      <li><b><%=h a.display_date_and_time %></b> - <%= a.what %></li>
-      <% end %>
-    <% end %>
-    </ul>
-    <!--<%= link_to 'View All Announcements', announcements_path %>-->
+    <h3>Children's Ministries</h3>
+    <h4>Mother's Day Out</h4>
+    <h5>Tuesday &amp; Thursdays 9:00am - 2:00pm</h5>
+    <h5>$30 Registration fee.  $15 per day.</h5>
+    <h6>Contact Becky Jenkins at 330-3707 or <a href="mailto:becky@templetoday.com?subject=MDO%20at%20Temple">becky@templetoday.com</a> for more info.</h6>
     </div>
-  <% end %>
 
     <div class="grid_8 alpha content_box" id="col-3">
     <h3>About Us</h3>
