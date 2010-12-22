@@ -9,6 +9,27 @@
             </ul>
         </div>
 
+
+    <% if @announcements %>
+    <div class="grid_4 omega content_box" id="col-2">
+    <h3>Announcements</h3>
+    <ul>
+    <% @announcements.each do |a| %>
+      <% if a.ann_date >= Date.today %>
+      <!--<li><b><%=h a.display_date_and_time %></b> - <%= link_to a.what, a %></li>-->
+      <li>
+        <h6><%= a.what %></h6>
+        <b><%=h a.display_date_and_time %></b>
+      </li>
+      <% end %>
+    <% end %>
+    </ul>
+    <!--<%= link_to 'View All Announcements', announcements_path %>-->
+    </div>
+  <% end %>
+
+
+
     <% if false %>
     <!--
     <% upcoming_events.each do |event| %>

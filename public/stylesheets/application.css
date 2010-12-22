@@ -1,6 +1,6 @@
 body {
   background: url(/images/slices/bodybg.jpg) repeat 0 190px;
-  font-family: "Trebuchet MS","Helvetica Neue",Arial,sans-serif; }
+  font-family: "Trebuchet MS", "Helvetica Neue", Arial, sans-serif; }
 
 .temple_red {
   color: #8c0d0d; }
@@ -8,12 +8,12 @@ body {
 .red_button {
   width: auto;
   padding: 9px 15px;
-  background: #51100C;
+  background: #51100c;
   border: 0;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  color: #FFFFFF;
+  color: white;
   display: block; }
 
 a {
@@ -29,7 +29,7 @@ a {
   background: url(/images/slices/headerbg.jpg) repeat-x 0 0;
   padding-top: 20px;
   border-width: 0 2px 2px 2px;
-  border-color: #BF9F56;
+  border-color: #bf9f56;
   border-style: solid;
   top: -175px; }
   #services-overlay #services-tab span {
@@ -64,8 +64,8 @@ a {
   display: block; }
 
 .sidebox {
-  background: #F4E7E7 none repeat scroll 0 0;
-  border: 1px solid #C68787;
+  background: #f4e7e7 none repeat scroll 0 0;
+  border: 1px solid #c68787;
   margin-bottom: 10px;
   padding: 10px 20px 0 20px;
   font-size: 14px; }
@@ -95,7 +95,7 @@ a {
 
 #footer {
   background: url(/images/slices/footerbg.jpg) repeat 0 0;
-  color: #CDC7C2;
+  color: #cdc7c2;
   padding-top: 20px;
   height: 125px; }
 
@@ -106,7 +106,7 @@ a {
     line-height: 1.7em;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-size: 15px;
     font-weight: bold; }
 
@@ -121,7 +121,7 @@ a {
 
 .full-calendar-month .event td {
   background-color: #8c0d0d;
-  color: #ffffff;
+  color: white;
   font-weight: bold;
   padding: 0; }
 
@@ -130,8 +130,8 @@ a {
   text-align: left; }
 
 .full-calendar-month td.today {
-  background: #C68787;
-  color: #ffffff; }
+  background: #c68787;
+  color: white; }
 
 #navbar {
   float: right;
@@ -144,7 +144,7 @@ a {
       letter-spacing: 2px;
       text-transform: uppercase;
       text-decoration: none;
-      color: #fff;
+      color: white;
       font-size: 16px;
       font-weight: bold; }
 
@@ -152,13 +152,13 @@ a {
   width: 100%; }
 
 #nav_main_wrap {
-  background: #51100C;
+  background: #51100c;
   border-top: 5px solid #8c0d0d;
   border-bottom: 5px solid #8c0d0d;
   width: 100%; }
 
 #nav_main {
-  background: #51100C;
+  background: #51100c;
   border-top: 5px solid #8c0d0d;
   border-bottom: 5px solid #8c0d0d;
   font-size: 14px;
@@ -171,15 +171,15 @@ a {
     #nav_main li.current {
       background: #8c0d0d; }
   #nav_main a {
-    color: #BF9F56;
+    color: #bf9f56;
     display: block;
     padding: 8px 20px;
     white-space: nowrap; }
     #nav_main a:hover {
-      color: #fff;
+      color: white;
       text-decoration: underline; }
   #nav_main li.current a {
-    color: #fff; }
+    color: white; }
 
 #nav_sub_wrap {
   background-color: #8c0d0d;
@@ -199,36 +199,36 @@ a {
     list-style: none;
     padding: 6px 0 8px; }
   #nav_sub a {
-    border-left: 1px solid #876;
-    color: #fff;
+    border-left: 1px solid #887766;
+    color: white;
     display: block;
     padding: 0 10px;
     white-space: nowrap; }
     #nav_sub a:hover {
-      color: #fff;
+      color: white;
       text-decoration: underline; }
     #nav_sub a.first {
       border: 0; }
   #nav_sub li.current {
-    color: #fff;
+    color: white;
     font-size: 100%;
     position: relative;
     z-index: 10; }
     #nav_sub li.current a {
-      color: #fff; }
+      color: white; }
 
-#sermon_index {
+#sermon_index, #ann_index {
   list-style: none; }
-  #sermon_index h2 {
+  #sermon_index h2, #ann_index h2 {
     margin-bottom: 5px; }
-  #sermon_index li {
+  #sermon_index li, #ann_index li {
     padding-bottom: 20px;
     margin: 20px 0 0 0;
-    border-bottom: 1px solid #BF9F56; }
-    #sermon_index li:last-child {
+    border-bottom: 1px solid #bf9f56; }
+    #sermon_index li:last-child, #ann_index li:last-child {
       border-bottom: none; }
 
-.sermon_date {
+.sermon_date, .ann_date {
   float: right;
   font-size: 20px; }
 
@@ -239,7 +239,7 @@ a {
   #staff_index li {
     padding-bottom: 20px;
     margin: 20px 20px 20px 0;
-    border-bottom: 1px solid #BF9F56;
+    border-bottom: 1px solid #bf9f56;
     clear: both;
     min-height: 250px; }
     #staff_index li:last-child {
@@ -257,18 +257,18 @@ a {
 
 .form input[type="text"] {
   padding: 9px;
-  border: solid 1px #E5E5E5;
+  border: solid 1px #e5e5e5;
   outline: 0;
   font: normal 13px/100% Verdana, Tahoma, sans-serif;
   width: 200px;
-  background: #FFFFFF; }
+  background: white; }
 .form textarea {
   padding: 9px;
-  border: solid 1px #E5E5E5;
+  border: solid 1px #e5e5e5;
   outline: 0;
   font: normal 13px/100% Verdana, Tahoma, sans-serif;
   width: 200px;
-  background: #FFFFFF;
+  background: white;
   width: 400px;
   max-width: 400px;
   height: 150px;
@@ -284,14 +284,14 @@ a {
 .submit input {
   width: auto;
   padding: 9px 15px;
-  background: #51100C;
+  background: #51100c;
   border: 0;
   font-size: 14px;
-  color: #FFFFFF; }
+  color: white; }
 
 .event-item {
-  border-bottom: 1px solid #EAEAE8;
-  color: !temple_dark_red;
+  border-bottom: 1px solid #eaeae8;
+  color: #51100c;
   margin-left: 5px;
   margin-top: 12px;
   padding: 0 2px 11px; }

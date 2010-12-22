@@ -10,9 +10,9 @@
 	<div style="display:hide;width: 90%;">
 
     <!--<img src="/images/promos/SRR_logo_4color_sm.png" alt="Saddle Ridge Ranch" style="float:left;margin-right: 50px;" />-->
-    <h2>Christmas & New Years Services</h2>
-    <h4>Christmas Eve Candelight Service - December 24th - 5PM</h4>
-    <h4>New Years Eve Lord's Supper - December 31st - 6PM</h4>
+    <h2>Jackson Friends & Family Acoustic Christmas</h2>
+    <h3>December 17th - 7PM</h3>
+    <h5>A free acoustic music concert hosted by Mike Jackson & HoneyRun featuring bluegrass and acoustic music in a warm inviting family atmosphere.  Caroling, horse & carraige rides and Christmas piano favorites beginning at 6:15.  Old fashion brown bag treats for everyone after the show.<h5>
     <br clear="all"/>
     <br clear="all"/>
     <!--<h5><a class="red_button" style="width:200px;float:left;" href="/vbs-2010">Photos &amp; Video from VBS 2010</a></h5>-->
@@ -136,13 +136,20 @@
     <%= link_to 'View All Sermons', sermons_path %>
     </div>
 
+    <% if @announcements %>
     <div class="grid_4 omega content_box" id="col-2">
-    <h3>Children's Ministries</h3>
-    <h4>Mother's Day Out</h4>
-    <h5>Tuesday &amp; Thursdays 9:00am - 2:00pm</h5>
-    <h5>$30 Registration fee.  $15 per day.</h5>
-    <h6>Contact Becky Jenkins at 330-3707 or <a href="mailto:becky@templetoday.com?subject=MDO%20at%20Temple">becky@templetoday.com</a> for more info.</h6>
+    <h3>Announcements</h3>
+    <ul>
+    <% @announcements.each do |a| %>
+      <% if a.ann_date >= Date.today %>
+      <!--<li><b><%=h a.display_date_and_time %></b> - <%= link_to a.what, a %></li>-->
+      <li><b><%=h a.display_date_and_time %></b> - <%= a.what %></li>
+      <% end %>
+    <% end %>
+    </ul>
+    <!--<%= link_to 'View All Announcements', announcements_path %>-->
     </div>
+  <% end %>
 
     <div class="grid_8 alpha content_box" id="col-3">
     <h3>About Us</h3>
