@@ -1,21 +1,33 @@
 - title "Announcements"
 
-%table
-  %tr
-    %th What
-    %th Date/Time
-    %th Location
-    %th Details
-    %th Published
-  - for announcement in @announcements
+%p= link_to "New Announcement", new_admin_announcement_path
+
+- unless @active.empty?
+  %h2 Active Announcements
+  %table
     %tr
-      %td= h announcement.what
-      %td= h announcement.display_date_and_time
-      %td= h announcement.location
-      %td= h announcement.details
-      %td= h announcement.published
-      %td= link_to 'Show', [:admin, announcement]
-      %td= link_to 'Edit', edit_admin_announcement_path(announcement)
-      %td= link_to 'Destroy', [:admin, announcement], :confirm => 'Are you sure?', :method => :delete
+      %th Announcement/Event
+      %th Date/Time
+      %th Published
+    - for announcement in @active
+      %tr
+        %td= link_to announcement.what, edit_admin_announcement_path(announcement)
+        %td= h announcement.display_date_and_time
+        %td= h announcement.published ? 'Yes' : 'No'
+        %td= link_to 'View', [:admin, announcement]
+
+- unless @inactive.empty?
+  %h2 InActive Announcements
+  %table
+    %tr
+      %th Announcement/Event
+      %th Date/Time
+      %th Published
+    - for announcement in @inactive
+      %tr
+        %td= link_to announcement.what, edit_admin_announcement_path(announcement)
+        %td= h announcement.display_date_and_time
+        %td= h announcement.published ? 'Yes' : 'No'
+        %td= link_to 'View', [:admin, announcement]
 
 %p= link_to "New Announcement", new_admin_announcement_path
