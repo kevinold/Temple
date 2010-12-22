@@ -1,16 +1,12 @@
 - title "Announcements"
 
-%table
-  %tr
-    %th What
-    %th Date/Time
-    %th Location
-    %th Details
-    %th Published
-  - for announcement in @announcements
-    %tr
-      %td= h announcement.what
-      %td= h announcement.display_date_and_time
-      %td= h announcement.location
-      %td= h announcement.details
-      %td= h announcement.published
+%h1 Announcements
+%ul#ann_index
+  - @announcements.each do |a|
+    %li
+      %span.ann_date= h a.display_date_and_time
+      %h2= h a.what
+      %h5= h a.location
+      %p= h a.details
+      /%b= link_to 'View Sermon', sermon
+
