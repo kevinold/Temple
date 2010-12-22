@@ -4,7 +4,9 @@ class Admin::AnnouncementsController < ApplicationController
   layout 'admin'
 
   def index
-    @announcements = Announcement.all
+    @active = Announcement.all :conditions => { :published => 1 }, :order => "ann_date DESC"
+    @inactive = Announcement.all :conditions => { :published => 0 }, :order => "ann_date DESC"
+    p @inactive
   end
   
   def show
