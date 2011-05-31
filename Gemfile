@@ -38,6 +38,7 @@ gem 'populator'
 gem 'faker'
 gem 'ckeditor', '3.4.2.pre'
 gem 'paperclip'
+gem 'permalink_fu'
 gem 'test-unit', "1.2.3"
 
 # Bundle gems for the local environment. Make sure to

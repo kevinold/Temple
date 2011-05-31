@@ -79,6 +79,7 @@ GEM
     paperclip (2.3.11)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
+    permalink_fu (1.0.0)
     polyglot (0.3.1)
     populator (1.0.0)
     rack (1.2.3)
@@ -145,6 +146,7 @@ DEPENDENCIES
   mysql
   nifty-generators
   paperclip
+  permalink_fu
   populator
   rails (= 3.0.7)
   rake (~> 0.8.7)
