@@ -52,8 +52,3 @@ module TempleRails
 
   end
 end
-
-
-
-
-    

@@ -22,6 +22,9 @@ gem 'ruby-debug19', :require => 'ruby-debug'
 # gem 'bj'
 # gem 'nokogiri'
 # gem 'aws-s3', :require => 'aws/s3'
+#
+gem 'rake', '~> 0.8.7' # Leave in until fix is in starting in Rails 3.0.8
+                 # See: http://stackoverflow.com/questions/5287121/undefined-method-task-using-rake-0-9-0
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'haml'
 gem 'sass'
@@ -33,6 +36,7 @@ gem 'formtastic', "~> 1.2.1"
 gem 'nifty-generators'
 gem 'populator'
 gem 'faker'
+gem 'ckeditor', '3.4.2.pre'
 gem 'paperclip'
 gem 'test-unit', "1.2.3"
 
