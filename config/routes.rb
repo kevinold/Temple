@@ -1,10 +1,10 @@
-TempleRail::Application.routes.draw do
-  match '/contact/new' => 'contact#new', :as => :new_contact, :via => get
-  match '/contact' => 'contact#new', :as => :contact, :via => get
-  match '/contact' => 'contact#create', :as => :contact, :via => post
-  match '/prayer/new' => 'prayer#new', :as => :new_prayer, :via => get
-  match '/prayer' => 'prayer#new', :as => :prayer, :via => get
-  match '/prayer' => 'prayer#create', :as => :prayer, :via => post
+TempleRails::Application.routes.draw do
+  #match '/contact/new' => 'contact#new', :as => :new_contact, :via => get
+  #match '/contact' => 'contact#new', :as => :contact, :via => get
+  #match '/contact' => 'contact#create', :as => :contact, :via => post
+  #match '/prayer/new' => 'prayer#new', :as => :new_prayer, :via => get
+  #match '/prayer' => 'prayer#new', :as => :prayer, :via => get
+  #match '/prayer' => 'prayer#create', :as => :prayer, :via => post
   match '/about' => 'about#index', :as => :about
   match '/calendar' => 'calendar#index', :as => :calendar
   match '/' => 'home#index', :as => :home
@@ -12,19 +12,19 @@ TempleRail::Application.routes.draw do
   resources :pages
   resources :announcements
   match 'events/:id' => 'pages#show', :as => :events
-    match '/' => 'home#index'
+  match '/' => 'home#index'
   namespace :admin do
       resources :pages
       resources :sermons
       resources :announcements
   end
 
-  match '/signup' => 'users#create', :as => :signup, :via => post
-  match '/signup' => 'users#new', :as => :signup, :via => get
-  resource :account
-  match '/login' => 'user_sessions#create', :as => :login, :via => post
-  match '/login' => 'user_sessions#new', :as => :login, :via => get
-  match '/logout' => 'user_sessions#destroy', :as => :logout
+  #match '/signup' => 'users#create', :as => :signup, :via => post
+  #match '/signup' => 'users#new', :as => :signup, :via => get
+  resource :account, :controller => "users"
+  #match '/login' => 'user_sessions#create', :as => :login, :via => post
+  #match '/login' => 'user_sessions#new', :as => :login, :via => get
+  #match '/logout' => 'user_sessions#destroy', :as => :logout
   match '/' => 'home#index'
   match '/:id' => 'pages#show', :as => :page
   match '/:section/:id' => 'pages#show', :as => :page
