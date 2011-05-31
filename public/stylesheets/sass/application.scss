@@ -1,9 +1,11 @@
+@import "colors.scss";
+
 body {
   background: url(/images/slices/bodybg.jpg) repeat 0 190px;
   font-family: "Trebuchet MS", "Helvetica Neue", Arial, sans-serif; }
 
 .temple_red {
-  color: #8c0d0d; }
+  color: $temple_red }
 
 .red_button {
   width: auto;
@@ -17,10 +19,10 @@ body {
   display: block; }
 
 a {
-  color: #8c0d0d;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+  color: $temple_red;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline; } }
 
 #services-overlay {
   z-index: 1000;
@@ -31,8 +33,8 @@ a {
   border-width: 0 2px 2px 2px;
   border-color: #bf9f56;
   border-style: solid;
-  top: -175px; }
-  #services-overlay #services-tab span {
+  top: -175px;
+  #services-tab span {
     bottom: -40px;
     display: block;
     height: 42px;
@@ -41,7 +43,7 @@ a {
     text-indent: -9999px;
     width: 248px;
     cursor: pointer;
-    background: url(/images/slices/servicestab.png); }
+    background: url(/images/slices/servicestab.png); } }
 
 #headerwrap {
   background: url(/images/slices/headerbg.jpg) repeat-x 0 0; }
@@ -68,27 +70,27 @@ a {
   border: 1px solid #c68787;
   margin-bottom: 10px;
   padding: 10px 20px 0 20px;
-  font-size: 14px; }
-  .sidebox ul li {
+  font-size: 14px;
+  ul li {
     list-style: none;
-    margin: 0; }
+    margin: 0; } }
 
 #content {
   margin-top: 10px;
-  margin-left: 15px; }
-  #content p {
-    margin-right: 15px; }
+  margin-left: 15px;
+  p {
+    margin-right: 15px; } }
 
 .content_box {
-  margin-top: 20px; }
-  .content_box h3 {
-    color: #8c0d0d; }
-  .content_box h3, .content_box h4, .content_box h5, .content_box h6 {
+  margin-top: 20px;
+  h3 {
+    color: $temple_red }
+  h3,h4,h5,h6 {
     margin-bottom: 10px; }
-  .content_box ul {
+  ul {
     list-style: none; }
-  .content_box li {
-    margin-left: 0; }
+  li {
+    margin-left: 0; } }
 
 #sidebar {
   margin-top: 10px; }
@@ -100,15 +102,17 @@ a {
   height: 125px; }
 
 .footer_section {
-  list-style-type: none; }
-  .footer_section li a {
+  list-style-type: none;
+  li a {
     letter-spacing: 2px;
     line-height: 1.7em;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
     font-size: 15px;
-    font-weight: bold; }
+    font-weight: bold; } }
+
+// Calendar
 
 #loading {
   position: absolute;
@@ -119,167 +123,187 @@ a {
   width: 100%;
   margin: 0 auto; }
 
+// fullcalendar.css overrides
+
 .full-calendar-month .event td {
-  background-color: #8c0d0d;
+  background-color: $temple_red;
   color: white;
   font-weight: bold;
   padding: 0; }
 
 .full-calendar-title {
-  color: #8c0d0d;
+  color: $temple_red;
   text-align: left; }
 
 .full-calendar-month td.today {
   background: #c68787;
   color: white; }
 
+// admin navbar
+
 #navbar {
   float: right;
   font-size: 18px;
-  margin: 30px 0 0 0; }
-  #navbar li {
+  margin: 30px 0 0 0;
+  li {
     display: inline;
-    margin: 0 20px 0 0; }
-    #navbar li a {
+    margin: 0 20px 0 0;
+    a {
       letter-spacing: 2px;
       text-transform: uppercase;
       text-decoration: none;
       color: white;
       font-size: 16px;
-      font-weight: bold; }
+      font-weight: bold; } } }
 
 .sf-menu {
   width: 100%; }
 
+// Navigation - Main --- from stonebriar.org
+
 #nav_main_wrap {
   background: #51100c;
-  border-top: "5px" "solid" #8c0d0d;
-  border-bottom: "5px" "solid" #8c0d0d;
+  border-top: "5px" "solid" $temple_red;
+  border-bottom: "5px" "solid" $temple_red;
   width: 100%; }
 
 #nav_main {
   background: #51100c;
-  border-top: "5px" "solid" #8c0d0d;
-  border-bottom: "5px" "solid" #8c0d0d;
+  border-top: "5px" "solid" $temple_red;
+  border-bottom: "5px" "solid" $temple_red;
   font-size: 14px;
   margin: -5px auto;
-  width: 960px; }
-  #nav_main li {
+  width: 960px;
+  li {
     float: left;
     list-style: none;
-    margin-left: 0px; }
-    #nav_main li.current {
-      background: #8c0d0d; }
-  #nav_main a {
+    margin-left: 0px;
+    // override margin-left 30px set in text.css
+    &.current {
+      background: $temple_red } }
+  a {
     color: #bf9f56;
     display: block;
     padding: 8px 20px;
-    white-space: nowrap; }
-    #nav_main a:hover {
+    white-space: nowrap;
+    &:hover {
       color: white;
-      text-decoration: underline; }
-  #nav_main li.current a {
-    color: white; }
+      text-decoration: underline; } }
+  li.current a {
+    color: white; } }
+
+// Navigation - Sub
 
 #nav_sub_wrap {
-  background-color: #8c0d0d;
+  background-color: $temple_red;
   margin: 0 0 -2px;
   width: 100%; }
 
 #nav_sub {
-  background-color: #8c0d0d;
+  background-color: $temple_red;
   font-size: 11px;
   margin: -5px auto 0;
-  width: 960px; }
-  #nav_sub ul {
+  width: 960px;
+  ul {
     padding: 0 0 0 10px;
-    margin-bottom: 0; }
-  #nav_sub li {
+    margin-bottom: 0;
+    // clear margin-bottom set in text.css
+  }
+  li {
     float: left;
     list-style: none;
     padding: 6px 0 8px; }
-  #nav_sub a {
+  a {
     border-left: 1px solid #887766;
     color: white;
     display: block;
     padding: 0 10px;
-    white-space: nowrap; }
-    #nav_sub a:hover {
+    white-space: nowrap;
+    &:hover {
       color: white;
       text-decoration: underline; }
-    #nav_sub a.first {
-      border: 0; }
-  #nav_sub li.current {
+    &.first {
+      border: 0; } }
+  li.current {
     color: white;
     font-size: 100%;
     position: relative;
-    z-index: 10; }
-    #nav_sub li.current a {
-      color: white; }
+    z-index: 10;
+    a {
+      color: white; } } }
+
+// Sermons & Announcements
 
 #sermon_index, #ann_index {
-  list-style: none; }
-  #sermon_index h2, #ann_index h2 {
+  list-style: none;
+  h2 {
     margin-bottom: 5px; }
-  #sermon_index li, #ann_index li {
+  li {
     padding-bottom: 20px;
     margin: 20px 0 0 0;
-    border-bottom: 1px solid #bf9f56; }
-    #sermon_index li:last-child, #ann_index li:last-child {
-      border-bottom: none; }
+    border-bottom: 1px solid #bf9f56;
+    &:last-child {
+      border-bottom: none; } } }
 
 .sermon_date, .ann_date {
   float: right;
   font-size: 20px; }
 
+// #sermon_index li:nth-child(even) {background: #BF9F56}
+// #sermon_index li:nth-child(odd) {background: #FFF}
+
+// Staff
+
 #staff_index {
-  list-style: none; }
-  #staff_index h2 {
+  list-style: none;
+  h2 {
     margin-bottom: 5px; }
-  #staff_index li {
+  li {
     padding-bottom: 20px;
     margin: 20px 20px 20px 0;
     border-bottom: 1px solid #bf9f56;
     clear: both;
-    min-height: 250px; }
-    #staff_index li:last-child {
-      border-bottom: none; }
-  #staff_index img {
+    min-height: 250px;
+    &:last-child {
+      border-bottom: none; } }
+  img {
     float: left;
     margin-right: 20px;
-    padding: 2px; }
+    padding: 2px; } }
 
 #homepage_list {
-  list-style: none; }
-  #homepage_list li {
+  list-style: none;
+  li {
     font-size: 16px;
-    margin-left: 5px; }
+    margin-left: 5px; } }
 
-.form input[type="text"] {
-  padding: 9px;
-  border: solid 1px #e5e5e5;
-  outline: 0;
-  font: normal 13px/100% Verdana, Tahoma, sans-serif;
-  width: 200px;
-  background: white; }
-.form textarea {
-  padding: 9px;
-  border: solid 1px #e5e5e5;
-  outline: 0;
-  font: normal 13px/100% Verdana, Tahoma, sans-serif;
-  width: 200px;
-  background: white;
-  width: 400px;
-  max-width: 400px;
-  height: 150px;
-  line-height: 150%; }
-.form input:hover, .form textarea:hover, .form input:focus, .form textarea:focus {
-  border-color: #8c0d0d; }
-.form label {
-  float: left;
-  width: 200px;
-  font-size: 16px;
-  font-weight: bold; }
+// Front facing forms (Prayer, Contact)
+.form {
+  input[type="text"] {
+    padding: 9px;
+    border: solid 1px #e5e5e5;
+    outline: 0;
+    font: normal 13px / 100% Verdana, Tahoma, sans-serif;
+    width: 200px;
+    background: white; }
+  textarea {
+    padding: 9px;
+    border: solid 1px #e5e5e5;
+    outline: 0;
+    font: normal 13px / 100% Verdana, Tahoma, sans-serif;
+    width: 200px;
+    background: white;
+    width: 400px;
+    max-width: 400px;
+    height: 150px;
+    line-height: 150%; }
+  input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: $temple_red; }
+  label {
+    float: left;
+    width: 200px;
+    font-size: 16px;
+    font-weight: bold; } }
 
 .submit input {
   width: auto;
@@ -289,13 +313,14 @@ a {
   font-size: 14px;
   color: white; }
 
+// upcoming events in sidebar
 .event-item {
   border-bottom: 1px solid #eaeae8;
-  color: #51100c;
+  color: $dark_temple_red;
   margin-left: 5px;
   margin-top: 12px;
-  padding: 0 2px 11px; }
-  .event-item a {
+  padding: 0 2px 11px;
+  a {
     color: #444443;
     display: block;
     font-size: 13px;
@@ -303,7 +328,7 @@ a {
     line-height: 14pt;
     padding-bottom: 2px;
     text-decoration: none; }
-  .event-item strong {
+  strong {
     font-size: 10px;
     font-weight: bold;
-    text-transform: uppercase; }
+    text-transform: uppercase; } }
