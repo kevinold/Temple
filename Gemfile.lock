@@ -112,6 +112,8 @@ GEM
     ruby_core_source (0.1.5)
       archive-tar-minitar (>= 0.5.2)
     sass (3.1.1)
+    simple-navigation (3.3.3)
+      activesupport (>= 2.3.2)
     sqlite3 (1.3.3)
     sqlite3-ruby (1.3.3)
       sqlite3 (>= 1.3.3)
@@ -152,6 +154,7 @@ DEPENDENCIES
   rake (~> 0.8.7)
   ruby-debug19
   sass
+  simple-navigation (= 3.3.3)
   sqlite3
   sqlite3-ruby
   test-unit (= 1.2.3)
