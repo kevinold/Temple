@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.7'
+gem 'rails', '3.0.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -23,7 +23,7 @@ gem 'ruby-debug19', :require => 'ruby-debug'
 # gem 'nokogiri'
 # gem 'aws-s3', :require => 'aws/s3'
 #
-gem 'rake', '~> 0.8.7' # Leave in until fix is in starting in Rails 3.0.8
+#gem 'rake', '~> 0.8.7' # Leave in until fix is in starting in Rails 3.0.8
                  # See: http://stackoverflow.com/questions/5287121/undefined-method-task-using-rake-0-9-0
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'haml'
