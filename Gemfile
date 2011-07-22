@@ -41,6 +41,7 @@ gem 'paperclip'
 gem 'permalink_fu'
 gem 'test-unit', "1.2.3"
 gem 'simple-navigation', '3.3.3'
+gem 'activeadmin'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators

@@ -9,7 +9,7 @@ development:
   adapter: mysql
   host: localhost
   reconnect: false
-  database: temple_rails
+  database: temple_rails_active_admin
   username: root
   password:
 
