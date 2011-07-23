@@ -38,7 +38,7 @@ gem 'populator'
 gem 'faker'
 gem 'ckeditor', '3.4.2.pre'
 gem 'paperclip'
-gem 'permalink_fu'
+gem 'friendly_id'
 gem 'test-unit', "1.2.3"
 gem 'simple-navigation', '3.3.3'
 gem 'activeadmin'
