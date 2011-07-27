@@ -7,7 +7,7 @@
 
 <%= error_messages_for('prayer_handler') %>
 
-<% form_for(:prayer_handler, :url => prayer_url, :html => { :class => 'form' }) do |f| %>
+<%= form_for(:prayer_handler, :url => prayer_url, :html => { :class => 'form' }) do |f| %>
   <p>
     <%= f.label :name %>
     <%= f.text_field :name %>
