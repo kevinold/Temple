@@ -186,6 +186,7 @@ DEPENDENCIES
   friendly_id
   haml
   hpricot
+  mail
   mysql
   nifty-generators
   paperclip
