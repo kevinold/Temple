@@ -153,14 +153,14 @@ a {
 
 #nav_main_wrap {
   background: #51100c;
-  border-top: "5px" "solid" #8c0d0d;
-  border-bottom: "5px" "solid" #8c0d0d;
+  border-top: 5px solid #8c0d0d;
+  border-bottom: 5px solid #8c0d0d;
   width: 100%; }
 
 #nav_main {
   background: #51100c;
-  border-top: "5px" "solid" #8c0d0d;
-  border-bottom: "5px" "solid" #8c0d0d;
+  border-top: 5px solid #8c0d0d;
+  border-bottom: 5px solid #8c0d0d;
   font-size: 14px;
   margin: -5px auto;
   width: 960px; }
