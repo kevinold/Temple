@@ -4,7 +4,7 @@ ActiveAdmin.register Sermon do
 
   index do
     column "Title" do |sermon|
-      link_to sermon.title, admin_sermon_path(sermon)
+      link_to sermon.title, edit_admin_sermon_path(sermon)
     end
     column "Date", :date
     column "Verses", :verses
