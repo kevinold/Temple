@@ -1,13 +1,34 @@
-source :gemcutter
-gem "rails", "~> 2.3.10"
-gem "mysql"
+source 'http://rubygems.org'
 
-# bundler requires these gems in all environments
-# gem "nokogiri", "1.4.2"
-# gem "geokit"
+gem 'rails', '3.0.9'
+
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
+
+gem 'sqlite3'
+gem 'mysql'
+
+# Use unicorn as the web server
+gem 'unicorn'
+
+# Deploy with Capistrano
+gem 'capistrano'
+
+# To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
+# gem 'ruby-debug'
+gem 'ruby-debug19', :require => 'ruby-debug'
+
+# Bundle the extra gems:
+# gem 'bj'
+# gem 'nokogiri'
+# gem 'aws-s3', :require => 'aws/s3'
+#
+#gem 'rake', '~> 0.8.7' # Leave in until fix is in starting in Rails 3.0.8
+                 # See: http://stackoverflow.com/questions/5287121/undefined-method-task-using-rake-0-9-0
+gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'haml'
-#gem 'sass'
-gem 'searchlogic'
+gem 'sass'
+gem 'authlogic'
 gem 'will_paginate'
 gem 'vestal_versions'
 gem 'hpricot'
@@ -15,22 +36,18 @@ gem 'formtastic', "~> 1.2.1"
 gem 'nifty-generators'
 gem 'populator'
 gem 'faker'
+gem 'ckeditor', '3.4.2.pre'
+gem 'paperclip'
+gem 'friendly_id'
+gem 'test-unit', "1.2.3"
+gem 'simple-navigation', '3.3.3'
+gem 'activeadmin'
+gem 'mail'
 
-group :development do
-  # bundler requires these gems in development
-  gem "sqlite3-ruby", :require => "sqlite3"
-  gem 'capistrano'
-  gem "rspec", "1.3.0"
-  gem "rspec-rails", "1.3.2"
-  gem "factory_girl", "1.2.4"
-  # gem "rails-footnotes"
+# Bundle gems for the local environment. Make sure to
+# put test-only gems in this group so their generators
+# and rake tasks are available in development mode:
+group :development, :test do
+  gem 'webrat'
+  gem 'test-unit', "1.2.3"
 end
-
-group :test do
-  # bundler requires these gems while running tests
-  gem "rspec", "1.3.0"
-  gem "rspec-rails", "1.3.2"
-  gem "factory_girl", "1.2.4"
-  # gem "faker"
-end
-

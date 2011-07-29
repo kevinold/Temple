@@ -9,7 +9,7 @@ class SermonsController < ApplicationController
   end
 
   def show
-    @sermon = Sermon.find_by_permalink(params[:id])
+    @sermon = Sermon.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

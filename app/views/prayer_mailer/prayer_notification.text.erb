@@ -1,0 +1,8 @@
+
+Name: <%= @prayer.name %>
+Subject: <%= @prayer.subject %>
+E-mail: <%= @prayer.email %>
+Add to printed list: <%= @prayer.add_to_bulletin.to_i == 1 ? 'Yes' : 'No' %>
+
+Prayer/Praise Request:
+<%= @prayer.body %>

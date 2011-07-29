@@ -1,1 +1,3 @@
-rvm ree-1.8.7-2010.02@temple_rails
+unset BUNDLE_PATH
+rvm ruby-1.9.2-p180@temple_rails192
+#rvm ree-1.8.7-2010.02@temple_rails
