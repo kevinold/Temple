@@ -15,7 +15,7 @@ set :application, "templetoday"
 set :scm, :git
 #set :repository, "git@temple.kevinold.com:#{application}_rails.git"
 set :repository, "git@github.com:kevinold/Temple.git"
-set :branch, "feature/rails3_upgrade"
+set :branch, "master"
 #set :deploy_via, :remote_cache
  
 set :user, 'www'
