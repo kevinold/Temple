@@ -37,7 +37,7 @@ task :prime_cache, :roles => :app do
     CMD
 end
 
-after "deploy", "deploy:cleanup" #, :prime_cache
+after "deploy", "deploy:cleanup", :prime_cache
 
 namespace :deploy do
   desc "Restarting mod_rails with restart.txt"
