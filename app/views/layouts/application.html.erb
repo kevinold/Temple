@@ -76,7 +76,7 @@
     </div>  
 
     <% if @show_sidebar %>
-    <%= render :partial => "shared/sidebar" %>
+      <%= render :partial => "shared/sidebar" %>
     <% end %>
     <div class="clear"></div>
 
@@ -143,7 +143,7 @@
     });
     </script>
 
-    <%= render :partial => "shared/analytics" if RAILS_ENV == 'production' %>
+    <%= render :partial => "shared/analytics" if Rails.env.production? %>
 
 </body>
 </html>

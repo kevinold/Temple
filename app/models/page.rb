@@ -1,8 +1,5 @@
 class Page < ActiveRecord::Base
-  has_permalink :title, :update => true
+  has_friendly_id :title, :use_slug => true
   versioned
 
-  def to_param
-    permalink
-  end
 end
