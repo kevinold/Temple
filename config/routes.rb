@@ -1,86 +1,94 @@
-ActionController::Routing::Routes.draw do |map|
+TempleRails::Application.routes.draw do
+  ActiveAdmin.routes(self)
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
 
-  # Contact form routes
-  map.new_contact '/contact/new', :controller => 'contact', :action => 'new', :conditions => { :method => :get }
-  map.contact '/contact', :controller => 'contact', :action => 'new', :conditions => { :method => :get }
-  map.contact '/contact', :controller => 'contact', :action => 'create', :conditions => { :method => :post }
-
-  # Prayer form routes
-  map.new_prayer '/prayer/new', :controller => 'prayer', :action => 'new', :conditions => { :method => :get }
-  map.prayer '/prayer', :controller => 'prayer', :action => 'new', :conditions => { :method => :get }
-  map.prayer '/prayer', :controller => 'prayer', :action => 'create', :conditions => { :method => :post }
-
-  # Explicitly set routes (also needed for use with navigation_helper)
-  # TODO: should change all to show actions
-  map.about '/about', :controller => 'about', :action => 'index'
-  map.calendar '/calendar', :controller => 'calendar', :action => 'index'
-  map.home '/', :controller => 'home', :action => 'index'
-
-  map.resources :sermons
-  map.resources :pages
-  map.resources :announcements
-
-  # Allow pages urls to be accessed via events prefix
-  # i.e. templetoday.com/events/beth-moore-simulcast
-  map.events 'events/:id', :controller => 'pages', :action => 'show'
-
-  map.namespace :admin do |admin|
-    admin.resources :pages
-    admin.resources :sermons
-    admin.resources :announcements
-    admin.root :controller => "home"
+  match '/contact/new' => 'contact#new', :as => :new_contact, :via => :get
+  match '/contact' => 'contact#new', :as => :contact, :via => :get
+  match '/contact' => 'contact#create', :as => :contact, :via => :post
+  match '/prayer/new' => 'prayer#new', :as => :new_prayer, :via => :get
+  match '/prayer' => 'prayer#new', :as => :prayer, :via => :get
+  match '/prayer' => 'prayer#create', :as => :prayer, :via => :post
+  match '/about' => 'about#index', :as => :about
+  match '/calendar' => 'calendar#index', :as => :calendar
+  match '/' => 'home#index', :as => :home
+  resources :sermons
+  resources :pages
+  resources :announcements
+  match 'events/:id' => 'pages#show', :as => :events
+  match '/' => 'home#index'
+  namespace :admin do
+      resources :pages
+      resources :sermons
+      resources :announcements
   end
 
-  map.signup '/signup', :controller => 'users', :action => 'create', :conditions => { :method => :post}
-  map.signup '/signup', :controller => 'users', :action => 'new', :conditions => { :method => :get}
-  map.resource :account, :controller => 'users'
+  match '/signup' => 'users#create', :as => :signup, :via => :post
+  match '/signup' => 'users#new', :as => :signup, :via => :get
+  resource :account, :controller => "users"
+  match '/login' => 'user_sessions#create', :as => :login, :via => :post
+  match '/login' => 'user_sessions#new', :as => :login, :via => :get
+  match '/logout' => 'user_sessions#destroy', :as => :logout
+  match '/' => 'home#index'
+  match '/:id' => 'pages#show', :as => :page
+  match '/:section/:id' => 'pages#show', :as => :page
+  match '/:controller(/:action(/:id))'
 
-  map.login '/login', :controller => 'user_sessions', :action => 'create', :conditions => { :method => :post}
-  map.login '/login', :controller => 'user_sessions', :action => 'new', :conditions => { :method => :get}
-  map.logout '/logout', :controller => 'user_sessions', :action => 'destroy'
-  # The priority is based upon order of creation: first created -> highest priority.
+  # The priority is based upon order of creation:
+  # first created -> highest priority.
 
   # Sample of regular route:
-  #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
+  #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
-  #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
+  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   map.resources :products
+  #   resources :products
 
   # Sample resource route with options:
-  #   map.resources :products, :member => { :short => :get, :toggle => :post }, :collection => { :sold => :get }
+  #   resources :products do
+  #     member do
+  #       get 'short'
+  #       post 'toggle'
+  #     end
+  #
+  #     collection do
+  #       get 'sold'
+  #     end
+  #   end
 
   # Sample resource route with sub-resources:
-  #   map.resources :products, :has_many => [ :comments, :sales ], :has_one => :seller
-  
+  #   resources :products do
+  #     resources :comments, :sales
+  #     resource :seller
+  #   end
+
   # Sample resource route with more complex sub-resources
-  #   map.resources :products do |products|
-  #     products.resources :comments
-  #     products.resources :sales, :collection => { :recent => :get }
+  #   resources :products do
+  #     resources :comments
+  #     resources :sales do
+  #       get 'recent', :on => :collection
+  #     end
   #   end
 
   # Sample resource route within a namespace:
-  #   map.namespace :admin do |admin|
-  #     # Directs /admin/products/* to Admin::ProductsController (app/controllers/admin/products_controller.rb)
-  #     admin.resources :products
+  #   namespace :admin do
+  #     # Directs /admin/products/* to Admin::ProductsController
+  #     # (app/controllers/admin/products_controller.rb)
+  #     resources :products
   #   end
 
-  # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  map.root :controller => "home"
-  #map.root :controller => "pages", :action => 'show', :id => 'home'
+  # You can have the root of your site routed with "root"
+  # just remember to delete public/index.html.
+  # root :to => "welcome#index"
 
   # See how all your routes lay out with "rake routes"
 
-  # Install the default routes as the lowest priority.
-  # Note: These default routes make all actions in every controller accessible via GET requests. You should
-  # consider removing or commenting them out if you're using named routes and resources.
-  map.page '/:id', :controller => 'pages', :action => 'show'
-  map.page '/:section/:id', :controller => 'pages', :action => 'show'
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+  # This is a legacy wild controller route that's not recommended for RESTful applications.
+  # Note: This route will make all actions in every controller accessible via GET requests.
+  # match ':controller(/:action(/:id(.:format)))'
+
 end

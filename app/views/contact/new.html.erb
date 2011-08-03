@@ -18,7 +18,7 @@ White House, TN 37188
 <br/>
 <%= error_messages_for('contact_handler') %>
 
-<% form_for(:contact_handler, :url => contact_url, :html => { :class => 'form' }) do |f| %>
+<%= form_for(:contact_handler, :url => contact_url, :html => { :class => 'form' }) do |f| %>
   <p>
     <%= f.label :name %>
     <%= f.text_field :name %>
