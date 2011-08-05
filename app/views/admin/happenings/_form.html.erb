@@ -1,0 +1,7 @@
+<%= semantic_form_for [:admin, @happening] do |f| %>
+  <%= f.input :name %>
+  <%= @happening.image_url %>
+  <%= f.input :image, :as => :file %>
+  <%= f.input :details %>
+  <%= f.buttons %>
+<% end %>
