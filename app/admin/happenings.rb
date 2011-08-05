@@ -1,4 +1,4 @@
-ActiveAdmin.register Happenings do
+ActiveAdmin.register Happening do
   form :html => { :multipart => true, :enctype => "multipart/form-data" } do |f|
     f.inputs "Happening", do
       f.input :name
