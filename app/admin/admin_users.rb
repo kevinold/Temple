@@ -1,4 +1,7 @@
 ActiveAdmin.register AdminUser do
+  # Add conditional menu support from pull request 177 in github
+  menu :label => "User management", :if => proc { current_admin_user.id === 2 }
+
   index do
     column :email
     column :current_sign_in_at
