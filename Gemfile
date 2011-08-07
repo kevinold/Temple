@@ -27,7 +27,7 @@ gem 'ruby-debug19', :require => 'ruby-debug'
                  # See: http://stackoverflow.com/questions/5287121/undefined-method-task-using-rake-0-9-0
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'haml'
-gem 'sass'
+gem 'sass', "3.1.7"
 gem 'authlogic'
 gem 'will_paginate'
 gem 'vestal_versions'

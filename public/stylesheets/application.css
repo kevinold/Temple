@@ -1,94 +1,309 @@
-/*
-Syntax error: File to import not found or unreadable: colors.scss.
-              Load paths:
-                /Users/kold/projects/temple_rails/public/stylesheets/sass
-                /Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/bundler/gems/active_admin-016ffd39885a/app/assets/stylesheets
-                /Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/bundler/gems/active_admin-016ffd39885a/lib/active_admin/sass
-        on line 1 of /Users/kold/projects/temple_rails/public/stylesheets/sass/application.scss
+body {
+  background: url(/images/slices/bodybg.jpg) repeat 0 190px;
+  font-family: "Trebuchet MS", "Helvetica Neue", Arial, sans-serif; }
 
-1: @import "colors.scss";
-2: 
-3: body {
-4:   background: url(/images/slices/bodybg.jpg) repeat 0 190px;
-5:   font-family: "Trebuchet MS", "Helvetica Neue", Arial, sans-serif; }
-6: 
+.temple_red {
+  color: #8c0d0d; }
 
-Backtrace:
-/Users/kold/projects/temple_rails/public/stylesheets/sass/application.scss:1
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/import_node.rb:64:in `rescue in import'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/import_node.rb:42:in `import'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/import_node.rb:25:in `imported_file'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:148:in `rescue in visit_import'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:153:in `visit_import'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/tree/root_node.rb:20:in `render'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/engine.rb:291:in `_render'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/engine.rb:239:in `block in render'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/util.rb:297:in `silence_sass_warnings'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/engine.rb:239:in `render'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:175:in `each'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:173:in `each'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/plugin.rb:81:in `update_stylesheets'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/plugin.rb:54:in `check_for_updates'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.4/lib/sass/plugin/rack.rb:51:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/warden-1.0.5/lib/warden/manager.rb:35:in `block in call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/warden-1.0.5/lib/warden/manager.rb:34:in `catch'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/warden-1.0.5/lib/warden/manager.rb:34:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/ckeditor-3.4.2.pre/lib/ckeditor/middleware.rb:15:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `block in call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
-<internal:prelude>:10:in `synchronize'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:146:in `handle'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:99:in `rescue in block (2 levels) in start'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:96:in `block (2 levels) in start'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:86:in `each'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:86:in `block in start'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:66:in `loop'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:66:in `start'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:13:in `run'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/bin/nack_worker:4:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: colors.scss.\A               Load paths:\A                 /Users/kold/projects/temple_rails/public/stylesheets/sass\A                 /Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/bundler/gems/active_admin-016ffd39885a/app/assets/stylesheets\A                 /Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/bundler/gems/active_admin-016ffd39885a/lib/active_admin/sass\A         on line 1 of /Users/kold/projects/temple_rails/public/stylesheets/sass/application.scss\A \A 1: @import \"colors.scss\";\A 2: \A 3: body {\A 4:   background: url(/images/slices/bodybg.jpg) repeat 0 190px;\A 5:   font-family: \"Trebuchet MS\", \"Helvetica Neue\", Arial, sans-serif; }\A 6: "; }
+.red_button {
+  width: auto;
+  padding: 9px 15px;
+  background: #51100c;
+  border: 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  display: block; }
+
+a {
+  color: #8c0d0d;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+#services-overlay {
+  z-index: 1000;
+  height: 150px;
+  position: absolute;
+  background: url(/images/slices/headerbg.jpg) repeat-x 0 0;
+  padding-top: 20px;
+  border-width: 0 2px 2px 2px;
+  border-color: #bf9f56;
+  border-style: solid;
+  top: -175px; }
+  #services-overlay #services-tab span {
+    bottom: -40px;
+    display: block;
+    height: 42px;
+    position: absolute;
+    right: 20px;
+    text-indent: -9999px;
+    width: 248px;
+    cursor: pointer;
+    background: url(/images/slices/servicestab.png); }
+
+#headerwrap {
+  background: url(/images/slices/headerbg.jpg) repeat-x 0 0; }
+
+#contentwrap {
+  background: url(/images/slices/contentbg.png) repeat 0 0;
+  padding-bottom: 20px;
+  min-height: 500px; }
+
+#header {
+  height: 175px; }
+
+#logo a {
+  background: transparent url(/images/temple_logo_white_small.png) no-repeat scroll 0 -10px;
+  height: 180px;
+  width: 254px;
+  float: left;
+  overflow: hidden;
+  text-indent: -9000px;
+  display: block; }
+
+.sidebox {
+  background: #f4e7e7 none repeat scroll 0 0;
+  border: 1px solid #c68787;
+  margin-bottom: 10px;
+  padding: 10px 20px 0 20px;
+  font-size: 14px; }
+  .sidebox ul li {
+    list-style: none;
+    margin: 0; }
+
+#content {
+  margin-top: 10px;
+  margin-left: 15px; }
+  #content p {
+    margin-right: 15px; }
+
+.content_box {
+  margin-top: 20px; }
+  .content_box h3 {
+    color: #8c0d0d; }
+  .content_box h3, .content_box h4, .content_box h5, .content_box h6 {
+    margin-bottom: 10px; }
+  .content_box ul {
+    list-style: none; }
+  .content_box li {
+    margin-left: 0; }
+
+#sidebar {
+  margin-top: 10px; }
+
+#footer {
+  background: url(/images/slices/footerbg.jpg) repeat 0 0;
+  color: #cdc7c2;
+  padding-top: 20px;
+  height: 125px; }
+
+.footer_section {
+  list-style-type: none; }
+  .footer_section li a {
+    letter-spacing: 2px;
+    line-height: 1.7em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold; }
+
+#loading {
+  position: absolute;
+  top: 5px;
+  right: 5px; }
+
+#calendar {
+  width: 100%;
+  margin: 0 auto; }
+
+.full-calendar-month .event td {
+  background-color: #8c0d0d;
+  color: white;
+  font-weight: bold;
+  padding: 0; }
+
+.full-calendar-title {
+  color: #8c0d0d;
+  text-align: left; }
+
+.full-calendar-month td.today {
+  background: #c68787;
+  color: white; }
+
+#navbar {
+  float: right;
+  font-size: 18px;
+  margin: 30px 0 0 0; }
+  #navbar li {
+    display: inline;
+    margin: 0 20px 0 0; }
+    #navbar li a {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: bold; }
+
+.sf-menu {
+  width: 100%; }
+
+#nav_main_wrap {
+  background: #51100c;
+  border-top: 5px solid #8c0d0d;
+  border-bottom: 5px solid #8c0d0d;
+  width: 100%; }
+
+#nav_main {
+  background: #51100c;
+  border-top: 5px solid #8c0d0d;
+  border-bottom: 5px solid #8c0d0d;
+  font-size: 14px;
+  margin: -5px auto;
+  width: 960px; }
+  #nav_main li {
+    float: left;
+    list-style: none;
+    margin-left: 0px; }
+    #nav_main li.current {
+      background: #8c0d0d; }
+  #nav_main a {
+    color: #bf9f56;
+    display: block;
+    padding: 8px 20px;
+    white-space: nowrap; }
+    #nav_main a:hover {
+      color: white;
+      text-decoration: underline; }
+  #nav_main li.current a {
+    color: white; }
+
+#nav_sub_wrap {
+  background-color: #8c0d0d;
+  margin: 0 0 -2px;
+  width: 100%; }
+
+#nav_sub {
+  background-color: #8c0d0d;
+  font-size: 11px;
+  margin: -5px auto 0;
+  width: 960px; }
+  #nav_sub ul {
+    padding: 0 0 0 10px;
+    margin-bottom: 0; }
+  #nav_sub li {
+    float: left;
+    list-style: none;
+    padding: 6px 0 8px; }
+  #nav_sub a {
+    border-left: 1px solid #887766;
+    color: white;
+    display: block;
+    padding: 0 10px;
+    white-space: nowrap; }
+    #nav_sub a:hover {
+      color: white;
+      text-decoration: underline; }
+    #nav_sub a.first {
+      border: 0; }
+  #nav_sub li.current {
+    color: white;
+    font-size: 100%;
+    position: relative;
+    z-index: 10; }
+    #nav_sub li.current a {
+      color: white; }
+
+#sermon_index, #ann_index {
+  list-style: none; }
+  #sermon_index h2, #ann_index h2 {
+    margin-bottom: 5px; }
+  #sermon_index li, #ann_index li {
+    padding-bottom: 20px;
+    margin: 20px 0 0 0;
+    border-bottom: 1px solid #bf9f56; }
+    #sermon_index li:last-child, #ann_index li:last-child {
+      border-bottom: none; }
+
+.sermon_date, .ann_date {
+  float: right;
+  font-size: 20px; }
+
+#staff_index {
+  list-style: none; }
+  #staff_index h2 {
+    margin-bottom: 5px; }
+  #staff_index li {
+    padding-bottom: 20px;
+    margin: 20px 20px 20px 0;
+    border-bottom: 1px solid #bf9f56;
+    clear: both;
+    min-height: 250px; }
+    #staff_index li:last-child {
+      border-bottom: none; }
+  #staff_index img {
+    float: left;
+    margin-right: 20px;
+    padding: 2px; }
+
+#homepage_list {
+  list-style: none; }
+  #homepage_list li {
+    font-size: 16px;
+    margin-left: 5px; }
+
+.form input[type="text"] {
+  padding: 9px;
+  border: solid 1px #e5e5e5;
+  outline: 0;
+  font: normal 13px/100% Verdana, Tahoma, sans-serif;
+  width: 200px;
+  background: white; }
+.form textarea {
+  padding: 9px;
+  border: solid 1px #e5e5e5;
+  outline: 0;
+  font: normal 13px/100% Verdana, Tahoma, sans-serif;
+  width: 200px;
+  background: white;
+  width: 400px;
+  max-width: 400px;
+  height: 150px;
+  line-height: 150%; }
+.form input:hover, .form textarea:hover, .form input:focus, .form textarea:focus {
+  border-color: #8c0d0d; }
+.form label {
+  float: left;
+  width: 200px;
+  font-size: 16px;
+  font-weight: bold; }
+
+.submit input {
+  width: auto;
+  padding: 9px 15px;
+  background: #51100c;
+  border: 0;
+  font-size: 14px;
+  color: white; }
+
+.event-item {
+  border-bottom: 1px solid #eaeae8;
+  color: #51100c;
+  margin-left: 5px;
+  margin-top: 12px;
+  padding: 0 2px 11px; }
+  .event-item a {
+    color: #444443;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 14pt;
+    padding-bottom: 2px;
+    text-decoration: none; }
+  .event-item strong {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase; }
