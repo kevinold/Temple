@@ -41,8 +41,9 @@ gem 'paperclip'
 gem 'friendly_id'
 gem 'test-unit', "1.2.3"
 gem 'simple-navigation', '3.3.3'
-gem 'activeadmin'
+gem 'activeadmin', :git => 'https://github.com/gregbell/active_admin.git'
 gem 'mail'
+gem 'carrierwave'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
