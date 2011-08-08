@@ -20,6 +20,7 @@ TempleRails::Application.routes.draw do
   resources :sermons
   resources :pages
   resources :announcements
+  resources :mobile
 
   match 'events/:id' => 'pages#show', :as => :events
   match '/' => 'home#index'
