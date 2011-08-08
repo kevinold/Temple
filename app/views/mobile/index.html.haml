@@ -1,0 +1,33 @@
+/ Start of first page
+#home{"data-role" => "page"}
+  %div{"data-role" => "header"}
+    %a{"data-icon" => "home", :href => "#home"}
+    %h1 Welcome to Temple!
+  / /header
+  %div{"data-role" => "content"}
+    %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+    %p
+      Bar is a link
+      %a{:href => "#bar"} bar
+    %a{"data-role" => "button", :href => "#service_times"} Service Times
+    %a{"data-role" => "button", :href => "#directions"} Directions
+    %a{"data-role" => "button", :href => "#calendar"} Calendar
+    %a{"data-role" => "button", :href => "#contact"} Contact
+  / /content
+  = render 'footer'
+/ /page
+
+
+/ Start of second page
+#service_times{"data-role" => "page"}
+  %div{"data-role" => "header"}
+    %a{"data-icon" => "home", :href => "#home"}
+    %h1 Service Times
+  / /header
+  %div{"data-role" => "content"}
+    %p Service Times
+    %dt/
+    %h2 Sunday Services
+  / /content
+  = render 'footer'
+/ /page
