@@ -10,8 +10,6 @@ ActiveAdmin.register Happening do
     end
     column "PDF", :image_identifier
     column "Date", :updated_at
-    #column "Published" do |h|
-      #h.published ? 'Yes' : 'No'
-    #end
+    default_actions
   end
 end

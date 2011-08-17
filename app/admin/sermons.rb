@@ -8,9 +8,8 @@ ActiveAdmin.register Sermon do
     end
     column "Date", :date
     column "Verses", :verses
-    column "Published" do |sermon|
-      sermon.published ? 'Yes' : 'No'
-    end
+    column("Published") {|announcement| status_tag(announcement.published? ? 'published' : 'draft') }
+    default_actions
   end
 
 end

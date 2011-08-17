@@ -7,9 +7,8 @@ ActiveAdmin.register Announcement do
     column "Date", :ann_date
     column "Time", :ann_time
     column "Location", :location
-    column "Published" do |announcement|
-      announcement.published ? 'Yes' : 'No'
-    end
+    column("Published") {|announcement| status_tag(announcement.published? ? 'published' : 'draft') }
+    default_actions
   end
 
 end
