@@ -1,0 +1,42 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title Temple Baptist Church
+    = stylesheet_link_tag "960/reset", "960/text", "960/960", "application", :cache => true
+  %body
+    #header.clearfix
+      .container_16.clearfix
+        #logo.grid_4
+          %img{:src => "http://placehold.it/114x100" }
+          / end logo
+        .grid_11.prefix_1
+          #nav
+            %ul
+              %li
+                %a{:href => '#'} Home
+              %li
+                %a{:href => '#'} Sermons
+              %li
+                %a{:href => '#'} Calendar
+              %li
+                %a{:href => '#'} Prayer
+              %li
+                %a{:href => '#'} Directory
+              %li
+                %a{:href => '#'} About
+              %li
+                %a{:href => '#'} Contact
+              / end nav
+      / end container_16
+    / end header
+
+    .container_12
+      %h2
+        12 Column Grid
+      .grid_12
+        %p
+          test
+      / end .grid_12
+      .clear
+    / end .container_12
