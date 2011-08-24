@@ -1,94 +1,78 @@
-/*
-Syntax error: File to import not found or unreadable: colors.scss.
-              Load paths:
-                /Users/kold/projects/temple_rails/public/stylesheets/sass
-                /Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/bundler/gems/active_admin-016ffd39885a/app/assets/stylesheets
-                /Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/bundler/gems/active_admin-016ffd39885a/lib/active_admin/sass
-        on line 1 of /Users/kold/projects/temple_rails/public/stylesheets/sass/admin.scss
+body {
+  background-color: #8c0d0d;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px; }
 
-1: @import "colors.scss";
-2: 
-3: body {
-4:   background-color: $temple_red;
-5:   font-family: Verdana, Helvetica, Arial;
-6:   font-size: 14px; }
+a {
+  color: blue; }
+  a img {
+    border: none; }
 
-Backtrace:
-/Users/kold/projects/temple_rails/public/stylesheets/sass/admin.scss:1
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/import_node.rb:64:in `rescue in import'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/import_node.rb:42:in `import'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/import_node.rb:25:in `imported_file'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:148:in `rescue in visit_import'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:153:in `visit_import'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/tree/root_node.rb:20:in `render'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/engine.rb:293:in `_render'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/engine.rb:241:in `block in render'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/util.rb:297:in `silence_sass_warnings'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/engine.rb:241:in `render'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:175:in `each'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:173:in `each'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/plugin.rb:81:in `update_stylesheets'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/plugin.rb:54:in `check_for_updates'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/sass-3.1.7/lib/sass/plugin/rack.rb:51:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/warden-1.0.5/lib/warden/manager.rb:35:in `block in call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/warden-1.0.5/lib/warden/manager.rb:34:in `catch'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/warden-1.0.5/lib/warden/manager.rb:34:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/ckeditor-3.4.2.pre/lib/ckeditor/middleware.rb:15:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `block in call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
-<internal:prelude>:10:in `synchronize'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
-/Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:146:in `handle'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:99:in `rescue in block (2 levels) in start'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:96:in `block (2 levels) in start'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:86:in `each'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:86:in `block in start'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:66:in `loop'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:66:in `start'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/lib/nack/server.rb:13:in `run'
-/Users/kold/Library/Application Support/Pow/Versions/0.3.1/node_modules/nack/bin/nack_worker:4:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: colors.scss.\A               Load paths:\A                 /Users/kold/projects/temple_rails/public/stylesheets/sass\A                 /Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/bundler/gems/active_admin-016ffd39885a/app/assets/stylesheets\A                 /Users/kold/.rvm/gems/ruby-1.9.2-p180@temple_rails192/bundler/gems/active_admin-016ffd39885a/lib/active_admin/sass\A         on line 1 of /Users/kold/projects/temple_rails/public/stylesheets/sass/admin.scss\A \A 1: @import \"colors.scss\";\A 2: \A 3: body {\A 4:   background-color: $temple_red;\A 5:   font-family: Verdana, Helvetica, Arial;\A 6:   font-size: 14px; }"; }
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden; }
+
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px; }
+
+#flash_notice, #flash_error {
+  padding: 5px 8px;
+  margin: 10px 0; }
+
+#flash_notice {
+  background-color: #ccffcc;
+  border: solid 1px #66cc66; }
+
+#flash_error {
+  background-color: #ffcccc;
+  border: solid 1px #cc6666; }
+
+.fieldWithErrors {
+  display: inline; }
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid #cf0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; }
+  #errorExplanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: 0;
+    background-color: #cc0000;
+    color: white; }
+  #errorExplanation p {
+    color: #333333;
+    margin-bottom: 0;
+    padding: 8px; }
+  #errorExplanation ul {
+    margin: 2px 24px; }
+    #errorExplanation ul li {
+      font-size: 12px;
+      list-style: disc; }
+
+#navbar {
+  float: right;
+  font-size: 18px;
+  margin-top: 0;
+  display: block; }
+  #navbar li {
+    display: inline;
+    margin: 0 20px 0 0; }
+    #navbar li a {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+      font-weight: bold; }
