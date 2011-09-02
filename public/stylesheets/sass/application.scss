@@ -1,6 +1,10 @@
 $temple_red: #8C0D0D;
 $dark_temple_red: #51100C;
-$light_cream: #BF9F56;
+//$light_cream: #BF9F56;
+$light_cream: #E1D2B0;
+$very_light_cream: #F5F4F0;
+
+$gray1: #ECE9E7;
 
 // Brown shades - http://slayeroffice.com/tools/color_palette/?hex=38200D
 // Cranberry shades - http://slayeroffice.com/tools/color_palette/?hex=8c0d0d
@@ -18,15 +22,18 @@ $light_cream: #BF9F56;
 .temple_red {
   color: $temple_red }
 
+body {
+  background-color: $very_light_cream;
+}
 
-#logo { height: 114px; }
+//#logo { height: 114px; }
 
 #nav {
   width: 580px;
   height: 114px;
   display: block;
   float: right;
-  margin: 0 -15px 0 0;
+  margin: 0 -10px 0 0;
 
   ul {
     padding: 0;
@@ -36,7 +43,7 @@ $light_cream: #BF9F56;
   li {
     display: inline;
     //text-indent: -9999px;
-    //margin: 0;
+    margin: 0;
   }
 
   a {
@@ -49,4 +56,22 @@ $light_cream: #BF9F56;
 
 }
 
+#header {
+  border-top: 3px solid $temple_red;
+  padding: 36px 0px 36px;
+}
+
+#callout {
+  padding: 36px 0px 36px;
+}
+
+#content {
+  padding: 36px 0px 36px;
+}
+
+#footer {
+  height: 160px;
+  padding: 36px 0px 60px;
+  border-top: 2px solid $temple_red;
+}
 

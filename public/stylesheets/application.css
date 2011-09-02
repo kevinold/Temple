@@ -1,23 +1,39 @@
 .temple_red {
   color: #8c0d0d; }
 
-#logo {
-  height: 114px; }
+body {
+  background-color: #f5f4f0; }
 
 #nav {
   width: 580px;
   height: 114px;
   display: block;
   float: right;
-  margin: 0 -15px 0 0; }
+  margin: 0 -10px 0 0; }
   #nav ul {
     padding: 0;
     margin-top: 21px; }
   #nav li {
-    display: inline; }
+    display: inline;
+    margin: 0; }
   #nav a {
     display: block;
     float: left;
     height: 114px;
     cursor: pointer;
     padding: 20px 15px 20px 19px; }
+
+#header {
+  border-top: 3px solid #8c0d0d;
+  padding: 36px 0px 36px; }
+
+#callout {
+  padding: 36px 0px 36px; }
+
+#content {
+  padding: 36px 0px 36px; }
+
+#footer {
+  height: 160px;
+  padding: 36px 0px 60px;
+  border-top: 2px solid #8c0d0d; }
