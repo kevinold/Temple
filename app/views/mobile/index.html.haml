@@ -1,0 +1,48 @@
+/ Start of home 
+#home{"data-role" => "page"}
+  %div{"data-role" => "header"}
+    %a{"data-icon" => "home", :href => "#home"}
+    %h1 Welcome to Temple!
+  / /header
+  %div{"data-role" => "content"}
+    %a{"data-role" => "button", :href => "#service_times"} Service Times
+    %a{"data-role" => "button", :href => "#directions"} Directions
+    %a{"data-role" => "button", :href => "#calendar"} Calendar
+    %a{"data-role" => "button", :href => "#contact"} Contact
+  / /content
+  = render 'footer'
+/ /page
+
+
+/ Service times
+#service_times{"data-role" => "page"}
+  %div{"data-role" => "header"}
+    %a{"data-icon" => "home", :href => "#home"}
+    %h1 Service Times
+  / /header
+  %div{"data-role" => "content"}
+    %h2 Sunday Services
+    %dt/
+    %h3 Morning
+    %dd
+      %b 8:00 AM
+      \- Early Worship
+    %dd
+      %b 9:15 AM
+      \- Sunday School
+    %dd
+      %b 10:30 AM
+      \- Late Worship
+    %dt/
+    %h3 Evening
+    %dd Discipleship Training - 5:30 PM
+
+    %br
+
+    %dt/
+    %h2 Wednesday Worship
+    %dd Fellowship Meal - 5:30 PM
+    %dd Worship - 6:30 PM
+  / /content
+  = render 'footer'
+/ /page
