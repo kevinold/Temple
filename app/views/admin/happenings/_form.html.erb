@@ -1,11 +1,12 @@
 <%= semantic_form_for [:admin, @happening] do |f| %>
   <%= f.inputs :name, :details %>
   <%= f.inputs :name => "PDF" do %>
-    <%= f.input :image, :as => :file, :label => 'Upload PDF:' %>
-    <% if @happening.image %>
+    <% if @happening.image_identifier %>
       <li id="happening_current" class="string optional">
         <label for="happening_current">Current PDF:</label><span><%= @happening.image_identifier %></span>
       </li>
+    <% else %>
+    <%= f.input :image, :as => :file, :label => 'Upload PDF:' %>
     <% end %>
   <% end %>
   <%= f.buttons %>

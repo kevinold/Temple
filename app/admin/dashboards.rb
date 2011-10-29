@@ -1,5 +1,37 @@
 ActiveAdmin::Dashboards.build do
 
+  section "Recent Announcements", :priority => 1 do
+    table_for Announcement.order('id desc').limit(10) do
+      column("Headline")  {|a| link_to(a.what, admin_announcement_path(a)) } 
+      column "Date", :ann_date 
+      column("Published") {|a| status_tag(a.published? ? 'published' : 'draft') }
+    end
+    div do
+      link_to("New Announcement", new_admin_announcement_path, :style => 'font-weight:bold')
+    end
+  end
+
+  section "Recent Happenings", :priority => 2 do
+    table_for Happening.order('id desc').limit(10) do
+      column("Name")  {|h| link_to(h.name, admin_happening_path(h)) } 
+    end
+    div do
+      link_to("New Happening", new_admin_happening_path, :style => 'font-weight:bold')
+    end
+  end
+
+  section "Recent Sermons", :priority => 3 do
+    table_for Sermon.order('id desc').limit(10) do
+      column("Title")  {|a| link_to(a.title, admin_sermon_path(a)) } 
+    end
+    div do
+      link_to("New Sermon", new_admin_sermon_path, :style => 'font-weight:bold')
+    end
+  end
+
+
+
+
   # Define your dashboard sections here. Each block will be
   # rendered on the dashboard in the context of the view. So just
   # return the content which you would like to display.
