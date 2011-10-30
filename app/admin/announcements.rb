@@ -1,4 +1,9 @@
 ActiveAdmin.register Announcement do
+  #form do |f|
+    #f.inputs do
+      #f.input :date_and_time, :as => :datepicker
+    #end
+  #end
 
   index do
     column "Headline" do |announcement|

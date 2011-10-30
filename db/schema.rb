@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110805171423) do
+ActiveRecord::Schema.define(:version => 20111030190452) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -72,6 +72,12 @@ ActiveRecord::Schema.define(:version => 20110805171423) do
   add_index "assets", ["assetable_id", "assetable_type"], :name => "fk_assets"
   add_index "assets", ["user_id"], :name => "fk_user"
 
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                                 :null => false
     t.string   "data_content_type"
@@ -106,6 +112,7 @@ ActiveRecord::Schema.define(:version => 20110805171423) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "section"
+    t.integer  "category_id"
   end
 
   create_table "sermons", :force => true do |t|
