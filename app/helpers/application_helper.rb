@@ -3,7 +3,12 @@ module ApplicationHelper
   def next_sunday
     date = Date.today
     date = date +=1 until date.wday == 0
-    "#{Date::MONTHNAMES[date.mon]} #{date.day}, #{date.year}"
+    "#{Date::ABBR_MONTHNAMES[date.mon]} #{date.day}, #{date.year}"
+  end
+  def next_wednesday
+    date = Date.today
+    date = date +=1 until date.wday == 3
+    "#{Date::ABBR_MONTHNAMES[date.mon]} #{date.day}, #{date.year}"
   end
 
 # Return a title on a per-page basis.

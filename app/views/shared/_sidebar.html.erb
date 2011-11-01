@@ -1,11 +1,18 @@
     <!-- sidebar -->
     <div class="grid_4 alpha omega" id="sidebar">
         <div class="sidebox">
+          <h4>Wednesday, <%= next_wednesday %></h4>
+            <ul>
+              <li><b>5:30pm - 6:15pm</b> <br>Fellowship Meal
+                <%= @wed_night_meal ? '(' + @wed_night_meal.name + ')' : nil %>
+              </li>
+              <li><br><b>6:20pm - 7:30pm</b> <br>Adult Study, Youth Alter Call, Children Music &amp; Missions</li>
+            </ul>
             <h4>Sunday, <%= next_sunday %></h4>
             <ul>
-            <li>Bible Study - 9:15 am</li>
-            <li>Morning Worship - 8am &amp; 10:30 am</li>
-            <li>Discipleship - 5:30 pm</li>
+              <li><b>9:15 am</b> - Bible Study</li>
+              <li><b>8am &amp; 10:30 am</b> - Morning Worship</li>
+              <li><b>5:30 pm</b> - Discipleship</li>
             </ul>
         </div>
 
