@@ -29,6 +29,16 @@ ActiveAdmin::Dashboards.build do
     end
   end
 
+  section "Wed Night Meals", :priority => 4 do
+    table_for WedNightMeal.order('id desc').limit(10) do
+      column("Meal")  {|m| link_to(m.name, admin_wed_night_meal_path(m)) } 
+      column "Date", :date
+    end
+    div do
+      link_to("New Wed Night Meal", new_admin_wed_night_meal_path, :style => 'font-weight:bold')
+    end
+  end
+
 
 
 
