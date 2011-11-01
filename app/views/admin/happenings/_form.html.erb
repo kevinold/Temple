@@ -1,4 +1,4 @@
-<%= semantic_form_for [:admin, @happening] do |f| %>
+<%= semantic_form_for [:admin, @happening], :html => {:multipart => true} do |f| %>
   <%= f.inputs :name, :details %>
   <%= f.inputs :name => "PDF" do %>
     <% if @happening.image_identifier %>
