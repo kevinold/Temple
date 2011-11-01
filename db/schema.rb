@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111030190452) do
+ActiveRecord::Schema.define(:version => 20111101144435) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -173,6 +173,13 @@ ActiveRecord::Schema.define(:version => 20111030190452) do
   add_index "versions", ["user_id", "user_type"], :name => "index_versions_on_user_id_and_user_type"
   add_index "versions", ["user_name"], :name => "index_versions_on_user_name"
   add_index "versions", ["versioned_id", "versioned_type"], :name => "index_versions_on_versioned_id_and_versioned_type"
+
+  create_table "wed_night_meals", :force => true do |t|
+    t.string   "name"
+    t.date     "date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "wysihat_files", :force => true do |t|
     t.string   "file_file_name"
