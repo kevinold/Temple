@@ -1,0 +1,13 @@
+<%= semantic_form_for [:admin, @promo], :html => {:multipart => true} do |f| %>
+  <%= f.inputs :name, :details %>
+  <%= f.inputs :name => "PDF" do %>
+    <% if @promo.image_identifier %>
+      <li id="promo_current" class="string optional">
+        <label for="promo_current">Current PDF:</label><span><%= @promo.image_identifier %></span>
+      </li>
+    <% else %>
+    <%= f.input :image, :as => :file, :label => 'Upload PDF:' %>
+    <% end %>
+  <% end %>
+  <%= f.buttons %>
+<% end %>
