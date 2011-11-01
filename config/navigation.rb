@@ -37,7 +37,7 @@ SimpleNavigation::Configuration.run do |navigation|
     #primary.item :prayer, 'Prayer', prayer_path do |prayer|
     #  prayer.item :prayer_wall, 'Prayer Wall', '/prayer/wall'
     #end 
-    primary.item :directory, 'Directory', 'http://directory.templetoday.com'
+    #primary.item :directory, 'Directory', 'http://directory.templetoday.com'
     primary.item :about, 'About', about_path
     primary.item :contact, 'Contact', contact_path
     
