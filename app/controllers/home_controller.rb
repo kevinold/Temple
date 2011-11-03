@@ -7,7 +7,8 @@ class HomeController < ApplicationController
     @announcements = Announcement.where("published = 1 and ann_date >= curdate() and ann_time >= curtime()")
                                  .order("ann_date ASC, ann_time desc")
                                  .limit(10)
-    @wed_night_meal = WedNightMeal.where("date <= '" + @next_wednesday + "'").order("date desc").first
+    @wed_night_meal = WedNightMeal.where("date <= ?", @next_wednesday).order("date desc").first
+    @happening = Happening.order("updated_at desc").first
   end
 
 end

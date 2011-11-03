@@ -38,6 +38,7 @@ SimpleNavigation::Configuration.run do |navigation|
     #  prayer.item :prayer_wall, 'Prayer Wall', '/prayer/wall'
     #end 
     #primary.item :directory, 'Directory', 'http://directory.templetoday.com'
+    primary.item :announcements, 'Announcements', announcements_path
     primary.item :about, 'About', about_path
     primary.item :contact, 'Contact', contact_path
     

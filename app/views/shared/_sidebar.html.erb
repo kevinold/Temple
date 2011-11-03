@@ -29,10 +29,20 @@
       </li>
       <% end %>
     </ul>
-    <!--<%= link_to 'View All Announcements', announcements_path %>-->
+    <%= link_to 'View All Announcements', announcements_path %>
     </div>
   <% end %>
 
+    <% if @happening %>
+      <div class="grid_4 omega content_box" id="col-2">
+        <h3>Temple Happenings</h3>
+        <div>
+          <%= @happening.details.html_safe %>
+        </div>
+        <br>
+        <%= link_to 'Download Happenings' + @happening.name, @happening.image.url, :class => 'red_button' %>
+      </div>
+    <% end %>
 
 
     <% if false %>
