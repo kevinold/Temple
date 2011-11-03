@@ -23,10 +23,12 @@
     <ul>
     <% @announcements.each do |a| %>
       <!--<li><b><%=h a.display_date_and_time %></b> - <%= link_to a.what, a %></li>-->
-      <li>
-        <h6><%= a.what %></h6>
+      <li><b><%=h a.display_date_and_time %></b> - <%= a.what %></li>
+      <!--<li style="padding: 5px 0 5px 0;">
+        <h5><%= a.what %></h5>
         <b><%=h a.display_date_and_time %></b>
-      </li>
+        <br>
+      </li>-->
       <% end %>
     </ul>
     <%= link_to 'View All Announcements', announcements_path %>
