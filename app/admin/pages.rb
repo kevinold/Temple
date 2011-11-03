@@ -1,5 +1,6 @@
 ActiveAdmin.register Page do
   filter :title
+  form :partial => "form"
 
   index do
     column "Page Title" do |page|

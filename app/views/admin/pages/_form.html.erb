@@ -1,0 +1,10 @@
+  <%= javascript_include_tag "/javascripts/ckeditor/ckeditor.js" %> 
+  <%= semantic_form_for [:admin, @page], :multipart => true do |f| %>
+    <%= f.inputs do %>
+    <%= f.input :title, :label => "Title" %>
+    <%= f.input :section, :label => "Section" %>
+    <%= f.input :published, :label => "Published" %>
+    <%= f.input :body, :as => :ckeditor %>
+    <% end %>
+    <%= f.buttons %>
+  <% end %>  
