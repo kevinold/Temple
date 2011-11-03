@@ -1,4 +1,10 @@
 ActiveAdmin.register Announcement do
+
+  scope :active, :default => true
+  scope :inactive
+  scope :expired
+  scope :all
+
   form :partial => "form"
   #controller do
     #def after_initialize

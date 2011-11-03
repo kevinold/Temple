@@ -3,6 +3,10 @@ class Announcement < ActiveRecord::Base
   validates_presence_of :what, :ann_date, :ann_time, :location, :details
   has_friendly_id :what, :use_slug => true
 
+  scope :active, where("published = 1 and ann_date >= curdate()").order("ann_date ASC, ann_time desc")
+  scope :inactive, where("published != 1")
+  scope :expired, where("published = 1 and ann_date <= curdate()").order("ann_date ASC, ann_time desc")
+
   def display_ann_date
     ann_date.strftime('%m-%d-%y')
   end
