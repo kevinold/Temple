@@ -1,0 +1,15 @@
+  <%= javascript_include_tag "/javascripts/ckeditor/ckeditor.js" %> 
+  <%= semantic_form_for [:admin, @announcement], :multipart => true do |f| %>
+    <%= f.inputs do %>
+    <%= f.input :what, :label => "Headline" %>
+    <%= f.input :ann_date, :as => :date, :hint => 'Select a date', :prompt => {:day => "Day", :month => "Month", :year => "Year"}, :start_year => Time.now.year %>
+    <%= f.input :ann_time, :as => :string, :label => "Time", :input_html => {:class => 'timePickerField'} %>
+    <%= f.input :location, :label => "Location" %>
+    <%= f.input :published, :label => "Published" %>
+    <%= f.input :details, :as => :ckeditor %>
+    <% end %>
+    <%= f.buttons %>
+  <% end %>  
+
+
+
