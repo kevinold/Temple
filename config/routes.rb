@@ -21,6 +21,7 @@ TempleRails::Application.routes.draw do
   resources :pages
   resources :announcements
 
+  match 'children/:id' => 'pages#show', :as => :page
   match 'events/:id' => 'pages#show', :as => :events
   match '/' => 'home#index'
   match '/:id' => 'pages#show', :as => :page
